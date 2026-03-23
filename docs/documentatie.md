@@ -48,6 +48,8 @@ Carte
             Clasa
         CarteCopii
             Varsta Recomandata
+            Ilustrator
+            Elemente Interactive
         MaterialeReferinta
             Tip (Dictionar, Atlas, Enciclopedie)
     Metode:
@@ -58,6 +60,7 @@ Carte
 Utilizator
     Parametrii:
         Nume
+        Prenume
         ID
         Email sau Nr Telefon
         Tip- sunt mai multe tipuri de utilizator, voi implementa 4 tipuri: Basic, Student, Premium, Staff - enum si in functie de tipul de utilizator 
@@ -68,7 +71,6 @@ Utilizator
         UtilizatorBasic
             Valabilitate Abonament
             Reguli
-                Perioade scurte de imprumut (2 saptamani)
                 Limita mica de imprumuturi (2 carti)
         UtilizatorStudent
             Valabilitate Abonament
@@ -77,21 +79,18 @@ Utilizator
             NrMatricol
             Reguli
                 Discount la taxe (20%)
-                Perioade medii de imprumut (4 saptamani)
                 Limita medie de imprumuturi (5 carti)
         UtilizatorPremium
             Valabilitate Abonament
             Reguli
                 Discount la taxe (40%)
-                Perioade lungi de imprumut (6 saptamani)
                 Limita mare de imprumuturi (10 carti)
         UtilizatorStaff
             Departament
             Reguli
                 Are acces la adaugare, modificare si stergere
                 Nu are taxe
-                Perioade lungi de imprumut (6 saptamani)
-                Limita mare de imprumuturi (10 carti)
+                Limita mare de imprumuturi (15 carti)
     Metode:
         Constructori
         Getteri si Setteri
@@ -110,3 +109,5 @@ Biblioteca (Creierul Aplicatiei)
         Metode Gestiune Cărți (Folosite de Staff)
         Metode Gestiune Utilizatori (Folosite de Staff)
         Metode Gestiune Imprumuturi
+
+Nu are logica ca fiecare tip de utilizator sa aiba o perioada diferita de imprumut cand acestea depind de tipul cartii, si pa langa acest lucru, tipurile diferite de utilizatori au taxe diferite in functie de tipul abonamentului, deci am scos timpul de imprumut din clasa utilizator.
