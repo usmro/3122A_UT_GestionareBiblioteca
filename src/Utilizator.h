@@ -41,6 +41,11 @@ public:
     { 
         return nume; 
     }
+    
+    string getPrenume() const 
+    { 
+        return prenume; 
+    }
 
     double getTaxeAcumulate() const 
     { 

@@ -62,11 +62,9 @@ Utilizator
         Nume
         Prenume
         ID
-        Email sau Nr Telefon
+        Contact
         Tip- sunt mai multe tipuri de utilizator, voi implementa 4 tipuri: Basic, Student, Premium, Staff - enum si in functie de tipul de utilizator 
-        Imprumuturi- valabil doar pentru Primele 3 tipuri de utilizator
         Taxe acumulate
-        Limita de imprumuturi- depinde de tipul utilizatorului
     Clase Mostenite:
         UtilizatorBasic
             Valabilitate Abonament

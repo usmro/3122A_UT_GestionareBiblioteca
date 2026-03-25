@@ -62,6 +62,7 @@ public:
         return isbn; 
     }
 
+
     string getEditura() const 
     { 
         return editura;
