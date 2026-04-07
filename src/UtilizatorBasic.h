@@ -1,33 +1,32 @@
 #ifndef UTILIZATOR_BASIC_H
 #define UTILIZATOR_BASIC_H
-
 #include "Utilizator.h"
 
-class UtilizatorBasic : public Utilizator 
+class UtilizatorBasic : public Utilizator
 {
 private:
-    int luniValabilitateAbonament;
+    Abonament abonament;
 
 public:
-    UtilizatorBasic(string _id, string _nume, string _prenume, string _contact, int _luniAbonament) : Utilizator(_id, _nume, _prenume, _contact, TipUtilizator::BASIC)
+    UtilizatorBasic(string id, string nume, string prenume,
+                    string contact, string parola,
+                    int luniAb, int anStart, int lunaStart)
+        : Utilizator(id, nume, prenume, contact, TipUtilizator::BASIC, parola),
+          abonament("Basic", luniAb, 15.0, anStart, lunaStart)
     {
-        luniValabilitateAbonament = _luniAbonament;
+        adaugaEveniment(anStart, lunaStart, "Inscris ca utilizator Basic");
     }
 
-    int getLimitaImprumuturi() const override 
-    { 
-        return 2; 
-    }
+    const Abonament& getAbonament() const { return abonament; }
 
-    double aplicaDiscountTaxe(double taxa) const override 
-    { 
-        return taxa; 
-    }
+    int    getLimitaImprumuturi()          const override { return 2; }
+    double aplicaDiscountTaxe(double taxa) const override { return taxa; }
+    string getTipNume()                    const override { return "BASIC"; }
 
-    void afisareProfil() const override 
+    void afisareDetalii() const override
     {
-        cout << "[BASIC - " << luniValabilitateAbonament << " luni] ";
-        Utilizator::afisareProfil();
+        Utilizator::afisareDetalii();
+        abonament.afisare();
     }
 };
 

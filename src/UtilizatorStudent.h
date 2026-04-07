@@ -1,39 +1,49 @@
 #ifndef UTILIZATOR_STUDENT_H
 #define UTILIZATOR_STUDENT_H
-
 #include "Utilizator.h"
 
-class UtilizatorStudent : public Utilizator 
+class UtilizatorStudent : public Utilizator
 {
 private:
-    int luniValabilitateAbonament;
-    string facultate;
-    int anStudiu;
-    string nrMatricol;
+    Abonament abonament;
+    string    facultate;
+    int       anStudiu;
+    string    nrMatricol;
 
 public:
-    UtilizatorStudent(string _id, string _nume, string _prenume, string _contact, int _luniAb, string _fac, int _an, string _matr) : Utilizator(_id, _nume, _prenume, _contact, TipUtilizator::STUDENT) 
+    UtilizatorStudent(string id, string nume, string prenume,
+                      string contact, string parola,
+                      int luniAb, int anStart, int lunaStart,
+                      string fac, int anSt, string matr)
+        : Utilizator(id, nume, prenume, contact, TipUtilizator::STUDENT, parola),
+          abonament("Student", luniAb, 10.0, anStart, lunaStart),
+          facultate(fac), anStudiu(anSt), nrMatricol(matr)
     {
-        luniValabilitateAbonament = _luniAb;
-        facultate = _fac;
-        anStudiu = _an;
-        nrMatricol = _matr;
+        adaugaEveniment(anStart, lunaStart,
+                        "Inscris ca Student - " + fac + ", An " + std::to_string(anSt));
     }
 
-    int getLimitaImprumuturi() const override 
-    { 
-        return 5; 
-    }
+    string getFacultate()  const { return facultate; }
+    int    getAnStudiu()   const { return anStudiu; }
+    string getNrMatricol() const { return nrMatricol; }
 
-    double aplicaDiscountTaxe(double taxa) const override 
-    { 
-        return taxa * 0.8; 
-    }
-
-    void afisareProfil() const override 
+    void promoveazaAnSuperior()
     {
-        cout << "[STUDENT - " << facultate << " | An " << anStudiu << " | Matr: " << nrMatricol << "] ";
-        Utilizator::afisareProfil();
+        anStudiu++;
+        adaugaEveniment(2025, 9, "Promovat in anul " + std::to_string(anStudiu));
+    }
+
+    int    getLimitaImprumuturi()          const override { return 5; }
+    double aplicaDiscountTaxe(double taxa) const override { return taxa * 0.8; }
+    string getTipNume()                    const override { return "STUDENT"; }
+
+    void afisareDetalii() const override
+    {
+        Utilizator::afisareDetalii();
+        cout << "  Facultate: " << facultate
+             << " | An: " << anStudiu
+             << " | Matricol: " << nrMatricol << "\n";
+        abonament.afisare();
     }
 };
 
