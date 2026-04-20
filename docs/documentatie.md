@@ -199,8 +199,6 @@ Metode publice:
 
 Nota: constructorul de copiere si operatorul = sunt sterse (= delete) pentru a preveni dubla alocare a memoriei.
 
-
-
 4.3 Entitatile de baza: Autor si Editura
 
 Fisiere: src/Autor.h, src/Editura.h
@@ -334,3 +332,165 @@ UtilizatorStaff are in plus:
 - ContractAngajare struct: salariu, data angajare, zile concediu total si ramase
 - Metode de drepturi diferentiate: poateAdaugaCarte(), poateStergeCarte(), poateGestionaStaff()
 - pensionare(an, luna) — marcheaza staff-ul pensionat si adauga eveniment in istoric
+
+4.8 Clasa Biblioteca
+ 
+Fisier: src/Biblioteca.h
+ 
+Clasa centrala care orchestreaza toate operatiunile. Foloseste Colectie<T>
+pentru toate colectiile interne.
+ 
+Atribute private:
+- nume — string, numele institutiei
+- inventar — Colectie<Carte>, toate titlurile
+- utilizatori — Colectie<Utilizator>, utilizatori inregistrati
+- indexAutori — Colectie<Autor>, index unic de autori
+- indexEdituri — Colectie<Editura>, index unic de edituri
+- imprumuturi — vector<Imprumut>, istorice si active
+- rezervari — vector<Rezervare>, rezervari active
+- totalIncasari — double, suma totala colectata
+- contorExemplare — int, contor pentru generare coduri unice
+- logFile — ofstream, fisier log (biblioteca_log.txt)
+ 
+Metode principale:
+- gasesteOrAdaugaAutor(...) — asigura unicitatea autorilor in index
+- gasesteOrAdaugaEditura(...) — asigura unicitatea editurilor in index
+- adaugaCarte(Carte*) — verifica ISBN duplicat, adauga in inventar
+- adaugaExemplarLaCarte(isbn, ...) — genereaza cod unic, adauga exemplar fizic
+- imprumutaCarte(idUser, isbn, ...) — verifica limite, disponibilitate, actualizeaza status
+- returneazaCarte(idUser, cod, zile) — actualizeaza status, calculeaza taxe cu discount
+- incaseazaTaxa(idUser, suma) — scade din taxele utilizatorului, adauga la incasari
+- cautaDupaTitlu(fragment) — cautare partiala in titlu
+- cautaDupaAutor(numeAutor) — cautare dupa autor
+- cautaDupaAn(an) — filtrare dupa an aparitie
+- afiseazaStatistici() — raport general: carti, utilizatori, incasari
+ 
+Logging: fiecare operatie importanta (adaugare, imprumut, returnare, incasare)
+se inregistreaza automat in biblioteca_log.txt.
+ 
+4.9 Exceptii custom
+ 
+Fisier: src/Exceptii.h
+ 
+Toate deriva din std::runtime_error.
+ 
+CarteLipsaException — carte inexistenta, toate exemplarele ocupate, sau nu se imprumuta
+LimitaDepastitaException — utilizatorul a atins limita de imprumuturi
+IsbnDuplicatException — se incearca adaugarea unui ISBN deja existent
+UtilizatorInexistentException — ID utilizator negasit
+TaxaInvalidaException — suma negativa sau zero la incasare
+ 
+Exemplu de utilizare:
+    try {
+        bib.imprumutaCarte("U-101", "ISBN-001", 7, 4, 2024);
+    } catch (const LimitaDepastitaException& e) {
+        cout << e.what();
+    } catch (const CarteLipsaException& e) {
+        cout << e.what();
+    }
+ 
+--------------------------------
+5. Structura Fisierelor
+--------------------------------
+ 
+3122A_UT_GestionareBiblioteca/
+    src/
+        IAfisabil.h — interfata pura de afisare
+        Colectie.h — sablon generic <T>
+        Autor.h — entitate autor (unica in IndexAutori)
+        Editura.h — entitate editura (unica in IndexEdituri)
+        Exceptii.h — exceptii custom
+        Carte.h — clasa abstracta de baza + ExemplarFizic
+        CarteFictiune.h — derivata: gen literar, varsta minima
+        CarteTehnica.h — derivata: domeniu, dificultate, resurse
+        CarteEducativa.h — derivata: materie, profil, clasa
+        CarteCopii.h — derivata: varsta, ilustrator, interactiv
+        MaterialeReferinta.h — derivata: dictionar/atlas/enciclopedie
+        TipuriSpeciale.h — CarteReligioasa, Periodic, ManuscrisRar
+        Utilizator.h — clasa abstracta de baza + securitate
+        UtilizatorBasic.h — derivata: 2 carti, fara discount
+        UtilizatorStudent.h — derivata: 5 carti, discount 20%
+        UtilizatorPremium.h — derivata: 10 carti, discount 40%
+        UtilizatorStaff.h — derivata: 15 carti, roluri, contract
+        Biblioteca.h — orchestratorul principal
+        main.cpp — demonstratie completa si teste
+    tests/
+        TestStoc.cpp — teste stoc, exemplare, coduri unice, ISBN duplicat
+        TestImprumuturi.cpp — teste limite, taxe, discounturi, exceptii
+        TestPolimorfism.cpp — teste virtuale, template, interfata, operator<<
+    docs/
+        documentatie.md — acest fisier
+    Makefile
+    README.md
+
+-------------------------------- 
+6. Diagrama de Clase
+--------------------------------
+
+IAfisabil (interfata pura)
+    + afisareDetalii()* : void
+            |
+            |----------------------------------------|
+            |                                        |
+    Carte (abstracta)                       Utilizator (abstracta)
+    # isbn : string                         # id : string
+    # titlu : string                        # parolaHash : string
+    # autori : vector<Autor*>               # taxeAcumulate : double
+    # exemplare : vector<ExemplarFizic>     # istoric : vector<EvenimentIstoric>
+    + getTimpImprumut()* : int              + getLimitaImprumuturi()* : int
+    + getTaxaIntarziere()* : double         + aplicaDiscountTaxe()* : double
+    + afisareDetalii()* : void              + afisareDetalii()* : void
+            |                                        |
+    CarteFictiune                           UtilizatorBasic
+    CarteTehnica                            UtilizatorStudent
+    CarteEducativa                          UtilizatorPremium
+    CarteCopii                              UtilizatorStaff
+    MaterialeReferinta                          + RolStaff enum
+    CarteReligioasa                             + ContractAngajare struct
+    Periodic
+    ManuscrisRar
+ 
+Colectie<T> (template)
+    - elemente : vector<T*>
+    + adauga(T*) : void
+    + elimina(T*) : bool
+    + get(int) : T*
+    + dimensiune() : int
+ 
+Biblioteca
+    - inventar : Colectie<Carte>
+    - utilizatori : Colectie<Utilizator>
+    - indexAutori : Colectie<Autor>
+    - indexEdituri : Colectie<Editura>
+    + imprumutaCarte() : void
+    + returneazaCarte() : void
+    + cautaDupaTitlu() : vector<Carte*>
+
+--------------------------------
+7. Compilare si Rulare
+--------------------------------
+ 
+Cerinte: g++ cu suport C++17, make, WSL Ubuntu sau Linux nativ.
+ 
+Compilare completa:
+    make
+ 
+Compilare rapida (un singur pas):
+    make quick
+ 
+Compilare si rulare imediata:
+    make run
+ 
+Stergere fisiere generate:
+    make clean
+ 
+Rebuild complet:
+    make rebuild
+ 
+Manual fara Makefile:
+    g++ -std=c++17 -Wall -I./src -o biblioteca_app src/main.cpp
+    ./biblioteca_app
+ 
+Output asteptat: aplicatia ruleaza prin 14 sectiuni de teste, demonstrand
+toate conceptele POO implementate, si genereaza fisierul biblioteca_log.txt
+cu evenimentele logate.
