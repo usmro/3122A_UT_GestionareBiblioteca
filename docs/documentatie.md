@@ -494,3 +494,115 @@ Manual fara Makefile:
 Output asteptat: aplicatia ruleaza prin 14 sectiuni de teste, demonstrand
 toate conceptele POO implementate, si genereaza fisierul biblioteca_log.txt
 cu evenimentele logate.
+
+--------------------------------
+8. Teste Unitare
+--------------------------------
+ 
+Testele sunt organizate in 3 fisiere separate in tests/, fiecare compilabil independent.
+ 
+TestStoc.cpp — 8 teste pentru inventarul fizic:
+    T01 — carte fara exemplare: nrExemplareTotal = 0, getPrimulDisponibil = nullptr
+    T02 — adaugare exemplare: contorul creste corect dupa fiecare adaugare
+    T03 — format cod unic BIB-2024-NNNNN, lungime 14 caractere, coduri diferite
+    T04 — status exemplar devine IMPRUMUTATA la imprumut, DISPONIBILA la returnare
+    T05 — disponibilitate corecta cu exemplare multiple si mai multi utilizatori
+    T06 — MaterialeReferinta arunca CarteLipsaException la tentativa de imprumut
+    T07 — ISBN duplicat arunca IsbnDuplicatException
+    T08 — acelasi autor adaugat de 2 ori returneaza pointer identic (unicitate index)
+ 
+TestImprumuturi.cpp — 10 teste pentru logica de imprumut:
+    T01 — imprumut simplu: utilizatorul are cartea in lista activa
+    T02 — limita Basic (2 carti): al 3-lea imprumut arunca LimitaDepastitaException
+    T03 — limita Student (5 carti): al 6-lea imprumut arunca exceptie
+    T04 — returnarea elibereaza slot: utilizatorul poate imprumuta din nou
+    T05 — utilizator inexistent arunca UtilizatorInexistentException
+    T06 — carte fara niciun exemplar adaugat arunca CarteLipsaException
+    T07 — Staff: aplicaDiscountTaxe() returneaza 0.0 RON indiferent de suma
+    T08 — discount Student 20%: 10 RON brut devine 8 RON, 25 RON brut devine 20 RON
+    T09 — discount Premium 40%: 10 RON brut devine 6 RON, 50 RON brut devine 30 RON
+    T10 — taxa acumulata corect dupa returnare cu intarziere, zero dupa plata
+ 
+TestPolimorfism.cpp — 7 teste pentru concepte POO:
+    T01 — getTipCarte() returneaza tipul corect pentru toate cele 8 derivate
+    T02 — getTimpImprumut() diferit per tip prin pointer de baza Carte*
+    T03 — getLimitaImprumuturi() diferit per tip prin pointer Utilizator*
+    T04 — areDreptDeAdmin() false pentru Basic/Student/Premium, true pentru Staff
+    T05 — Colectie<T>: dimensiune, get, out_of_range, invalid_argument la null
+    T06 — IAfisabil*: afisareDetalii() functioneaza prin pointer de interfata
+    T07 — operator << supraincarcata produce output nevid cu date corecte
+ 
+Rulare teste:
+    make tests              — toate 3 fisierele
+    make test-stoc          — doar TestStoc
+    make test-imprumuturi   — doar TestImprumuturi
+    make test-polimorfism   — doar TestPolimorfism
+ 
+--------------------------------
+9. Cerinte Acoperite
+--------------------------------
+ 
+Cerinte obligatorii:
+ 
+Clase Carte, Utilizator, Biblioteca — implementate complet cu atribute
+private si metode publice.
+ 
+Mostenire — 8 tipuri de carti si 4 tipuri de utilizatori, toti mostenind
+din clase abstracte.
+ 
+Polimorfism — afisareDetalii(), getTipCarte(), getLimitaImprumuturi(),
+aplicaDiscountTaxe() toate virtuale cu suprascriere in derivate.
+ 
+Encapsulare — toate atributele private/protected, accesate prin getteri/setteri.
+Parola hash niciodata expusa direct.
+ 
+Evenimente logate — imprumut/returnare/adaugare/incasare scrise in biblioteca_log.txt.
+ 
+Git — minimum 5 commit-uri descriptive pe branch develop.
+ 
+Cerinte facultative:
+ 
+Sablon generic — Colectie<T> inlocuieste vector<T*> brut, cu gestionare
+memorie automata si validare.
+ 
+Exceptii — 5 clase de exceptii custom derivate din std::runtime_error.
+ 
+Interfata consola — main.cpp demonstreaza toate functionalitatile cu
+output structurat in 14 sectiuni.
+
+--------------------------------
+10. Decizii de Proiectare
+--------------------------------
+ 
+De ce Autor si Editura ca entitati, nu ca string?
+Un string "Frank Herbert" apare in zeci de carti. Daca vrem sa actualizam
+bio-ul sau sa adaugam un link, cu string ar trebui modificat in fiecare carte.
+Cu entitate separata, modificam o singura data si toate cartile reflecta
+automat schimbarea.
+ 
+De ce ExemplarFizic separat de Carte?
+ISBN-ul este acelasi pentru toate copiile unui titlu, dar fiecare copie fizica
+are locatie proprie, stare proprie si cod propriu. Fara ExemplarFizic, nu putem
+sti ca exemplarul de pe raftul A-3 este imprumutat dar cel de pe A-7 este disponibil.
+ 
+De ce IAfisabil ca interfata separata?
+Carte si Utilizator nu au o relatie de mostenire intre ele, dar ambele trebuie
+sa se poata afisa. IAfisabil permite scrierea de functii generice care accepta
+orice IAfisabil* fara sa stie daca e carte sau utilizator.
+ 
+De ce Colectie<T> in loc de vector<T*>?
+vector<T*> nu gestioneaza memoria — daca uiti delete, ai memory leak.
+Colectie<T> face delete automat in destructor, interzice copierea accidentala
+care ar face double-delete, si valideaza null-ul la adaugare.
+ 
+De ce parola ca hash si nu in clar?
+Daca fisierul de date sau memoria este citita de un atacator, parolele in clar
+sunt compromise instant. Hash-ul nu permite recuperarea parolei originale —
+verificarea se face comparand hash-uri, nu parole.
+ 
+De ce istoricul este sortat automat la fiecare adaugaEveniment()?
+Evenimentele pot fi adaugate in orice ordine — constructorul adauga inscrierea,
+apoi programatorul adauga retroactiv evenimente din trecut. Fara sortare automata,
+istoricul ar aparea in ordinea insertiei, nu cronologic. Sortand la fiecare
+inserare garantam ca vectorul este mereu ordonat indiferent de cine si cand
+adauga evenimente.
