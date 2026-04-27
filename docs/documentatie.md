@@ -496,7 +496,96 @@ toate conceptele POO implementate, si genereaza fisierul biblioteca_log.txt
 cu evenimentele logate.
 
 --------------------------------
-8. Teste Unitare
+8. Popularea cu date(DataSeeder)
+--------------------------------
+
+Fisier: src/DataSeeder.h
+
+La pornirea aplicatiei, DataSeeder::populeaza(bib) incarca automat in
+biblioteca o baza de date de test cu peste 1000 de titluri si 200 de
+utilizatori, acoperind toate cele 8 tipuri de carti implementate.
+
+Distributia titlurilor:
+- CarteFictiune    - ~150 titluri: SF, Fantasy, Thriller, Clasici romani
+                     si universali, literatura moderna
+- CarteTehnica     - ~150 titluri: C++, Python, Java, AI, DevOps,
+                     Cloud, Securitate, Algoritmi
+- CarteEducativa   - ~175 titluri: manuale cls. 5-12, culegeri BAC,
+                     cursuri universitare toate domeniile
+- CarteCopii       - ~100 titluri: Harry Potter, basme, enciclopedii,
+                     clasici internationali si romani
+- MaterialeReferinta - ~50 titluri: dictionare, atlase, enciclopedii
+- CarteReligioasa  - 15 titluri: Biblie, Filocalie, Coran
+- Periodic         - 15 titluri: ziare si reviste curente
+- ManuscrisRar     - 10 titluri: cronicari moldoveni, manuscrise medievale
+
+Fiecare titlu primeste 1-3 exemplare fizice cu cod unic BIB-YYYY-NNNNN
+generat automat si locatie fizica in biblioteca.
+
+Utilizatori generati:
+- 5 Staff (Bibliotecar, Bibliotecar Sef, Administrator, Casier, Arhivar)
+- 30 Studenti (5 facultati, ani diferiti de studiu)
+- 80 utilizatori Basic
+- 80 utilizatori Premium
+
+Toate parolele sunt stocate ca hash, nu in clar.
+
+--------------------------------
+9. Meniu Consola
+--------------------------------
+
+Fisier: src/Meniu.h
+
+Meniul foloseste coduri ANSI pentru culori in terminal:
+- Albastru  — titluri sectiuni
+- Galben    — numerele optiunilor
+- Verde     — mesaje de succes
+- Rosu      — erori si iesire
+- Cyan      — prompt-uri de input
+- Gri       — linii separatoare
+
+Structura meniu:
+
+1. Gestiune Carti (14 optiuni)
+   - Afisare inventar complet
+   - Cautare dupa ISBN
+   - Adaugare carte pentru fiecare tip: Fictiune, Tehnica, Educativa,
+     Copii, Referinta, Religioasa, Periodic, Manuscris Rar
+   - Adaugare exemplar fizic la carte existenta
+   - Afisare detalii complete (toate exemplarele si locatiile)
+   - Afisare index autori si edituri
+
+2. Gestiune Utilizatori (9 optiuni)
+   - Afisare toti utilizatorii
+   - Cautare dupa ID
+   - Adaugare utilizator: Basic, Student, Premium, Staff
+   - Afisare istoric evolutie utilizator
+   - Afisare imprumuturi active
+   - Verificare parola (testeaza hash-ul fara a afisa parola)
+
+3. Imprumuturi & Returnari (4 optiuni)
+   - Inregistrare imprumut (verifica automat limita si disponibilitatea)
+   - Inregistrare returnare cu calcul taxa de intarziere
+   - Incasare taxa cu discount automat pe tip utilizator
+   - Verificare disponibilitate carte
+
+4. Cautare & Filtrare (5 optiuni)
+   - Cautare partiala dupa titlu
+   - Cautare dupa autor
+   - Filtrare dupa an aparitie
+   - Cautare dupa ISBN
+   - Cautare utilizator dupa ID
+
+5. Statistici & Rapoarte
+   - Total titluri, utilizatori, autori unici, edituri unice
+   - Total incasari biblioteca
+   - Numar imprumuturi active
+
+Toate actiunile sunt protejate cu tratare de exceptii — erorile sunt
+afisate cu rosu fara a crapa aplicatia.
+
+--------------------------------
+10. Teste Unitare
 --------------------------------
  
 Testele sunt organizate in 3 fisiere separate in tests/, fiecare compilabil independent.
@@ -539,7 +628,7 @@ Rulare teste:
     make test-polimorfism   — doar TestPolimorfism
  
 --------------------------------
-9. Cerinte Acoperite
+11. Cerinte Acoperite
 --------------------------------
  
 Cerinte obligatorii:
@@ -571,7 +660,7 @@ Interfata consola — main.cpp demonstreaza toate functionalitatile cu
 output structurat in 14 sectiuni.
 
 --------------------------------
-10. Decizii de Proiectare
+12. Decizii de Proiectare
 --------------------------------
  
 De ce Autor si Editura ca entitati, nu ca string?
