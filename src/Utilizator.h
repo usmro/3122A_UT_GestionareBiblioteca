@@ -4,10 +4,10 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include <functional>   // std::hash
+#include <functional>
 #include <sstream>
 #include <iomanip>
-#include <algorithm>    // std::sort, std::find
+#include <algorithm>
 #include "IAfisabil.h"
 
 using std::string;
@@ -17,39 +17,7 @@ using std::cout;
 // -----------------------------------------------------------------------
 // Enum-uri
 // -----------------------------------------------------------------------
-
-enum class TipUtilizator { BASIC, STUDENT, PREMIUM, STAFF };
-
-// -----------------------------------------------------------------------
-// Abonament - valabilitate si pret
-// -----------------------------------------------------------------------
-struct Abonament
-{
-    string tipNume;       // "Basic", "Student", "Premium"
-    int    luniValabilitate;
-    double pretLuna;      // RON/luna
-    int    anStart;
-    int    lunaStart;
-
-    Abonament(string tip, int luni, double pret, int an, int luna)
-        : tipNume(tip), luniValabilitate(luni), pretLuna(pret),
-          anStart(an), lunaStart(luna)
-    {}
-
-    bool esteActiv(int anCurent, int lunaCurenta) const
-    {
-        int luniScurse = (anCurent - anStart) * 12 + (lunaCurenta - lunaStart);
-        return luniScurse < luniValabilitate;
-    }
-
-    void afisare() const
-    {
-        cout << "Abonament " << tipNume << " | "
-             << luniValabilitate << " luni | "
-             << pretLuna << " RON/luna | Start: "
-             << lunaStart << "/" << anStart << "\n";
-    }
-};
+enum class TipUtilizator { BASIC, STUDENT, STAFF };
 
 // -----------------------------------------------------------------------
 // Eveniment din istoria utilizatorului
@@ -58,15 +26,14 @@ struct EvenimentIstoric
 {
     int    an;
     int    luna;
-    string descriere; // ex: "Inscris la biblioteca", "Promovat la Student"
+    string descriere;
 
     EvenimentIstoric(int _an, int _luna, string _desc)
         : an(_an), luna(_luna), descriere(_desc) {}
 };
 
 // -----------------------------------------------------------------------
-// Utilitar hash simplu pentru parole (SHA-256 simplificat cu std::hash)
-// In productie: folositi bcrypt sau OpenSSL SHA-256
+// Utilitar hash pentru parole
 // -----------------------------------------------------------------------
 namespace Securitate
 {
@@ -94,49 +61,49 @@ protected:
     string         id;
     string         nume;
     string         prenume;
-    string         contact;     // email sau telefon
+    string         contact;
     TipUtilizator  tip;
     double         taxeAcumulate;
-
-    // Securitate - parola stocata ca hash, nu in clar
     string         parolaHash;
+    int            anInregistrare;
+    int            lunaInregistrare;
 
-    // Istoric evolutie utilizator
     vector<EvenimentIstoric> istoric;
-
-    // Imprumuturi curente (coduri unice ale exemplarelor)
-    vector<string> imprumututiCurente;
+    vector<string>           imprumututiCurente;
 
 public:
     Utilizator(string _id, string _nume, string _prenume,
                string _contact, TipUtilizator _tip,
-               string parola = "")
+               string parola = "",
+               int an = 2024, int luna = 1)
         : id(_id), nume(_nume), prenume(_prenume),
           contact(_contact), tip(_tip),
           taxeAcumulate(0.0),
-          parolaHash(parola.empty() ? "" : Securitate::hashParola(parola))
+          parolaHash(parola.empty() ? "" : Securitate::hashParola(parola)),
+          anInregistrare(an), lunaInregistrare(luna)
     {}
 
     virtual ~Utilizator() = default;
 
-    // -----------------------------------------------------------------------
     // Getteri
-    // -----------------------------------------------------------------------
-    string        getId()             const { return id; }
-    string        getNume()           const { return nume; }
-    string        getPrenume()        const { return prenume; }
-    string        getNumeComplet()    const { return prenume + " " + nume; }
-    string        getContact()        const { return contact; }
-    TipUtilizator getTip()            const { return tip; }
-    double        getTaxeAcumulate()  const { return taxeAcumulate; }
-    int           getNrImprumuturi()  const { return (int)imprumututiCurente.size(); }
+    string        getId()               const { return id; }
+    string        getNume()             const { return nume; }
+    string        getPrenume()          const { return prenume; }
+    string        getNumeComplet()      const { return prenume + " " + nume; }
+    string        getContact()          const { return contact; }
+    TipUtilizator getTip()              const { return tip; }
+    double        getTaxeAcumulate()    const { return taxeAcumulate; }
+    string getParolaHash()               const { return parolaHash; }
+void   setParolaHash(const string& h)      { parolaHash = h; }
+void   setTaxeAcumulate(double t)          { taxeAcumulate = t; }
+    int           getNrImprumuturi()    const { return (int)imprumututiCurente.size(); }
+    int           getAnInregistrare()   const { return anInregistrare; }
+    int           getLunaInregistrare() const { return lunaInregistrare; }
 
     const vector<EvenimentIstoric>& getIstoric() const { return istoric; }
 
-    // -----------------------------------------------------------------------
     // Setteri
-    // -----------------------------------------------------------------------
-    void setContact(string c) { contact = c; }
+    void setContact(const string& c) { contact = c; }
 
     void setParola(const string& parolaNoua)
     {
@@ -148,9 +115,7 @@ public:
         return Securitate::verificaParola(parola, parolaHash);
     }
 
-    // -----------------------------------------------------------------------
     // Taxe
-    // -----------------------------------------------------------------------
     void adaugaTaxa(double suma)
     {
         if (suma < 0) return;
@@ -163,9 +128,7 @@ public:
         if (taxeAcumulate < 0) taxeAcumulate = 0;
     }
 
-    // -----------------------------------------------------------------------
     // Imprumuturi
-    // -----------------------------------------------------------------------
     void adaugaImprumut(const string& codExemplar)
     {
         imprumututiCurente.push_back(codExemplar);
@@ -184,9 +147,7 @@ public:
         return getNrImprumuturi() < getLimitaImprumuturi();
     }
 
-    // -----------------------------------------------------------------------
     // Istoric
-    // -----------------------------------------------------------------------
     void adaugaEveniment(int an, int luna, const string& desc)
     {
         istoric.emplace_back(an, luna, desc);
@@ -206,17 +167,13 @@ public:
                  << ev.descriere << "\n";
     }
 
-    // -----------------------------------------------------------------------
     // Virtuale pure
-    // -----------------------------------------------------------------------
-    virtual int    getLimitaImprumuturi()             const = 0;
-    virtual double aplicaDiscountTaxe(double taxa)    const = 0;
-    virtual bool   areDreptDeAdmin()                  const { return false; }
-    virtual string getTipNume()                       const = 0;
+    virtual int    getLimitaImprumuturi()          const = 0;
+    virtual double aplicaDiscountTaxe(double taxa) const = 0;
+    virtual bool   areDreptDeAdmin()               const { return false; }
+    virtual string getTipNume()                    const = 0;
 
-    // -----------------------------------------------------------------------
     // IAfisabil
-    // -----------------------------------------------------------------------
     virtual void afisareDetalii() const override
     {
         cout << "[" << getTipNume() << "] "
@@ -225,23 +182,15 @@ public:
              << " | Contact: " << contact
              << " | Taxe: " << taxeAcumulate << " RON"
              << " | Imprumuturi: " << getNrImprumuturi()
-             << "/" << getLimitaImprumuturi() << "\n";
+             << "/" << getLimitaImprumuturi()
+             << " | Inregistrat: " << lunaInregistrare
+             << "/" << anInregistrare << "\n";
     }
 
-    // -----------------------------------------------------------------------
-    // Operator <<
-    // -----------------------------------------------------------------------
     friend std::ostream& operator<<(std::ostream& os, const Utilizator& u)
     {
         os << u.getNumeComplet() << " [" << u.id << "]";
         return os;
-    }
-
-private:
-    // necesar pentru eliminaImprumut
-    static auto& find_helper()
-    {
-        return std::find<vector<string>::iterator, string>;
     }
 };
 

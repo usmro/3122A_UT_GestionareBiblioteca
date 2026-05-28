@@ -17,7 +17,7 @@ public:
                   string serie = "", int volum = 0,
                   double pretCatalog = 0.0)
         : Carte(isbn, titlu, autori, editura, an, limba, coperta,
-                pagini, greutate, serie, volum, pretCatalog),
+                pagini, greutate, serie, volum, pretCatalog, gen),
           genLiterar(gen), varstaMinima(varsta)
     {}
 

@@ -17,7 +17,7 @@ public:
                int pagini = 0, double greutate = 0.0,
                double pretCatalog = 0.0)
         : Carte(isbn, titlu, autori, editura, an, limba, coperta,
-                pagini, greutate, "", 0, pretCatalog),
+                pagini, greutate, "", 0, pretCatalog, "Copii"),
           varstaRecomandata(varsta), ilustrator(ilustr),
           areElementeInteractive(interactiv)
     {}

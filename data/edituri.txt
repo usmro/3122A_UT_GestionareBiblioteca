@@ -1,0 +1,17 @@
+Nemira|Romania|Bucuresti|1991|www.nemira.ro
+Humanitas|Romania|Bucuresti|1990|www.humanitas.ro
+Polirom|Romania|Iasi|1995|www.polirom.ro
+RAO|Romania|Bucuresti|1994|www.raobooks.com
+Corint|Romania|Bucuresti|1991|www.corint.ro
+Didactica si Pedagogica|Romania|Bucuresti|1951|
+Art|Romania|Bucuresti|2003|www.edituraart.ro
+Litera|Romania|Bucuresti|1990|www.litera.ro
+O'Reilly Media|USA|Sebastopol|1978|www.oreilly.com
+Prentice Hall|USA|New Jersey|1913|
+Addison-Wesley|USA|Boston|1942|
+Manning Publications|USA|Shelter Island|1990|
+Packt Publishing|UK|Birmingham|2004|
+No Starch Press|USA|San Francisco|1994|
+Adevarul Holding|Romania|Bucuresti|2008|
+Curtea Veche|Romania|Bucuresti|1997|
+Minerva|Romania|Bucuresti|1969|

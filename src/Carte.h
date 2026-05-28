@@ -137,6 +137,9 @@ protected:
     // Pret de catalog al editurii (diferit de pretul de achizitie al bibliotecii)
     double              pretCatalog;
 
+    // Gen / categorie specifica (SF, Fantasy, Horror, C++, Matematica etc.)
+    string              gen;
+
 public:
     // Constructor principal
     Carte(string _isbn, string _titlu,
@@ -145,14 +148,16 @@ public:
           TipCoperta _coperta,
           int _pagini = 0, double _greutate = 0.0,
           string _serie = "", int _volum = 0,
-          double _pretCatalog = 0.0)
+          double _pretCatalog = 0.0,
+          string _gen = "")
         : isbn(_isbn), titlu(_titlu),
           autori(_autori), editura(_editura),
           anAparitie(_an), limba(_limba),
           coperta(_coperta),
           nrPagini(_pagini), greutateGrame(_greutate),
           serie(_serie), nrVolum(_volum),
-          pretCatalog(_pretCatalog)
+          pretCatalog(_pretCatalog),
+          gen(_gen)
     {}
 
     virtual ~Carte() = default;
@@ -172,6 +177,8 @@ public:
     string          getSerie()        const { return serie; }
     int             getNrVolum()      const { return nrVolum; }
     double          getPretCatalog()  const { return pretCatalog; }
+    string          getGen()          const { return gen; }
+    void            setGen(const string& g) { gen = g; }
 
     const vector<ExemplarFizic>& getExemplare() const { return exemplare; }
 
@@ -255,6 +262,7 @@ public:
     {
         os << "[" << c.getTipCarte() << "] " << c.titlu
            << " (" << c.anAparitie << ") - ISBN: " << c.isbn;
+        if (!c.gen.empty()) os << " [" << c.gen << "]";
         return os;
     }
 

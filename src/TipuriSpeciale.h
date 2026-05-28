@@ -18,7 +18,7 @@ public:
                     string _religie, string _cult,
                     int pagini = 0, double pretCatalog = 0.0)
         : Carte(isbn, titlu, autori, editura, an, limba, coperta,
-                pagini, 0.0, "", 0, pretCatalog),
+                pagini, 0.0, "", 0, pretCatalog, _religie),
           religie(_religie), cult(_cult)
     {}
 
@@ -61,7 +61,7 @@ public:
              string dom = "",
              int pagini = 0)
         : Carte(_issn, titlu, autori, editura, an, limba,
-                TipCoperta::BROSATA, pagini, 0.0),
+                TipCoperta::BROSATA, pagini, 0.0, "", 0, 0.0, tip),
           issn(_issn), tipPeriodic(tip),
           nrEditie(nrEd), luna(_luna), anEditie(_an),
           domeniu(dom)
@@ -106,7 +106,7 @@ public:
                  string _epoca, string conditii, bool supervizare,
                  double pretCatalog = 0.0)
         : Carte(isbn, titlu, autori, editura, an, limba, coperta,
-                0, 0.0, "", 0, pretCatalog),
+                0, 0.0, "", 0, pretCatalog, _epoca),
           epoca(_epoca), conditiiPastrare(conditii),
           necesitaSupervizare(supervizare)
     {}

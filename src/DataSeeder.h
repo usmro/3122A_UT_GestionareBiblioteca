@@ -10,7 +10,6 @@
 #include "TipuriSpeciale.h"
 #include "UtilizatorBasic.h"
 #include "UtilizatorStudent.h"
-#include "UtilizatorPremium.h"
 #include "UtilizatorStaff.h"
 
 class DataSeeder
@@ -1014,15 +1013,14 @@ private:
         int c = 1;
         for (int i=0;i<30;i++) {
             string id="STU-"+std::to_string(1000+c++);
-            bib.adaugaUtilizator(new UtilizatorStudent(id,nm[i],pren[i],pren[i]+"."+nm[i]+"@usv.ro","pass"+id,12,2024,9,fac[i%5],(i%4)+1,"MAT"+std::to_string(2024000+c)));
+            bib.adaugaUtilizator(new UtilizatorStudent(id,nm[i],pren[i],pren[i]+"."+nm[i]+"@usv.ro","pass"+id,2024,9,fac[i%5],(i%4)+1,"MAT"+std::to_string(2024000+c)));
         }
         for (int i=0;i<80;i++) {
             string id="BAS-"+std::to_string(2000+c++);
-            bib.adaugaUtilizator(new UtilizatorBasic(id,nm[i%30],pren[(i+5)%30],pren[(i+5)%30]+"@gmail.com","pass"+id,6,2024,(i%12)+1));
+            bib.adaugaUtilizator(new UtilizatorBasic(id,nm[i%30],pren[(i+5)%30],pren[(i+5)%30]+"@gmail.com","pass"+id,2024,(i%12)+1));
         }
         for (int i=0;i<80;i++) {
             string id="PRE-"+std::to_string(3000+c++);
-            bib.adaugaUtilizator(new UtilizatorPremium(id,nm[(i+10)%30],pren[(i+15)%30],pren[(i+15)%30]+".premium@gmail.com","pass"+id,24,2023,(i%12)+1));
         }
     }
 };

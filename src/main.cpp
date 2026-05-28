@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-
 #include "Biblioteca.h"
 #include "CarteFictiune.h"
 #include "CarteTehnica.h"
@@ -10,41 +9,38 @@
 #include "TipuriSpeciale.h"
 #include "UtilizatorBasic.h"
 #include "UtilizatorStudent.h"
-#include "UtilizatorPremium.h"
 #include "UtilizatorStaff.h"
 #include "Exceptii.h"
 #include "DataSeeder.h"
-#include "Meniu.h"
-
-using std::cout;
-using std::string;
+#include "Fisiere.h"
+#include "Server.h"
 
 int main()
 {
-    // ====================================================================
-    // Initializare si populare baza de date
-    // ====================================================================
-    cout << "\033[2J\033[H"; // Curata ecranul
-
-    cout << "\033[1m\033[94m";
-    cout << "\n  *** Biblioteca Universitara Suceava ***\n";
-    cout << "\033[0m";
-    cout << "\n  Se incarca baza de date...\n";
+    std::cout << "\033[1m\033[94m";
+    std::cout << "\n  *** Biblioteca Universitara Suceava ***\n";
+    std::cout << "\033[0m\n";
 
     Biblioteca bib("Biblioteca Universitara Suceava", 2024);
-    DataSeeder::populeaza(bib);
 
-    cout << "\033[92m  Baza de date incarcata!\033[0m\n";
-    cout << "  Titluri: " << bib.getNrCarti()
-         << " | Utilizatori: " << bib.getNrUtilizatori() << "\n";
-    cout << "\n  Apasati Enter pentru a continua...";
-    cin.ignore();
+    if (Fisiere::existaDateSalvate())
+    {
+        std::cout << "  Se incarca datele salvate...\n";
+        Fisiere::incarcaTot(bib);
+    }
+    else
+    {
+        std::cout << "  Prima pornire - se populeaza baza de date...\n";
+        DataSeeder::populeaza(bib);
+        Fisiere::salveazaTot(bib);
+    }
 
-    // ====================================================================
-    // Pornire meniu
-    // ====================================================================
-    Meniu meniu(bib);
-    meniu.ruleaza();
+    std::cout << "\033[92m  Titluri: " << bib.getNrCarti()
+              << " | Utilizatori: " << bib.getNrUtilizatori()
+              << "\033[0m\n";
+
+    Server server(bib);
+    server.porneste(8080);
 
     return 0;
 }

@@ -2,25 +2,28 @@
 #define UTILIZATOR_STUDENT_H
 #include "Utilizator.h"
 
+// -----------------------------------------------------------------------
+// UtilizatorStudent — acces gratuit pe baza de legitimatie studenteasca
+// Limita 5 carti, discount 20% la taxe de intarziere
+// -----------------------------------------------------------------------
 class UtilizatorStudent : public Utilizator
 {
 private:
-    Abonament abonament;
-    string    facultate;
-    int       anStudiu;
-    string    nrMatricol;
+    string facultate;
+    int    anStudiu;
+    string nrMatricol;
 
 public:
     UtilizatorStudent(string id, string nume, string prenume,
                       string contact, string parola,
-                      int luniAb, int anStart, int lunaStart,
+                      int an, int luna,
                       string fac, int anSt, string matr)
-        : Utilizator(id, nume, prenume, contact, TipUtilizator::STUDENT, parola),
-          abonament("Student", luniAb, 10.0, anStart, lunaStart),
+        : Utilizator(id, nume, prenume, contact, TipUtilizator::STUDENT,
+                     parola, an, luna),
           facultate(fac), anStudiu(anSt), nrMatricol(matr)
     {
-        adaugaEveniment(anStart, lunaStart,
-                        "Inscris ca Student - " + fac + ", An " + std::to_string(anSt));
+        adaugaEveniment(an, luna,
+            "Inscris ca Student - " + fac + ", An " + std::to_string(anSt));
     }
 
     string getFacultate()  const { return facultate; }
@@ -42,8 +45,8 @@ public:
         Utilizator::afisareDetalii();
         cout << "  Facultate: " << facultate
              << " | An: " << anStudiu
-             << " | Matricol: " << nrMatricol << "\n";
-        abonament.afisare();
+             << " | Matricol: " << nrMatricol
+             << " | Gratuit | Discount taxe: 20%\n";
     }
 };
 

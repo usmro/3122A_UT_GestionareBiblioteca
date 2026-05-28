@@ -23,7 +23,17 @@ using std::map;
 using std::vector;
 
 // -----------------------------------------------------------------------
-// Struct Imprumut - inregistrare activa a unui imprumut
+// Helper: conversie la lowercase pentru cautare case-insensitive
+// -----------------------------------------------------------------------
+static string toLower(const string& s)
+{
+    string r = s;
+    for (char& c : r) c = (char)std::tolower((unsigned char)c);
+    return r;
+}
+
+// -----------------------------------------------------------------------
+// Struct Imprumut
 // -----------------------------------------------------------------------
 struct Imprumut
 {
@@ -69,19 +79,15 @@ private:
     string               nume;
     Colectie<Carte>      inventar;
     Colectie<Utilizator> utilizatori;
-    Colectie<Autor>      indexAutori;   // fara duplicare
-    Colectie<Editura>    indexEdituri;  // fara duplicare
+    Colectie<Autor>      indexAutori;
+    Colectie<Editura>    indexEdituri;
 
     vector<Imprumut>     imprumuturi;
     vector<Rezervare>    rezervari;
 
     double               totalIncasari;
-
-    // Contor pentru generare coduri unice exemplare
     int                  contorExemplare;
     int                  anCurent;
-
-    // Log fisier
     std::ofstream        logFile;
 
 public:
@@ -103,16 +109,67 @@ public:
             log("Biblioteca '" + nume + "' inchisa.");
             logFile.close();
         }
-        // Colectie<T> se ocupa de delete in propriul destructor
     }
 
     // -----------------------------------------------------------------------
-    // Getteri
+    // Getteri existenti
     // -----------------------------------------------------------------------
     string getNume()          const { return nume; }
     double getTotalIncasari() const { return totalIncasari; }
     int    getNrCarti()       const { return inventar.dimensiune(); }
     int    getNrUtilizatori() const { return utilizatori.dimensiune(); }
+
+    // -----------------------------------------------------------------------
+    // Getteri pentru Fisiere.h (acces la colectii)
+    // -----------------------------------------------------------------------
+    int         getNrAutori()        const { return indexAutori.dimensiune(); }
+    int         getNrEdituri()       const { return indexEdituri.dimensiune(); }
+    Autor*      getAutor(int i)      const { return indexAutori.get(i); }
+    Editura*    getEditura(int i)    const { return indexEdituri.get(i); }
+    Carte*      getCarte(int i)      const { return inventar.get(i); }
+    Utilizator* getUtilizator(int i) const { return utilizatori.get(i); }
+
+    const vector<Imprumut>& getImprumuturi() const { return imprumuturi; }
+
+    // -----------------------------------------------------------------------
+    // Adauga utilizator fara cout (folosit la incarcare din fisier)
+    // -----------------------------------------------------------------------
+    void adaugaUtilizatorSilent(Utilizator* u)
+    {
+        utilizatori.adauga(u);
+    }
+
+    // -----------------------------------------------------------------------
+    // Adauga imprumut direct din fisier (fara logica de validare)
+    // -----------------------------------------------------------------------
+    void adaugaImprumutDirect(const string& cod, const string& uid,
+                               const string& isbn,
+                               int zi, int luna, int an, int zile, bool activ)
+    {
+        Imprumut imp(cod, uid, isbn, zi, luna, an, zile);
+        imp.esteActiv = activ;
+        imprumuturi.push_back(imp);
+        if (activ)
+        {
+            Utilizator* u = gasesteUtilizator(uid);
+            if (u) u->adaugaImprumut(cod);
+        }
+    }
+
+    // -----------------------------------------------------------------------
+    // Actualizeaza contorul de exemplare la incarcare din fisier
+    // -----------------------------------------------------------------------
+    void actualizeazaContorExemplare(const string& cod)
+    {
+        auto pos = cod.rfind('-');
+        if (pos != string::npos)
+        {
+            try {
+                int nr = std::stoi(cod.substr(pos + 1));
+                if (nr > contorExemplare) contorExemplare = nr;
+            } catch (...) {}
+        }
+    }
 
     // -----------------------------------------------------------------------
     // Generare cod unic exemplar: BIB-YYYY-NNNNN
@@ -127,20 +184,18 @@ public:
     }
 
     // -----------------------------------------------------------------------
-    // IndexAutori - asigura unicitatea autorilor
+    // IndexAutori
     // -----------------------------------------------------------------------
     Autor* gasesteOrAdaugaAutor(string nume, string prenume,
                                  string nat, int anN, bool viu,
                                  string bio = "", string link = "")
     {
-        // Cauta dupa nume + prenume
         for (int i = 0; i < indexAutori.dimensiune(); i++)
         {
             Autor* a = indexAutori.get(i);
             if (a->getNume() == nume && a->getPrenume() == prenume)
                 return a;
         }
-        // Nu exista - il adaugam
         Autor* nou = new Autor(nume, prenume, nat, anN, viu, bio, link);
         indexAutori.adauga(nou);
         log("Autor nou adaugat: " + prenume + " " + nume);
@@ -165,11 +220,10 @@ public:
     }
 
     // -----------------------------------------------------------------------
-    // Gestiune Carti (Staff)
+    // Gestiune Carti
     // -----------------------------------------------------------------------
     void adaugaCarte(Carte* c)
     {
-        // Verifica ISBN duplicat
         for (int i = 0; i < inventar.dimensiune(); i++)
         {
             if (inventar.get(i)->getIsbn() == c->getIsbn())
@@ -180,7 +234,6 @@ public:
         cout << "[Staff] Cartea '" << c->getTitlu() << "' a fost adaugata.\n";
     }
 
-    // Adauga un exemplar fizic la o carte existenta si returneaza codul generat
     string adaugaExemplarLaCarte(const string& isbn,
                                   const string& cladire, const string& camera,
                                   const string& raft, const string& sectiune,
@@ -202,13 +255,15 @@ public:
     }
 
     // -----------------------------------------------------------------------
-    // Gestiune Utilizatori (Staff)
+    // Gestiune Utilizatori
     // -----------------------------------------------------------------------
     void adaugaUtilizator(Utilizator* u)
     {
         utilizatori.adauga(u);
-        log("[Staff] Utilizator inregistrat: " + u->getNumeComplet() + " [" + u->getId() + "]");
-        cout << "[Staff] Utilizatorul " << u->getNumeComplet() << " a fost inregistrat.\n";
+        log("[Staff] Utilizator inregistrat: " + u->getNumeComplet() +
+            " [" + u->getId() + "]");
+        cout << "[Staff] Utilizatorul " << u->getNumeComplet()
+             << " a fost inregistrat.\n";
     }
 
     // -----------------------------------------------------------------------
@@ -230,39 +285,43 @@ public:
         return nullptr;
     }
 
-    // Cautare dupa titlu (partial)
     vector<Carte*> cautaDupaTitlu(const string& fragment)
     {
         vector<Carte*> rezultate;
+        string fragLower = toLower(fragment);
         for (int i = 0; i < inventar.dimensiune(); i++)
         {
             Carte* c = inventar.get(i);
-            if (c->getTitlu().find(fragment) != string::npos)
+            if (toLower(c->getTitlu()).find(fragLower) != string::npos)
                 rezultate.push_back(c);
         }
         return rezultate;
     }
 
-    // Cautare dupa autor
     vector<Carte*> cautaDupaAutor(const string& numeAutor)
     {
         vector<Carte*> rezultate;
+        string cautLower = toLower(numeAutor);
         for (int i = 0; i < inventar.dimensiune(); i++)
         {
             Carte* c = inventar.get(i);
+            bool gasit = false;
             for (Autor* a : c->getAutori())
             {
-                if (a->getNumeComplet().find(numeAutor) != string::npos)
+                // Cauta in nume complet, nume sau prenume separat
+                if (toLower(a->getNumeComplet()).find(cautLower) != string::npos ||
+                    toLower(a->getNume()).find(cautLower) != string::npos ||
+                    toLower(a->getPrenume()).find(cautLower) != string::npos)
                 {
-                    rezultate.push_back(c);
+                    gasit = true;
                     break;
                 }
             }
+            if (gasit) rezultate.push_back(c);
         }
         return rezultate;
     }
 
-    // Cautare dupa an
     vector<Carte*> cautaDupaAn(int an)
     {
         vector<Carte*> rezultate;
@@ -296,7 +355,8 @@ public:
                                        " (nu se imprumuta - doar sala)");
 
         ExemplarFizic* ex = c->getPrimulDisponibil();
-        if (!ex) throw CarteLipsaException(c->getTitlu() + " (toate exemplarele ocupate)");
+        if (!ex) throw CarteLipsaException(c->getTitlu() +
+                                            " (toate exemplarele ocupate)");
 
         ex->status = StatusCarte::IMPRUMUTATA;
         u->adaugaImprumut(ex->codUnic);
@@ -324,7 +384,6 @@ public:
         Utilizator* u = gasesteUtilizator(idUser);
         if (!u) throw UtilizatorInexistentException(idUser);
 
-        // Gaseste imprumutul activ
         for (auto& imp : imprumuturi)
         {
             if (imp.codExemplar == codExemplar &&
@@ -332,11 +391,11 @@ public:
             {
                 imp.esteActiv = false;
 
-                // Actualizeaza statusul exemplarului
                 Carte* c = gasesteCarte(imp.isbnCarte);
                 if (c)
                 {
-                    for (auto& ex : const_cast<vector<ExemplarFizic>&>(c->getExemplare()))
+                    for (auto& ex : const_cast<vector<ExemplarFizic>&>(
+                                        c->getExemplare()))
                     {
                         if (ex.codUnic == codExemplar)
                         {
@@ -344,7 +403,6 @@ public:
                             break;
                         }
                     }
-                    // Calcul taxa
                     if (zileIntarziere > 0)
                     {
                         double taxaBruta  = zileIntarziere * c->getTaxaIntarziere();
@@ -386,7 +444,7 @@ public:
     }
 
     // -----------------------------------------------------------------------
-    // Afisare inventar
+    // Afisare
     // -----------------------------------------------------------------------
     void afiseazaInventar() const
     {
@@ -422,11 +480,11 @@ public:
     void afiseazaStatistici() const
     {
         cout << "\n=== STATISTICI " << nume << " ===\n";
-        cout << "Titluri: " << inventar.dimensiune() << "\n";
-        cout << "Utilizatori: " << utilizatori.dimensiune() << "\n";
-        cout << "Autori unici: " << indexAutori.dimensiune() << "\n";
-        cout << "Edituri unice: " << indexEdituri.dimensiune() << "\n";
-        cout << "Total incasari: " << totalIncasari << " RON\n";
+        cout << "Titluri: "         << inventar.dimensiune()    << "\n";
+        cout << "Utilizatori: "     << utilizatori.dimensiune() << "\n";
+        cout << "Autori unici: "    << indexAutori.dimensiune() << "\n";
+        cout << "Edituri unice: "   << indexEdituri.dimensiune()<< "\n";
+        cout << "Total incasari: "  << totalIncasari            << " RON\n";
 
         int imprActive = 0;
         for (const auto& imp : imprumuturi)
