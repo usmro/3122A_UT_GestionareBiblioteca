@@ -71,6 +71,9 @@ public:
     string getTipPeriodic() const { return tipPeriodic; }
     int    getNrEditie()    const { return nrEditie; }
     string getDomeniu()     const { return domeniu; }
+    int    getLunaEditie()   const { return luna; }
+    int    getAnEditie()     const { return anEditie; }
+    string getTipPublicatie()const { return tipPeriodic; }
 
     void afisareDetalii() const override
     {
@@ -113,6 +116,7 @@ public:
 
     string getEpoca()    const { return epoca; }
     bool   necesitaSupv() const { return necesitaSupervizare; }
+    string getConditiiPastrare() const { return conditiiPastrare; }
 
     void afisareDetalii() const override
     {

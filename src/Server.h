@@ -1,6 +1,12 @@
 #ifndef SERVER_H
 #define SERVER_H
 
+// Socket headers trebuie incluse INAINTE de filesystem
+#include <sys/types.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <arpa/inet.h>
+#include <netdb.h>
 #include "httplib.h"
 #include "Biblioteca.h"
 #include "Fisiere.h"
@@ -523,91 +529,6 @@ static string getHTML()
   }
   .anunt-text { font-size: 0.85rem; color: var(--text2); }
 
-  /* ---- CHATBOT ---- */
-  #chatbot-btn {
-    position: fixed;
-    bottom: 28px; right: 28px;
-    width: 52px; height: 52px;
-    background: var(--gold);
-    color: var(--bg);
-    border: none;
-    border-radius: 50%;
-    font-size: 1.4rem;
-    cursor: pointer;
-    box-shadow: var(--shadow);
-    z-index: 500;
-    display: none;
-  }
-  #chatbot-box {
-    position: fixed;
-    bottom: 92px; right: 28px;
-    width: 340px;
-    background: var(--bg2);
-    border: 1px solid var(--border);
-    border-top: 2px solid var(--gold);
-    box-shadow: var(--shadow);
-    z-index: 500;
-    display: none;
-    flex-direction: column;
-  }
-  #chatbot-box.open { display: flex; }
-  .chat-header {
-    padding: 12px 16px;
-    border-bottom: 1px solid var(--border);
-    font-family: 'Playfair Display', serif;
-    color: var(--gold);
-    font-size: 0.9rem;
-  }
-  .chat-messages {
-    flex: 1;
-    height: 280px;
-    overflow-y: auto;
-    padding: 12px;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-  }
-  .msg {
-    padding: 8px 12px;
-    font-size: 0.82rem;
-    max-width: 85%;
-    line-height: 1.5;
-  }
-  .msg-bot {
-    background: var(--bg3);
-    border: 1px solid var(--border);
-    color: var(--text);
-    align-self: flex-start;
-  }
-  .msg-user {
-    background: rgba(201,168,76,0.12);
-    border: 1px solid var(--border);
-    color: var(--cream);
-    align-self: flex-end;
-  }
-  .chat-input {
-    display: flex;
-    border-top: 1px solid var(--border);
-  }
-  .chat-input input {
-    flex: 1;
-    background: var(--bg3);
-    border: none;
-    color: var(--cream);
-    padding: 10px 12px;
-    font-family: 'Lora', serif;
-    font-size: 0.82rem;
-    outline: none;
-  }
-  .chat-input button {
-    background: var(--gold);
-    color: var(--bg);
-    border: none;
-    padding: 0 16px;
-    cursor: pointer;
-    font-size: 0.9rem;
-  }
-
   /* ---- DIVIDER ---- */
   .divider {
     border: none;
@@ -692,7 +613,8 @@ static string getHTML()
       <div id="nav-user" style="display:none">
         <div class="nav-section">
           <div class="nav-item" onclick="showPage('dashboard')"><span class="icon">⊞</span> Acasă</div>
-          <div class="nav-item" onclick="showPage('cautare')"><span class="icon">🔍</span> Caută Cărți</div>
+          <div class="nav-item" onclick="showPage('carti-user')"><span class="icon">📚</span> Cărți</div>
+          <div class="nav-item" onclick="showPage('cautare')"><span class="icon">🔍</span> Căutare Avansată</div>
           <div class="nav-item" onclick="showPage('profil')"><span class="icon">👤</span> Profilul Meu</div>
           <div class="nav-item" onclick="showPage('istoric')"><span class="icon">📖</span> Istoricul Meu</div>
           <div class="nav-item" onclick="showPage('wishlist')"><span class="icon">🔖</span> Lista de Lectură</div>
@@ -717,18 +639,11 @@ static string getHTML()
           <p id="dash-subtitle">Biblioteca Universitară Suceava</p>
         </div>
         <div class="stats-grid" id="stats-grid"></div>
-        <div class="grid-2">
-          <div class="card">
+        <div class="card">
             <div class="card-title">Anunțuri Recente</div>
             <div id="dash-anunturi"></div>
           </div>
-          <div class="card">
-            <div class="card-title">Activitate Recentă</div>
-            <div id="dash-activitate" style="color:var(--text2); font-style:italic; font-size:0.85rem;">
-              Nicio activitate recentă.
-            </div>
-          </div>
-        </div>
+
       </div>
 
       <!-- CARTI -->
@@ -842,6 +757,25 @@ static string getHTML()
           </div>
         </div>
         <div class="card">
+          <div class="card-title">Împrumuturi Active</div>
+          <div style="margin-bottom:12px;display:flex;gap:10px">
+            <input type="text" id="imp-activ-search" placeholder="Caută după ID utilizator sau titlu..."
+              style="flex:1;background:var(--bg3);border:1px solid var(--border);color:var(--cream);padding:8px 12px;font-family:Lora,serif;outline:none"
+              oninput="filtreazaImprumuturi()">
+            <button class="btn btn-outline" onclick="loadImprumuturiActive()">🔄 Reîncarcă</button>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead><tr>
+                <th>Utilizator</th><th>Carte</th><th>Cod Exemplar</th>
+                <th>Data</th><th>Zile Limită</th><th>Acțiune</th>
+              </tr></thead>
+              <tbody id="tbody-imp-active"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="card">
           <div class="card-title">Încasare Taxă</div>
           <div style="display:flex;gap:12px;align-items:flex-end">
             <div class="form-group" style="flex:1;margin:0">
@@ -912,6 +846,41 @@ static string getHTML()
           <div style="margin-top:16px">
             <button class="btn btn-gold" onclick="descarcaPV()">📄 Descarcă PDF</button>
           </div>
+        </div>
+      </div>
+
+      <!-- CARTI UTILIZATOR -->
+      <div class="page" id="page-carti-user">
+        <div class="page-header">
+          <h1>Colecția Bibliotecii</h1>
+          <p>Răsfoiește toate cărțile disponibile</p>
+        </div>
+        <div class="search-bar">
+          <input type="text" id="carti-user-search" placeholder="Caută după titlu, autor, ISBN, gen..."
+            oninput="cautaCartiUser()">
+          <select id="carti-user-tip" onchange="cautaCartiUser()">
+            <option value="">Toate tipurile</option>
+            <option value="Fictiune">Ficțiune</option>
+            <option value="Tehnica">Tehnică</option>
+            <option value="Educativa">Educativă</option>
+            <option value="Copii">Copii</option>
+            <option value="Referinta">Referință</option>
+            <option value="Religioasa">Religioasă</option>
+            <option value="Periodic">Periodic</option>
+          </select>
+          <select id="carti-user-disponibile" onchange="cautaCartiUser()">
+            <option value="">Toate</option>
+            <option value="disponibile">Doar disponibile</option>
+          </select>
+        </div>
+        <div class="table-wrap">
+          <table id="tabel-carti-user">
+            <thead><tr>
+              <th>Titlu</th><th>Autor</th><th>Gen</th><th>An</th>
+              <th>ISBN</th><th>Disponibile</th><th>Acțiune</th>
+            </tr></thead>
+            <tbody id="tbody-carti-user"></tbody>
+          </table>
         </div>
       </div>
 
@@ -996,12 +965,18 @@ static string getHTML()
       <div class="page" id="page-istoric">
         <div class="page-header">
           <h1>Istoricul Meu</h1>
-          <p>Cărțile pe care le-ai citit</p>
+          <p>Împrumuturi active și cărți citite</p>
+        </div>
+        <div class="card" style="margin-bottom:20px">
+          <div class="card-title">📚 Împrumuturi Active</div>
+          <div id="istoric-active">
+            <p style="color:var(--text2);font-style:italic;font-size:0.85rem">Se încarcă...</p>
+          </div>
         </div>
         <div class="card">
-          <div class="card-title">Cărți Citite</div>
+          <div class="card-title">✅ Cărți Returnate</div>
           <div id="istoric-content">
-            <p style="color:var(--text2);font-style:italic">Nicio carte înregistrată încă.</p>
+            <p style="color:var(--text2);font-style:italic">Nicio carte returnată încă.</p>
           </div>
         </div>
       </div>
@@ -1013,14 +988,20 @@ static string getHTML()
           <p>Cărțile pe care vrei să le citești</p>
         </div>
         <div class="card">
-          <div class="card-title">Adaugă la Listă</div>
+          <div class="card-title">Adaugă Manual</div>
           <div style="display:flex;gap:10px">
             <input type="text" id="wish-isbn" placeholder="ISBN carte" style="flex:1;background:var(--bg3);border:1px solid var(--border);color:var(--cream);padding:10px;font-family:Lora,serif;outline:none">
             <button class="btn btn-gold" onclick="adaugaWishlist()">Adaugă</button>
           </div>
+          <p style="color:var(--text2);font-size:0.8rem;margin-top:8px;font-style:italic">Sau folosește butonul 🔖 din pagina Cărți pentru a adăuga direct.</p>
         </div>
         <div class="card">
-          <div class="card-title">Lista Ta</div>
+          <div class="card-title" id="wish-title">Lista Ta</div>
+          <div style="margin-bottom:12px">
+            <input type="text" id="wish-search" placeholder="Caută în lista ta după titlu, autor, ISBN..."
+              style="width:100%;background:var(--bg3);border:1px solid var(--border);color:var(--cream);padding:10px;font-family:Lora,serif;outline:none"
+              oninput="cautaWishlist()">
+          </div>
           <div id="wishlist-content">
             <p style="color:var(--text2);font-style:italic">Lista ta de lectură este goală.</p>
           </div>
@@ -1142,18 +1123,6 @@ static string getHTML()
   </div>
 </div>
 
-<!-- CHATBOT -->
-<button id="chatbot-btn" onclick="toggleChat()">💬</button>
-<div id="chatbot-box">
-  <div class="chat-header">✦ Asistent Bibliotecă</div>
-  <div class="chat-messages" id="chat-messages">
-    <div class="msg msg-bot">Bună ziua! Sunt asistentul bibliotecii. Cu ce vă pot ajuta?</div>
-  </div>
-  <div class="chat-input">
-    <input type="text" id="chat-input" placeholder="Scrieți o întrebare..." onkeydown="if(event.key==='Enter')sendChat()">
-    <button onclick="sendChat()">➤</button>
-  </div>
-</div>
 
 <!-- MODALS -->
 <div class="modal-overlay" id="modal-adauga-carte">
@@ -1181,6 +1150,32 @@ static string getHTML()
     <div class="modal-actions">
       <button class="btn btn-outline" onclick="closeModal('modal-adauga-carte')">Anulează</button>
       <button class="btn btn-gold" onclick="adaugaCarte()">Adaugă</button>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal-imprumut-rapid">
+  <div class="modal">
+    <h2>Împrumută Carte</h2>
+    <div class="card" style="margin-bottom:16px;padding:12px">
+      <div id="imprumut-rapid-carte-info" style="color:var(--cream);font-size:0.9rem"></div>
+    </div>
+    <div class="form-group">
+      <label>ISBN</label>
+      <input type="text" id="ir-isbn" readonly style="opacity:0.7">
+    </div>
+    <div class="form-group">
+      <label>Data (zi / luna / an)</label>
+      <div style="display:flex;gap:8px">
+        <input type="number" id="ir-zi" placeholder="zi" min="1" max="31" style="width:33%">
+        <input type="number" id="ir-luna" placeholder="luna" min="1" max="12" style="width:33%">
+        <input type="number" id="ir-an" placeholder="an" value="2024" style="width:34%">
+      </div>
+    </div>
+    <div id="ir-msg"></div>
+    <div class="modal-actions">
+      <button class="btn btn-outline" onclick="closeModal('modal-imprumut-rapid')">Anulează</button>
+      <button class="btn btn-gold" onclick="doImprumutRapid()">Împrumută</button>
     </div>
   </div>
 </div>
@@ -1213,13 +1208,25 @@ static string getHTML()
   </div>
 </div>
 
+<!-- CHATBOT (ascuns) -->
+<button id="chatbot-btn" style="display:none"></button>
+<div id="chatbot-box" style="display:none">
+  <div class="chat-header"></div>
+  <div class="chat-messages" id="chat-messages"></div>
+  <div class="chat-input">
+    <input type="text" id="chat-input">
+    <button onclick="sendChat()">➤</button>
+  </div>
+</div>
+
 <!-- ================================================================ -->
 <!-- JAVASCRIPT -->
 <!-- ================================================================ -->
 <script>
 let token = '';
 let userInfo = null;
-let wishlist = JSON.parse(localStorage.getItem('wishlist_' + '') || '[]');
+let wishlist = [];
+try { wishlist = JSON.parse(localStorage.getItem('wishlist_' + (userInfo?.id||'')) || '[]'); } catch(e) { wishlist = []; }
 let currentRating = 0;
 let currentPV = '';
 
@@ -1306,8 +1313,10 @@ function showPage(name) {
       n.classList.add('active');
   });
   if (name === 'carti')      loadCarti();
+  if (name === 'carti-user') loadCartiUser();
   if (name === 'utilizatori') loadUtilizatori();
   if (name === 'statistici') loadStatistici();
+  if (name === 'imprumuturi') loadImprumuturiActive();
   if (name === 'profil')     loadProfil();
   if (name === 'anunturi')   loadAnunturi();
   if (name === 'wishlist')   renderWishlist();
@@ -1320,12 +1329,26 @@ async function loadDashboard() {
   const d = await api('GET', '/api/statistici');
   if (!d) return;
   const g = document.getElementById('stats-grid');
-  g.innerHTML = `
-    <div class="stat-card"><span class="stat-number">${d.carti||0}</span><div class="stat-label">Titluri</div></div>
-    <div class="stat-card"><span class="stat-number">${d.utilizatori||0}</span><div class="stat-label">Utilizatori</div></div>
-    <div class="stat-card"><span class="stat-number">${d.autori||0}</span><div class="stat-label">Autori</div></div>
-    <div class="stat-card"><span class="stat-number">${d.imprumuturi_active||0}</span><div class="stat-label">Împrumutate</div></div>
-  `;
+  const isStaff = userInfo && userInfo.tip === 'STAFF';
+  if (isStaff) {
+    g.innerHTML = `
+      <div class="stat-card"><span class="stat-number">${d.carti||0}</span><div class="stat-label">Titluri</div></div>
+      <div class="stat-card"><span class="stat-number">${d.utilizatori||0}</span><div class="stat-label">Utilizatori</div></div>
+      <div class="stat-card"><span class="stat-number">${d.autori||0}</span><div class="stat-label">Autori</div></div>
+      <div class="stat-card"><span class="stat-number">${d.imprumuturi_active||0}</span><div class="stat-label">Împrumutate</div></div>
+    `;
+  } else {
+    // Pentru utilizator normal - arata statistici personale
+    const impAll = await api('GET', '/api/imprumuturi-active');
+    const aleMe = impAll && impAll.imprumuturi ? impAll.imprumuturi.filter(i => i.idUser === userInfo.id) : [];
+    try { wishlist = JSON.parse(localStorage.getItem('wishlist_' + userInfo.id) || '[]'); } catch(e) { wishlist = []; }
+    g.innerHTML = `
+      <div class="stat-card"><span class="stat-number">${d.carti||0}</span><div class="stat-label">Titluri</div></div>
+      <div class="stat-card"><span class="stat-number">${d.autori||0}</span><div class="stat-label">Autori</div></div>
+      <div class="stat-card"><span class="stat-number">${aleMe.length}</span><div class="stat-label">Împrumuturi Active</div></div>
+      <div class="stat-card"><span class="stat-number">${wishlist.length}</span><div class="stat-label">Listă Lectură</div></div>
+    `;
+  }
   document.getElementById('dash-title').textContent = 'Bun venit, ' + (userInfo?.numeComplet || '');
   loadAnunturiDash();
 }
@@ -1353,6 +1376,104 @@ async function loadCarti() {
   if (!d || !d.carti) return;
   toateCartile = d.carti;
   renderCarti(toateCartile);
+}
+
+async function loadCartiUser() {
+  if (toateCartile.length === 0) {
+    const d = await api('GET', '/api/carti');
+    if (!d || !d.carti) return;
+    toateCartile = d.carti;
+  }
+  renderCartiUser(toateCartile);
+}
+
+function renderCartiUser(carti) {
+  const tb = document.getElementById('tbody-carti-user');
+  tb.innerHTML = carti.map(c => `
+    <tr>
+      <td><strong style="color:var(--cream)">${c.titlu}</strong>
+        ${c.serie ? '<br><small style="color:var(--text2)">' + c.serie + '</small>' : ''}
+      </td>
+      <td style="color:var(--text2);font-size:0.85rem">${c.autori}</td>
+      <td><span class="badge badge-gold">${c.gen || c.tip}</span></td>
+      <td>${c.an}</td>
+      <td>
+        <span style="color:var(--text2);font-size:0.8rem;font-family:monospace">${c.isbn}</span>
+        <button onclick="navigator.clipboard.writeText('${c.isbn}')" 
+          style="background:none;border:none;color:var(--gold);cursor:pointer;font-size:0.8rem;margin-left:4px"
+          title="Copiază ISBN">📋</button>
+      </td>
+      <td><span class="${c.disponibile > 0 ? 'badge badge-green' : 'badge badge-red'}">${c.disponibile}/${c.total}</span></td>
+      <td>
+        ${c.disponibile > 0 
+          ? `<button class="btn btn-gold" style="padding:4px 12px;font-size:0.75rem" 
+               onclick="deschideImprumutRapid('${c.isbn}','${c.titlu.replace(/'/g,"\\'")}','${c.autori.replace(/'/g,"\\'")}')">
+               Împrumută
+             </button>`
+          : `<span style="color:var(--text2);font-size:0.8rem">Indisponibil</span>`
+        }
+        <button onclick="adaugaWishlistDinCarti('${c.isbn}','${c.titlu.replace(/'/g,"\\'")}')"
+          style="background:none;border:1px solid var(--border);color:var(--text2);cursor:pointer;padding:3px 8px;font-size:0.75rem;margin-left:4px"
+          title="Adaugă la lista de lectură">🔖</button>
+      </td>
+    </tr>
+  `).join('');
+}
+
+function cautaCartiUser() {
+  const q = document.getElementById('carti-user-search').value.toLowerCase();
+  const tip = document.getElementById('carti-user-tip').value;
+  const doarDisp = document.getElementById('carti-user-disponibile').value === 'disponibile';
+  const filtrate = toateCartile.filter(c => {
+    const matchQ = !q || c.titlu.toLowerCase().includes(q) ||
+                   c.autori.toLowerCase().includes(q) ||
+                   c.isbn.toLowerCase().includes(q) ||
+                   (c.gen || '').toLowerCase().includes(q);
+    const matchTip = !tip || c.tip === tip;
+    const matchDisp = !doarDisp || c.disponibile > 0;
+    return matchQ && matchTip && matchDisp;
+  });
+  renderCartiUser(filtrate);
+}
+
+function deschideImprumutRapid(isbn, titlu, autori) {
+  document.getElementById('ir-isbn').value = isbn;
+  document.getElementById('imprumut-rapid-carte-info').innerHTML = 
+    `<strong style="color:var(--gold)">${titlu}</strong><br>
+     <span style="color:var(--text2);font-size:0.85rem">${autori}</span>`;
+  // Seteaza data de azi
+  const azi = new Date();
+  document.getElementById('ir-zi').value = azi.getDate();
+  document.getElementById('ir-luna').value = azi.getMonth() + 1;
+  document.getElementById('ir-an').value = azi.getFullYear();
+  document.getElementById('ir-msg').innerHTML = '';
+  showModal('modal-imprumut-rapid');
+}
+
+async function doImprumutRapid() {
+  const isbn = document.getElementById('ir-isbn').value;
+  const zi   = parseInt(document.getElementById('ir-zi').value) || 1;
+  const luna = parseInt(document.getElementById('ir-luna').value) || 1;
+  const an   = parseInt(document.getElementById('ir-an').value) || 2024;
+  const msg  = document.getElementById('ir-msg');
+  const d = await api('POST', '/api/imprumut', {
+    id_user: userInfo.id, isbn, zi, luna, an
+  });
+  msg.innerHTML = `<div class="alert ${d.ok ? 'alert-success' : 'alert-error'}">${d.mesaj}</div>`;
+  if (d.ok) {
+    // Sterge din wishlist daca e acolo
+    normalizeazaWishlist();
+    const idx = wishlist.findIndex(w => w.isbn === isbn);
+    if (idx !== -1) {
+      wishlist.splice(idx, 1);
+      localStorage.setItem('wishlist_' + userInfo.id, JSON.stringify(wishlist));
+    }
+    setTimeout(() => {
+      closeModal('modal-imprumut-rapid');
+      loadCartiUser();
+      loadDashboard();
+    }, 1500);
+  }
 }
 
 function renderCarti(carti) {
@@ -1384,6 +1505,68 @@ function cautaCarti() {
 
 // ---- UTILIZATORI ----
 let toateUser = [];
+let toateImprumuturiActive = [];
+
+async function loadImprumuturiActive() {
+  const d = await api('GET', '/api/imprumuturi-active');
+  if (!d || !d.imprumuturi) return;
+  toateImprumuturiActive = d.imprumuturi;
+  renderImprumuturiActive(toateImprumuturiActive);
+}
+
+function renderImprumuturiActive(lista) {
+  const tb = document.getElementById('tbody-imp-active');
+  if (!tb) return;
+  if (lista.length === 0) {
+    tb.innerHTML = '<tr><td colspan="6" style="text-align:center;color:var(--text2);font-style:italic;padding:20px">Niciun împrumut activ.</td></tr>';
+    return;
+  }
+  tb.innerHTML = lista.map(imp => {
+    const data = `${imp.zi}.${imp.luna}.${imp.an}`;
+    return `<tr>
+      <td>
+        <strong style="color:var(--cream)">${imp.numeUser}</strong>
+        <br><small style="color:var(--text2)">${imp.idUser}</small>
+      </td>
+      <td style="color:var(--text2)">${imp.titlu}</td>
+      <td>
+        <span style="font-family:monospace;font-size:0.8rem;color:var(--gold)">${imp.cod}</span>
+        <button onclick="navigator.clipboard.writeText('${imp.cod}')"
+          style="background:none;border:none;color:var(--gold);cursor:pointer;font-size:0.8rem;margin-left:4px"
+          title="Copiază codul">📋</button>
+      </td>
+      <td style="color:var(--text2)">${data}</td>
+      <td><span class="badge badge-gold">${imp.zileLimita} zile</span></td>
+      <td>
+        <button class="btn btn-outline" style="padding:4px 10px;font-size:0.75rem"
+          onclick="precompletaReturnare('${imp.idUser}','${imp.cod}')">
+          Returnează
+        </button>
+      </td>
+    </tr>`;
+  }).join('');
+}
+
+function filtreazaImprumuturi() {
+  const q = document.getElementById('imp-activ-search').value.toLowerCase();
+  const filtrate = toateImprumuturiActive.filter(i =>
+    i.idUser.toLowerCase().includes(q) ||
+    i.numeUser.toLowerCase().includes(q) ||
+    i.titlu.toLowerCase().includes(q) ||
+    i.cod.toLowerCase().includes(q)
+  );
+  renderImprumuturiActive(filtrate);
+}
+
+function precompletaReturnare(idUser, cod) {
+  document.getElementById('ret-user-id').value = idUser;
+  document.getElementById('ret-cod').value = cod;
+  document.getElementById('ret-zile').value = '0';
+  // Scroll la sectiunea de returnare
+  document.getElementById('ret-user-id').scrollIntoView({behavior:'smooth'});
+  document.getElementById('ret-user-id').focus();
+}
+
 async function loadUtilizatori() {
   const d = await api('GET', '/api/utilizatori');
   if (!d || !d.utilizatori) return;
@@ -1567,15 +1750,22 @@ async function executaCautare() {
     rez.innerHTML = '<div class="alert alert-info">Niciun rezultat găsit.</div>';
     return;
   }
+  const isStaffUser = userInfo && userInfo.tip === 'STAFF';
   rez.innerHTML = `<div class="card"><div class="card-title">${carti.length} rezultate</div>
     <div class="table-wrap"><table>
-      <thead><tr><th>Titlu</th><th>Autor</th><th>Tip</th><th>An</th><th>Disponibile</th></tr></thead>
+      <thead><tr><th>Titlu</th><th>Autor</th><th>Tip</th><th>An</th><th>Disponibile</th>${!isStaffUser ? '<th>Acțiuni</th>' : ''}</tr></thead>
       <tbody>${carti.map(c=>`<tr>
         <td><strong style="color:var(--cream)">${c.titlu}</strong></td>
         <td style="color:var(--text2)">${c.autori}</td>
         <td><span class="badge badge-gold">${c.tip}</span></td>
         <td>${c.an}</td>
         <td><span class="${c.disponibile>0?'badge badge-green':'badge badge-red'}">${c.disponibile}</span></td>
+        ${!isStaffUser ? `<td style="display:flex;gap:4px">
+          ${c.disponibile>0 ? `<button class="btn btn-gold" style="padding:3px 8px;font-size:0.75rem"
+            onclick="deschideImprumutRapid('${c.isbn}','${c.titlu.replace(/'/g,"\\'")}','${c.autori.replace(/'/g,"\\'")}')">Împrumută</button>` : ''}
+          <button onclick="adaugaWishlistDinCarti('${c.isbn}','${c.titlu.replace(/'/g,"\\'")}'); event.stopPropagation();"
+            style="background:none;border:1px solid var(--border);color:var(--text2);cursor:pointer;padding:3px 6px;font-size:0.75rem">🔖</button>
+        </td>` : '<td></td>'}
       </tr>`).join('')}</tbody>
     </table></div></div>`;
 }
@@ -1631,10 +1821,34 @@ async function schimbaParola() {
 
 // ---- ISTORIC ----
 async function loadIstoric() {
+  // Sectiunea imprumuturi active
+  const elActive = document.getElementById('istoric-active');
+  const impAll = await api('GET', '/api/imprumuturi-active');
+  if (elActive && impAll && impAll.imprumuturi) {
+    const aleMe = impAll.imprumuturi.filter(i => i.idUser === userInfo.id);
+    if (aleMe.length === 0) {
+      elActive.innerHTML = '<p style="color:var(--text2);font-style:italic;font-size:0.85rem">Nu ai nicio carte împrumutată momentan.</p>';
+    } else {
+      elActive.innerHTML = `<div class="table-wrap"><table>
+        <thead><tr><th>Carte</th><th>Cod Exemplar</th><th>Data</th><th>Zile Limită</th></tr></thead>
+        <tbody>${aleMe.map(i=>`<tr>
+          <td style="color:var(--cream)">${i.titlu}</td>
+          <td><span style="font-family:monospace;font-size:0.8rem;color:var(--gold)">${i.cod}</span>
+            <button onclick="navigator.clipboard.writeText('${i.cod}')"
+              style="background:none;border:none;color:var(--gold);cursor:pointer;margin-left:4px" title="Copiază">📋</button>
+          </td>
+          <td style="color:var(--text2)">${i.zi}.${i.luna}.${i.an}</td>
+          <td><span class="badge badge-gold">${i.zileLimita} zile</span></td>
+        </tr>`).join('')}</tbody>
+      </table></div>`;
+    }
+  }
+
+  // Sectiunea carti citite
   const d = await api('GET', '/api/istoric?id=' + userInfo.id);
   const el = document.getElementById('istoric-content');
   if (!d || !d.istoric || d.istoric.length === 0) {
-    el.innerHTML = '<p style="color:var(--text2);font-style:italic">Nicio carte înregistrată încă.</p>';
+    el.innerHTML = '<p style="color:var(--text2);font-style:italic">Nicio carte returnată încă.</p>';
     return;
   }
   el.innerHTML = `<table><thead><tr><th>Carte</th><th>ISBN</th><th>Data</th><th>Rating</th></tr></thead>
@@ -1647,25 +1861,98 @@ async function loadIstoric() {
 }
 
 // ---- WISHLIST ----
+function normalizeazaWishlist() {
+  try { wishlist = JSON.parse(localStorage.getItem('wishlist_' + userInfo.id) || '[]'); } catch(e) { wishlist = []; }
+  wishlist = wishlist.map(w => {
+    if (typeof w === 'string') {
+      const c = toateCartile.find(x => x.isbn === w);
+      return {isbn: w, titlu: c ? c.titlu : w};
+    }
+    if (w && w.isbn) return {isbn: w.isbn, titlu: w.titlu || w.isbn};
+    return null;
+  }).filter(Boolean);
+  localStorage.setItem('wishlist_' + userInfo.id, JSON.stringify(wishlist));
+}
+
 function renderWishlist() {
-  const el = document.getElementById('wishlist-content');
-  if (wishlist.length === 0) {
-    el.innerHTML = '<p style="color:var(--text2);font-style:italic">Lista ta de lectură este goală.</p>';
+  if (toateCartile.length === 0) {
+    api('GET', '/api/carti').then(d => { if(d && d.carti) { toateCartile = d.carti; renderWishlist(); } });
     return;
   }
-  el.innerHTML = wishlist.map((isbn, i) => `
-    <div class="wishlist-item">
-      <span style="color:var(--cream)">${isbn}</span>
-      <button class="btn btn-danger" style="padding:4px 10px;font-size:0.75rem" onclick="removeWishlist(${i})">Șterge</button>
-    </div>
-  `).join('');
+  normalizeazaWishlist();
+  const titleEl = document.getElementById('wish-title');
+  if (titleEl) titleEl.textContent = 'Lista Ta (' + wishlist.length + ' carti)';
+  const el = document.getElementById('wishlist-content');
+  if (wishlist.length === 0) {
+    el.innerHTML = '<p style="color:var(--text2);font-style:italic">Lista ta de lectura este goala.</p>';
+    return;
+  }
+  afiseazaWishlist(wishlist);
+}
+
+function afiseazaWishlist(lista) {
+  const el = document.getElementById('wishlist-content');
+  if (!lista || lista.length === 0) {
+    el.innerHTML = '<p style="color:var(--text2);font-style:italic">Niciun rezultat.</p>';
+    return;
+  }
+  let html = '';
+  lista.forEach(function(item, i) {
+    const isbn = item.isbn || '';
+    const titlu = item.titlu || isbn;
+    const carte = toateCartile.find(function(c) { return c.isbn === isbn; });
+    const disp = carte ? carte.disponibile : 0;
+    const autor = carte ? carte.autori : '';
+    const an = carte ? carte.an : '';
+    const idx = wishlist.findIndex(function(w) { return w.isbn === isbn; });
+    const badge = disp > 0
+      ? '<span class="badge badge-green">' + disp + ' disp.</span>'
+      : '<span class="badge badge-red">Indisponibil</span>';
+    const btnImp = (carte && disp > 0)
+      ? '<button class="btn btn-gold" style="padding:3px 8px;font-size:0.75rem" onclick="deschideImprumutRapid(\''+ isbn +'\',\''+ titlu.replace(/'/g,"\\'") +'\',\''+ autor.replace(/'/g,"\\'") +'\')">Împrumută</button>'
+      : '';
+    const btnDel = '<button class="btn btn-danger" style="padding:3px 8px;font-size:0.75rem" onclick="removeWishlist(' + idx + ')">🗑</button>';
+    html += '<div style="display:flex;align-items:center;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--border)">'
+      + '<div><div style="color:var(--cream)">' + titlu + '</div>'
+      + '<div style="color:var(--text2);font-size:0.78rem">' + autor + (an ? ' · ' + an : '') + '</div></div>'
+      + '<div style="display:flex;gap:8px;align-items:center">' + badge + btnImp + btnDel + '</div>'
+      + '</div>';
+  });
+  el.innerHTML = html;
+}
+
+function cautaWishlist() {
+  normalizeazaWishlist();
+  const q = document.getElementById('wish-search').value.toLowerCase();
+  const filtrate = wishlist.filter(function(item) {
+    const carte = toateCartile.find(function(c) { return c.isbn === item.isbn; });
+    return !q || item.titlu.toLowerCase().includes(q)
+      || item.isbn.toLowerCase().includes(q)
+      || (carte && carte.autori.toLowerCase().includes(q));
+  });
+  afiseazaWishlist(filtrate);
+}
+
+function adaugaWishlistDinCarti(isbn, titlu) {
+  normalizeazaWishlist();
+  if (!wishlist.find(function(w) { return w.isbn === isbn; })) {
+    wishlist.push({isbn: isbn, titlu: titlu});
+    localStorage.setItem('wishlist_' + userInfo.id, JSON.stringify(wishlist));
+  }
+  const btn = event.target;
+  const orig = btn.textContent;
+  btn.textContent = '✅';
+  setTimeout(function() { btn.textContent = orig; }, 1000);
 }
 
 function adaugaWishlist() {
   const isbn = document.getElementById('wish-isbn').value.trim();
   if (!isbn) return;
-  if (!wishlist.includes(isbn)) {
-    wishlist.push(isbn);
+  normalizeazaWishlist();
+  const carte = toateCartile.find(function(c) { return c.isbn === isbn; });
+  const titlu = carte ? carte.titlu : isbn;
+  if (!wishlist.find(function(w) { return w.isbn === isbn; })) {
+    wishlist.push({isbn: isbn, titlu: titlu});
     localStorage.setItem('wishlist_' + userInfo.id, JSON.stringify(wishlist));
   }
   document.getElementById('wish-isbn').value = '';
@@ -1673,27 +1960,36 @@ function adaugaWishlist() {
 }
 
 function removeWishlist(i) {
+  normalizeazaWishlist();
   wishlist.splice(i, 1);
   localStorage.setItem('wishlist_' + userInfo.id, JSON.stringify(wishlist));
   renderWishlist();
 }
-
 // ---- RECOMANDARI ----
 async function getRecomandari(gen) {
+  if (!gen || gen.trim() === '') return;
+  gen = gen.trim();
   const d = await api('GET', '/api/recomandari?gen=' + encodeURIComponent(gen));
   const el = document.getElementById('rec-rezultate');
   if (!d || !d.carti || d.carti.length === 0) {
-    el.innerHTML = '<div class="alert alert-info">Nu am găsit recomandări pentru acest gen.</div>';
+    el.innerHTML = '<div class="alert alert-info">Nu am găsit recomandări pentru &ldquo;' + gen + '&rdquo;. Încearcă alt gen.</div>';
     return;
   }
-  el.innerHTML = `<div class="card"><div class="card-title">Recomandări — ${gen}</div>
+  el.innerHTML = `<div class="card"><div class="card-title">Recomandări — ${gen} (${d.carti.length} titluri)</div>
     <div class="table-wrap"><table>
-      <thead><tr><th>Titlu</th><th>Autor</th><th>An</th><th>Disponibile</th></tr></thead>
+      <thead><tr><th>Titlu</th><th>Autor</th><th>Gen</th><th>An</th><th>Disponibile</th><th>Acțiuni</th></tr></thead>
       <tbody>${d.carti.map(c=>`<tr>
         <td><strong style="color:var(--cream)">${c.titlu}</strong></td>
         <td style="color:var(--text2)">${c.autori}</td>
+        <td><span class="badge badge-gold">${c.gen||c.tip}</span></td>
         <td>${c.an}</td>
         <td><span class="${c.disponibile>0?'badge badge-green':'badge badge-red'}">${c.disponibile}</span></td>
+        <td style="display:flex;gap:4px">
+          ${c.disponibile>0 ? `<button class="btn btn-gold" style="padding:3px 8px;font-size:0.75rem"
+            onclick="deschideImprumutRapid('${c.isbn}','${c.titlu.replace(/'/g,"\\'")}','${c.autori.replace(/'/g,"\\'")}')">Împrumută</button>` : ''}
+          <button onclick="adaugaWishlistDinCarti('${c.isbn}','${c.titlu.replace(/'/g,"\\'")}'); event.stopPropagation();"
+            style="background:none;border:1px solid var(--border);color:var(--text2);cursor:pointer;padding:3px 6px;font-size:0.75rem">🔖</button>
+        </td>
       </tr>`).join('')}</tbody>
     </table></div></div>`;
 }
@@ -2314,24 +2610,24 @@ private:
         srv.Get("/api/recomandari", [this](const httplib::Request& req, httplib::Response& res){
             addCORS(res);
             string gen = req.get_param_value("gen");
-            auto rez = bib.cautaDupaTitlu(""); // toate
-            // filtram dupa gen in titlu sau tip
-            std::vector<Carte*> filtrate;
             string genLower = gen;
             for (char& c : genLower) c = (char)std::tolower((unsigned char)c);
-            for (Carte* c : rez) {
-                string tipLower = c->getTipCarte();
-                for (char& ch : tipLower) ch = (char)std::tolower((unsigned char)ch);
-                if (tipLower.find(genLower) != string::npos) {
+            std::vector<Carte*> filtrate;
+            // Cauta in campul gen al fiecarei carti
+            for (int i = 0; i < bib.getNrCarti(); i++) {
+                Carte* c = bib.getCarte(i);
+                string gL = c->getGen();
+                for (char& ch : gL) ch = (char)std::tolower((unsigned char)ch);
+                if (!gL.empty() && gL.find(genLower) != string::npos) {
                     filtrate.push_back(c);
-                    if (filtrate.size() >= 20) break;
+                    if (filtrate.size() >= 30) break;
                 }
             }
-            // Daca putine rezultate, cauta si in titlu
+            // Fallback: cauta in titlu daca putine rezultate
             if (filtrate.size() < 5) {
                 auto byTitlu = bib.cautaDupaTitlu(gen);
                 for (Carte* c : byTitlu) {
-                    if (filtrate.size() >= 20) break;
+                    if (filtrate.size() >= 30) break;
                     bool deja = false;
                     for (Carte* f : filtrate) if (f->getIsbn()==c->getIsbn()) { deja=true; break; }
                     if (!deja) filtrate.push_back(c);
@@ -2344,6 +2640,37 @@ private:
             }
             json+="]";
             res.set_content("{\"carti\":" + json + "}", "application/json");
+        });
+
+        // ---- IMPRUMUTURI ACTIVE ----
+        srv.Get("/api/imprumuturi-active", [this](const httplib::Request& req, httplib::Response& res){
+            addCORS(res);
+            string json = "[";
+            bool first = true;
+            for (const auto& imp : bib.getImprumuturi()) {
+                if (!imp.esteActiv) continue;
+                Utilizator* u = bib.gasesteUtilizator(imp.idUtilizator);
+                Carte* c = bib.gasesteCarte(imp.isbnCarte);
+                string numeU = u ? u->getNumeComplet() : imp.idUtilizator;
+                string titluC = c ? c->getTitlu() : imp.isbnCarte;
+                if (!first) json += ",";
+                first = false;
+                std::ostringstream o;
+                o << "{"
+                  << JSON::str("cod", imp.codExemplar) << ","
+                  << JSON::str("idUser", imp.idUtilizator) << ","
+                  << JSON::str("numeUser", numeU) << ","
+                  << JSON::str("isbn", imp.isbnCarte) << ","
+                  << JSON::str("titlu", titluC) << ","
+                  << JSON::num("zi", imp.ziuaImprumut) << ","
+                  << JSON::num("luna", imp.lunaImprumut) << ","
+                  << JSON::num("an", imp.anImprumut) << ","
+                  << JSON::num("zileLimita", imp.zileLimita)
+                  << "}";
+                json += o.str();
+            }
+            json += "]";
+            res.set_content("{\"imprumuturi\":" + json + "}", "application/json");
         });
 
         // ---- ANUNTURI GET ----

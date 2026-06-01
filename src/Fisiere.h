@@ -6,6 +6,7 @@
 #include <sstream>
 #include <string>
 #include <vector>
+#include <sys/socket.h>
 #include <filesystem>
 #include "Biblioteca.h"
 #include "CarteFictiune.h"

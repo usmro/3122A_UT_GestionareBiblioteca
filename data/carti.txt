@@ -18,286 +18,276 @@ Fictiune|ISBN-F017|2001 A Space Odyssey|Clarke~Arthur C.|RAO|2020|0|1|221|0||0|3
 Fictiune|ISBN-F018|Rendezvous with Rama|Clarke~Arthur C.|RAO|2021|0|1|243|0||0|35.99|SF|14
 Fictiune|ISBN-F019|Do Androids Dream of Electric Sheep|Dick~Philip K.|Nemira|2019|0|1|210|0||0|32.99|SF|16
 Fictiune|ISBN-F020|The Man in the High Castle|Dick~Philip K.|Nemira|2020|0|1|259|0||0|35.99|SF|16
-Fictiune|ISBN-F021|The Left Hand of Darkness|Le Guin~Ursula K.|Humanitas|2020|0|1|286|0||0|34.99|SF|16
-Fictiune|ISBN-F022|Fahrenheit 451|Bradbury~Ray|Nemira|2018|0|1|158|0||0|29.99|Distopie|14
-Fictiune|ISBN-F023|Neuromancer|Gibson~William|Nemira|2021|0|1|271|0||0|34.99|Cyberpunk|16
-Fictiune|ISBN-F024|American Gods|Gaiman~Neil|RAO|2019|0|1|465|0||0|45.99|Fantasy|16
-Fictiune|ISBN-F025|Good Omens|Gaiman~Neil|RAO|2020|0|1|288|0||0|39.99|Comedie|14
-Fictiune|ISBN-F026|The Colour of Magic|Pratchett~Terry|Humanitas|2019|0|1|243|0|Discworld|1|35.99|Comedie|12
-Fictiune|ISBN-F027|Guards Guards|Pratchett~Terry|Humanitas|2020|0|1|288|0|Discworld|8|35.99|Comedie|12
-Fictiune|ISBN-F028|Hitchhikers Guide to the Galaxy|Adams~Douglas|Humanitas|2019|0|1|193|0|HHGTTG|1|32.99|SF Comedie|12
-Fictiune|ISBN-F029|The Shining|King~Stephen|Litera|2020|0|1|447|0||0|45.99|Horror|18
-Fictiune|ISBN-F030|It|King~Stephen|Litera|2019|0|1|1138|0||0|65.99|Horror|18
-Fictiune|ISBN-F031|Pet Sematary|King~Stephen|Litera|2020|0|1|374|0||0|39.99|Horror|18
-Fictiune|ISBN-F032|Misery|King~Stephen|Litera|2021|0|1|310|0||0|35.99|Horror|18
-Fictiune|ISBN-F033|The Stand|King~Stephen|Litera|2021|0|1|1152|0||0|65.99|Horror|18
-Fictiune|ISBN-F034|A Game of Thrones|Martin~George R.R.|RAO|2020|0|1|694|0|ASOIAF|1|55.99|Fantasy|16
-Fictiune|ISBN-F035|A Clash of Kings|Martin~George R.R.|RAO|2020|0|1|768|0|ASOIAF|2|55.99|Fantasy|16
-Fictiune|ISBN-F036|A Storm of Swords|Martin~George R.R.|RAO|2021|0|1|992|0|ASOIAF|3|59.99|Fantasy|16
-Fictiune|ISBN-F037|The Final Empire|Sanderson~Brandon|Nemira|2021|0|1|541|0|Mistborn|1|49.99|Fantasy|14
-Fictiune|ISBN-F038|The Well of Ascension|Sanderson~Brandon|Nemira|2021|0|1|590|0|Mistborn|2|49.99|Fantasy|14
-Fictiune|ISBN-F039|The Hero of Ages|Sanderson~Brandon|Nemira|2022|0|1|572|0|Mistborn|3|49.99|Fantasy|14
-Fictiune|ISBN-F040|The Way of Kings|Sanderson~Brandon|Nemira|2022|0|1|1007|0|Stormlight|1|65.99|Fantasy|16
-Fictiune|ISBN-F041|The Name of the Wind|Rothfuss~Patrick|Nemira|2020|0|1|662|0|Kingkiller|1|55.99|Fantasy|16
-Fictiune|ISBN-F042|The Wise Mans Fear|Rothfuss~Patrick|Nemira|2021|0|1|994|0|Kingkiller|2|59.99|Fantasy|16
-Fictiune|ISBN-F043|The Blade Itself|Abercrombie~Joe|Humanitas|2020|0|1|515|0|First Law|1|45.99|Fantasy|16
-Fictiune|ISBN-F044|Before They Are Hanged|Abercrombie~Joe|Humanitas|2021|0|1|543|0|First Law|2|45.99|Fantasy|16
-Fictiune|ISBN-F045|The Eye of the World|Jordan~Robert|RAO|2019|0|1|782|0|Wheel of Time|1|55.99|Fantasy|14
-Fictiune|ISBN-F046|The Great Hunt|Jordan~Robert|RAO|2019|0|1|599|0|Wheel of Time|2|52.99|Fantasy|14
-Fictiune|ISBN-F047|The Dragon Reborn|Jordan~Robert|RAO|2020|0|1|675|0|Wheel of Time|3|49.99|Fantasy|14
-Fictiune|ISBN-F048|The Night Angel vol 1|Weeks~Brent|Nemira|2020|0|1|645|0|Night Angel|1|49.99|Fantasy|16
-Fictiune|ISBN-F049|The Night Angel vol 2|Weeks~Brent|Nemira|2021|0|1|592|0|Night Angel|2|49.99|Fantasy|16
-Fictiune|ISBN-F050|Enders Game|Card~Orson Scott|Nemira|2020|0|1|324|0||0|39.99|SF|12
-Fictiune|ISBN-F051|The Martian|Weir~Andy|RAO|2020|0|1|369|0||0|42.99|SF|14
-Fictiune|ISBN-F052|Project Hail Mary|Weir~Andy|RAO|2022|0|1|476|0||0|45.99|SF|14
-Fictiune|ISBN-F053|Red Rising|Brown~Pierce|Nemira|2020|0|1|382|0|Red Rising|1|42.99|SF|16
-Fictiune|ISBN-F054|Hyperion|Simmons~Dan|Nemira|2020|0|1|481|0|Hyperion|1|49.99|SF|16
-Fictiune|ISBN-F055|Snow Crash|Stephenson~Neal|Nemira|2021|0|1|440|0||0|45.99|Cyberpunk|18
-Fictiune|ISBN-F056|Les Miserables|Hugo~Victor|Humanitas|2019|0|1|1463|0||0|59.99|Roman social|14
-Fictiune|ISBN-F057|Notre-Dame de Paris|Hugo~Victor|Humanitas|2020|0|1|512|0||0|42.99|Roman gotic|14
-Fictiune|ISBN-F058|Cei trei muschetari|Dumas~Alexandre|Litera|2019|0|1|576|0||0|45.99|Aventuri|12
-Fictiune|ISBN-F059|Contele de Monte Cristo vol 1|Dumas~Alexandre|Litera|2019|0|1|512|0|Monte Cristo|1|45.99|Aventuri|14
-Fictiune|ISBN-F060|Contele de Monte Cristo vol 2|Dumas~Alexandre|Litera|2019|0|1|498|0|Monte Cristo|2|45.99|Aventuri|14
-Fictiune|ISBN-F061|20000 de leghe sub mari|Verne~Jules|Corint|2019|0|1|368|0||0|35.99|SF Aventuri|10
-Fictiune|ISBN-F062|Ocolul pamantului in 80 de zile|Verne~Jules|Corint|2019|0|1|256|0||0|29.99|Aventuri|10
-Fictiune|ISBN-F063|Centrul Pamantului|Verne~Jules|Corint|2020|0|1|256|0||0|29.99|SF Aventuri|10
-Fictiune|ISBN-F064|Pere Goriot|Balzac~Honore de|Humanitas|2019|0|1|334|0||0|34.99|Roman realist|16
-Fictiune|ISBN-F065|Strainul|Camus~Albert|Humanitas|2019|0|1|160|0||0|22.99|Roman existentialist|16
-Fictiune|ISBN-F066|Ciuma|Camus~Albert|Humanitas|2020|0|1|320|0||0|32.99|Roman|16
-Fictiune|ISBN-F067|Procesul|Kafka~Franz|Humanitas|2019|0|1|224|0||0|25.99|Roman|18
-Fictiune|ISBN-F068|Metamorfoza|Kafka~Franz|Humanitas|2019|0|1|96|0||0|15.99|Nuvela|16
-Fictiune|ISBN-F069|Siddhartha|Hesse~Hermann|Humanitas|2019|0|1|152|0||0|22.99|Roman filozofic|14
-Fictiune|ISBN-F070|Lupul de stepa|Hesse~Hermann|Humanitas|2020|0|1|288|0||0|28.99|Roman|16
-Fictiune|ISBN-F071|Pe frontul de vest nimic nou|Remarque~Erich Maria|Humanitas|2019|0|1|296|0||0|29.99|Roman razboi|16
-Fictiune|ISBN-F072|Arc de triumf|Remarque~Erich Maria|Humanitas|2020|0|1|432|0||0|35.99|Roman|16
-Fictiune|ISBN-F073|Scrisoare catre o necunoscuta|Zweig~Stefan|Humanitas|2019|0|1|112|0||0|18.99|Nuvela|14
-Fictiune|ISBN-F074|Crime and Punishment|Dostoevsky~Fyodor|Humanitas|2019|0|1|671|0||0|45.99|Roman clasic|16
-Fictiune|ISBN-F075|The Brothers Karamazov|Dostoevsky~Fyodor|Humanitas|2020|0|1|824|0||0|55.99|Roman clasic|16
-Fictiune|ISBN-F076|War and Peace|Tolstoy~Leo|Humanitas|2021|0|1|1225|0||0|69.99|Roman clasic|16
-Fictiune|ISBN-F077|Anna Karenina|Tolstoy~Leo|Humanitas|2020|0|1|864|0||0|55.99|Roman clasic|16
-Fictiune|ISBN-F078|Batranul si marea|Hemingway~Ernest|Humanitas|2019|0|1|128|0||0|19.99|Nuvela|14
-Fictiune|ISBN-F079|Adio arme|Hemingway~Ernest|Humanitas|2020|0|1|352|0||0|34.99|Roman razboi|16
-Fictiune|ISBN-F080|Lolita|Nabokov~Vladimir|Humanitas|2020|0|1|336|0||0|34.99|Roman|18
-Fictiune|ISBN-F081|Ficciones|Borges~Jorge Luis|Humanitas|2019|0|1|174|0||0|24.99|Proza|18
-Fictiune|ISBN-F082|Numele trandafirului|Eco~Umberto|Humanitas|2019|0|1|502|0||0|42.99|Roman mister|16
-Fictiune|ISBN-F083|Norvegia Forest|Murakami~Haruki|Humanitas|2019|0|1|296|0||0|32.99|Roman|18
-Fictiune|ISBN-F084|1Q84 vol 1|Murakami~Haruki|Humanitas|2020|0|1|496|0|1Q84|1|42.99|Roman|18
-Fictiune|ISBN-F085|1Q84 vol 2|Murakami~Haruki|Humanitas|2021|0|1|512|0|1Q84|2|42.99|Roman|18
-Fictiune|ISBN-F086|Suta de ani de singuratate|Garcia Marquez~Gabriel|RAO|2019|0|1|417|0||0|39.99|Realism magic|16
-Fictiune|ISBN-F087|Alchimistul|Coelho~Paulo|Humanitas|2019|0|1|192|0||0|22.99|Roman filozofic|14
-Fictiune|ISBN-F088|David Copperfield|Dickens~Charles|Humanitas|2019|0|1|880|0||0|55.99|Roman|14
-Fictiune|ISBN-F089|Oliver Twist|Dickens~Charles|Humanitas|2019|0|1|448|0||0|35.99|Roman|12
-Fictiune|ISBN-F090|Mandrie si prejudecata|Austen~Jane|Humanitas|2019|0|1|432|0||0|35.99|Roman romantic|14
-Fictiune|ISBN-F091|Dorian Gray|Wilde~Oscar|Humanitas|2019|0|1|254|0||0|25.99|Roman|16
-Fictiune|ISBN-F092|Infernul|Dante~Alighieri|Humanitas|2019|0|1|288|0|Divina Comedie|1|28.99|Poem epic|14
-Fictiune|ISBN-F093|Iliada|Homer~Antic|Humanitas|2019|0|1|544|0||0|39.99|Epopee|14
-Fictiune|ISBN-F094|Odiseea|Homer~Antic|Humanitas|2020|0|1|432|0||0|37.99|Epopee|14
-Fictiune|ISBN-F095|The Firm|Grisham~John|Litera|2019|0|1|421|0||0|35.99|Thriller|16
-Fictiune|ISBN-F096|The Client|Grisham~John|Litera|2020|0|1|422|0||0|35.99|Thriller|16
-Fictiune|ISBN-F097|A Time to Kill|Grisham~John|Litera|2019|0|1|515|0||0|39.99|Thriller|16
-Fictiune|ISBN-F098|The Hunt for Red October|Clancy~Tom|RAO|2020|0|1|497|0||0|39.99|Thriller militar|16
-Fictiune|ISBN-F099|The Bourne Identity|Ludlum~Robert|RAO|2019|0|1|535|0||0|39.99|Thriller spionaj|16
-Fictiune|ISBN-F100|And Then There Were None|Christie~Agatha|Litera|2019|0|1|245|0||0|29.99|Mister|14
-Fictiune|ISBN-F101|Murder on the Orient Express|Christie~Agatha|Litera|2020|0|1|212|0||0|28.99|Mister|14
-Fictiune|ISBN-F102|The Da Vinci Code|Brown~Dan|RAO|2020|0|1|454|0||0|39.99|Thriller|16
-Fictiune|ISBN-F103|The Girl with the Dragon Tattoo|Larsson~Stieg|Litera|2019|0|1|465|0|Millennium|1|42.99|Thriller|18
-Fictiune|ISBN-F104|Killing Floor|Child~Lee|Litera|2020|0|1|424|0|Jack Reacher|1|35.99|Thriller|16
-Fictiune|ISBN-F105|Die Trying|Child~Lee|Litera|2021|0|1|448|0|Jack Reacher|2|35.99|Thriller|16
-Fictiune|ISBN-F106|Poezii|Eminescu~Mihai|Minerva|2018|0|1|312|0||0|25.99|Poezie|12
-Fictiune|ISBN-F107|Amintiri din Copilarie|Creanga~Ion|Minerva|2018|0|1|156|0||0|15.99|Proza|8
-Fictiune|ISBN-F108|Povesti|Creanga~Ion|Corint|2019|0|1|200|0||0|18.99|Proza|6
-Fictiune|ISBN-F109|O Scrisoare Pierduta|Caragiale~Ion Luca|Humanitas|2018|0|1|128|0||0|15.99|Teatru|14
-Fictiune|ISBN-F110|Ion|Rebreanu~Liviu|Humanitas|2020|0|1|448|0||0|35.99|Roman|16
-Fictiune|ISBN-F111|Padurea Spanzuratilor|Rebreanu~Liviu|Humanitas|2019|0|1|352|0||0|32.99|Roman|16
-Fictiune|ISBN-F112|Baltagul|Sadoveanu~Mihail|Minerva|2018|0|1|245|0||0|25.99|Roman|14
-Fictiune|ISBN-F113|Morometii vol 1|Preda~Marin|Humanitas|2020|0|1|312|0|Morometii|1|32.99|Roman|16
-Fictiune|ISBN-F114|Morometii vol 2|Preda~Marin|Humanitas|2020|0|1|298|0|Morometii|2|32.99|Roman|16
-Fictiune|ISBN-F115|Nostalgia|Cartarescu~Mircea|Humanitas|2019|0|1|312|0||0|39.99|Proza|18
-Fictiune|ISBN-F116|Orbitor Aripa Stanga|Cartarescu~Mircea|Humanitas|2020|0|1|412|0|Orbitor|1|49.99|Roman|18
-Fictiune|ISBN-F117|Solenoid|Cartarescu~Mircea|Humanitas|2021|0|1|860|0||0|65.99|Roman|18
-Fictiune|ISBN-F118|Poemele luminii|Blaga~Lucian|Minerva|2019|0|1|96|0||0|14.99|Poezie|14
-Fictiune|ISBN-F119|Flori de mucigai|Arghezi~Tudor|Minerva|2019|0|1|96|0||0|15.99|Poezie|16
-Fictiune|ISBN-F120|Cantareata cheala|Ionesco~Eugene|Humanitas|2019|0|1|128|0||0|18.99|Teatru|16
-Fictiune|ISBN-F121|Maitreyi|Eliade~Mircea|Humanitas|2019|0|1|224|0||0|24.99|Roman|16
-Fictiune|ISBN-F122|Ultima noapte de dragoste|Petrescu~Camil|Humanitas|2019|0|1|288|0||0|28.99|Roman|16
-Fictiune|ISBN-F123|Jurnalul fericirii|Steinhardt~Nicolae|Polirom|2019|0|1|448|0||0|39.99|Jurnal|16
-Fictiune|ISBN-F124|Jurnalul Annei Frank|Frank~Anne|Humanitas|2020|0|1|283|0||0|28.99|Memorialistica|12
-Fictiune|ISBN-F125|Omul in cautarea sensului vietii|Frankl~Viktor|Humanitas|2020|0|1|157|0||0|21.99|Psihologie|16
-Fictiune|ISBN-F126|Micul Print|Saint-Exupery~Antoine de|Humanitas|2019|0|1|96|0||0|15.99|Basm filozofic|8
-Fictiune|ISBN-F127|Old Mans War|Scalzi~John|Nemira|2021|0|1|351|0||0|39.99|SF|16
-Fictiune|ISBN-F128|Elantris|Sanderson~Brandon|Nemira|2021|0|1|492|0||0|45.99|Fantasy|14
-Fictiune|ISBN-F129|Oathbringer|Sanderson~Brandon|Nemira|2023|0|1|1220|0|Stormlight|3|69.99|Fantasy|16
-Fictiune|ISBN-F130|Ringworld|Niven~Larry|Nemira|2020|0|1|288|0||0|35.99|SF|16
-Fictiune|ISBN-F131|The Fall of Hyperion|Simmons~Dan|Nemira|2021|0|1|517|0|Hyperion|2|49.99|SF|16
-Fictiune|ISBN-F132|Gardens of the Moon|Erikson~Steven|Nemira|2021|0|1|666|0|Malazan|1|52.99|Fantasy|16
-Fictiune|ISBN-F133|Magician|Feist~Raymond E.|Nemira|2019|0|1|681|0|Riftwar|1|49.99|Fantasy|14
-Fictiune|ISBN-F134|Wizard First Rule|Goodkind~Terry|Nemira|2020|0|1|836|0|Sword of Truth|1|52.99|Fantasy|16
-Fictiune|ISBN-F135|The Bourne Supremacy|Ludlum~Robert|RAO|2020|0|1|597|0||0|39.99|Thriller spionaj|16
-Fictiune|ISBN-F136|Patriot Games|Clancy~Tom|RAO|2020|0|1|540|0||0|39.99|Thriller|16
-Fictiune|ISBN-F137|Angels and Demons|Brown~Dan|RAO|2019|0|1|430|0||0|39.99|Thriller|16
-Fictiune|ISBN-F138|The Girl who Played with Fire|Larsson~Stieg|Litera|2020|0|1|503|0|Millennium|2|42.99|Thriller|18
-Fictiune|ISBN-F139|Gone Girl|Flynn~Gillian|Litera|2021|0|1|415|0||0|39.99|Thriller|18
-Fictiune|ISBN-F140|The Silent Patient|Michaelides~Alex|Litera|2022|0|1|325|0||0|35.99|Thriller|18
-Fictiune|ISBN-F141|Mystic River|Lehane~Dennis|Litera|2020|0|1|401|0||0|35.99|Thriller|16
-Fictiune|ISBN-F142|The Dispossessed|Le Guin~Ursula K.|Humanitas|2021|0|1|311|0||0|35.99|SF|16
-Fictiune|ISBN-F143|Speaker for the Dead|Card~Orson Scott|Nemira|2021|0|1|360|0||0|39.99|SF|14
-Fictiune|ISBN-F144|The Brothers Karamazov vol 2|Dostoevsky~Fyodor|Humanitas|2022|0|1|490|0||0|45.99|Roman clasic|16
-Fictiune|ISBN-F145|Fratii Jderi|Sadoveanu~Mihail|Minerva|2019|0|1|580|0||0|45.99|Roman|14
-Fictiune|ISBN-F146|Cel mai iubit dintre pamanteni|Preda~Marin|Humanitas|2021|0|1|896|0||0|65.99|Roman|18
-Fictiune|ISBN-F147|Parfumul|Suskind~Patrick|Litera|2019|0|1|248|0||0|26.99|Roman|16
-Fictiune|ISBN-F148|Dragoste in vremea holerei|Garcia Marquez~Gabriel|RAO|2020|0|1|384|0||0|37.99|Roman|16
-Fictiune|ISBN-F149|Zahir|Coelho~Paulo|Humanitas|2020|0|1|274|0||0|26.99|Roman|14
-Fictiune|ISBN-F150|Momente si Schite|Caragiale~Ion Luca|Humanitas|2019|0|1|246|0||0|22.99|Proza|14
+Fictiune|ISBN-F021|Fahrenheit 451|Bradbury~Ray|Nemira|2018|0|1|158|0||0|29.99|Distopie|14
+Fictiune|ISBN-F022|Neuromancer|Gibson~William|Nemira|2021|0|1|271|0||0|34.99|Cyberpunk|16
+Fictiune|ISBN-F023|American Gods|Gaiman~Neil|RAO|2019|0|1|465|0||0|45.99|Fantasy|16
+Fictiune|ISBN-F024|Good Omens|Gaiman~Neil|RAO|2020|0|1|288|0||0|39.99|Comedie|14
+Fictiune|ISBN-F025|The Colour of Magic|Pratchett~Terry|Humanitas|2019|0|1|243|0|Discworld|1|35.99|Comedie|12
+Fictiune|ISBN-F026|Guards Guards|Pratchett~Terry|Humanitas|2020|0|1|288|0|Discworld|8|35.99|Comedie|12
+Fictiune|ISBN-F027|Hitchhikers Guide to the Galaxy|Adams~Douglas|Humanitas|2019|0|1|193|0|HHGTTG|1|32.99|SF Comedie|12
+Fictiune|ISBN-F028|The Shining|King~Stephen|Litera|2020|0|1|447|0||0|45.99|Horror|18
+Fictiune|ISBN-F029|It|King~Stephen|Litera|2019|0|1|1138|0||0|65.99|Horror|18
+Fictiune|ISBN-F030|Pet Sematary|King~Stephen|Litera|2020|0|1|374|0||0|39.99|Horror|18
+Fictiune|ISBN-F031|Misery|King~Stephen|Litera|2021|0|1|310|0||0|35.99|Horror|18
+Fictiune|ISBN-F032|The Stand|King~Stephen|Litera|2021|0|1|1152|0||0|65.99|Horror|18
+Fictiune|ISBN-F033|A Game of Thrones|Martin~George R.R.|RAO|2020|0|1|694|0|ASOIAF|1|55.99|Fantasy|16
+Fictiune|ISBN-F034|A Clash of Kings|Martin~George R.R.|RAO|2020|0|1|768|0|ASOIAF|2|55.99|Fantasy|16
+Fictiune|ISBN-F035|A Storm of Swords|Martin~George R.R.|RAO|2021|0|1|992|0|ASOIAF|3|59.99|Fantasy|16
+Fictiune|ISBN-F036|The Final Empire|Sanderson~Brandon|Nemira|2021|0|1|541|0|Mistborn|1|49.99|Fantasy|14
+Fictiune|ISBN-F037|The Well of Ascension|Sanderson~Brandon|Nemira|2021|0|1|590|0|Mistborn|2|49.99|Fantasy|14
+Fictiune|ISBN-F038|The Hero of Ages|Sanderson~Brandon|Nemira|2022|0|1|572|0|Mistborn|3|49.99|Fantasy|14
+Fictiune|ISBN-F039|The Way of Kings|Sanderson~Brandon|Nemira|2022|0|1|1007|0|Stormlight|1|65.99|Fantasy|16
+Fictiune|ISBN-F040|The Name of the Wind|Rothfuss~Patrick|Nemira|2020|0|1|662|0|Kingkiller|1|55.99|Fantasy|16
+Fictiune|ISBN-F041|The Wise Mans Fear|Rothfuss~Patrick|Nemira|2021|0|1|994|0|Kingkiller|2|59.99|Fantasy|16
+Fictiune|ISBN-F042|The Blade Itself|Abercrombie~Joe|Humanitas|2020|0|1|515|0|First Law|1|45.99|Fantasy|16
+Fictiune|ISBN-F043|Before They Are Hanged|Abercrombie~Joe|Humanitas|2021|0|1|543|0|First Law|2|45.99|Fantasy|16
+Fictiune|ISBN-F044|The Eye of the World|Jordan~Robert|RAO|2019|0|1|782|0|Wheel of Time|1|55.99|Fantasy|14
+Fictiune|ISBN-F045|Enders Game|Card~Orson Scott|Nemira|2020|0|1|324|0||0|39.99|SF|12
+Fictiune|ISBN-F046|The Martian|Weir~Andy|RAO|2020|0|1|369|0||0|42.99|SF|14
+Fictiune|ISBN-F047|Project Hail Mary|Weir~Andy|RAO|2022|0|1|476|0||0|45.99|SF|14
+Fictiune|ISBN-F048|Hyperion|Simmons~Dan|Nemira|2020|0|1|481|0|Hyperion|1|49.99|SF|16
+Fictiune|ISBN-F049|Snow Crash|Stephenson~Neal|Nemira|2021|0|1|440|0||0|45.99|Cyberpunk|18
+Fictiune|ISBN-F050|Les Miserables|Hugo~Victor|Humanitas|2019|0|1|1463|0||0|59.99|Roman social|14
+Fictiune|ISBN-F051|Notre-Dame de Paris|Hugo~Victor|Humanitas|2020|0|1|512|0||0|42.99|Roman gotic|14
+Fictiune|ISBN-F052|Cei trei muschetari|Dumas~Alexandre|Litera|2019|0|1|576|0||0|45.99|Aventuri|12
+Fictiune|ISBN-F053|Contele de Monte Cristo vol 1|Dumas~Alexandre|Litera|2019|0|1|512|0|Monte Cristo|1|45.99|Aventuri|14
+Fictiune|ISBN-F054|Contele de Monte Cristo vol 2|Dumas~Alexandre|Litera|2019|0|1|498|0|Monte Cristo|2|45.99|Aventuri|14
+Fictiune|ISBN-F055|20000 de leghe sub mari|Verne~Jules|Corint|2019|0|1|368|0||0|35.99|SF Aventuri|10
+Fictiune|ISBN-F056|Ocolul pamantului in 80 de zile|Verne~Jules|Corint|2019|0|1|256|0||0|29.99|Aventuri|10
+Fictiune|ISBN-F057|Strainul|Camus~Albert|Humanitas|2019|0|1|160|0||0|22.99|Roman existentialist|16
+Fictiune|ISBN-F058|Ciuma|Camus~Albert|Humanitas|2020|0|1|320|0||0|32.99|Roman|16
+Fictiune|ISBN-F059|Procesul|Kafka~Franz|Humanitas|2019|0|1|224|0||0|25.99|Roman|18
+Fictiune|ISBN-F060|Metamorfoza|Kafka~Franz|Humanitas|2019|0|1|96|0||0|15.99|Nuvela|16
+Fictiune|ISBN-F061|Siddhartha|Hesse~Hermann|Humanitas|2019|0|1|152|0||0|22.99|Roman filozofic|14
+Fictiune|ISBN-F062|Lupul de stepa|Hesse~Hermann|Humanitas|2020|0|1|288|0||0|28.99|Roman|16
+Fictiune|ISBN-F063|Pe frontul de vest nimic nou|Remarque~Erich Maria|Humanitas|2019|0|1|296|0||0|29.99|Roman razboi|16
+Fictiune|ISBN-F064|Arc de triumf|Remarque~Erich Maria|Humanitas|2020|0|1|432|0||0|35.99|Roman|16
+Fictiune|ISBN-F065|Scrisoare catre o necunoscuta|Zweig~Stefan|Humanitas|2019|0|1|112|0||0|18.99|Nuvela|14
+Fictiune|ISBN-F066|Crime and Punishment|Dostoevsky~Fyodor|Humanitas|2019|0|1|671|0||0|45.99|Roman clasic|16
+Fictiune|ISBN-F067|The Brothers Karamazov|Dostoevsky~Fyodor|Humanitas|2020|0|1|824|0||0|55.99|Roman clasic|16
+Fictiune|ISBN-F068|War and Peace|Tolstoy~Leo|Humanitas|2021|0|1|1225|0||0|69.99|Roman clasic|16
+Fictiune|ISBN-F069|Anna Karenina|Tolstoy~Leo|Humanitas|2020|0|1|864|0||0|55.99|Roman clasic|16
+Fictiune|ISBN-F070|Batranul si marea|Hemingway~Ernest|Humanitas|2019|0|1|128|0||0|19.99|Nuvela|14
+Fictiune|ISBN-F071|Adio arme|Hemingway~Ernest|Humanitas|2020|0|1|352|0||0|34.99|Roman razboi|16
+Fictiune|ISBN-F072|Numele trandafirului|Eco~Umberto|Humanitas|2019|0|1|502|0||0|42.99|Roman mister|16
+Fictiune|ISBN-F073|Norvegia Forest|Murakami~Haruki|Humanitas|2019|0|1|296|0||0|32.99|Roman|18
+Fictiune|ISBN-F074|1Q84 vol 1|Murakami~Haruki|Humanitas|2020|0|1|496|0|1Q84|1|42.99|Roman|18
+Fictiune|ISBN-F075|Suta de ani de singuratate|Garcia Marquez~Gabriel|RAO|2019|0|1|417|0||0|39.99|Realism magic|16
+Fictiune|ISBN-F076|Alchimistul|Coelho~Paulo|Humanitas|2019|0|1|192|0||0|22.99|Roman filozofic|14
+Fictiune|ISBN-F077|David Copperfield|Dickens~Charles|Humanitas|2019|0|1|880|0||0|55.99|Roman|14
+Fictiune|ISBN-F078|Oliver Twist|Dickens~Charles|Humanitas|2019|0|1|448|0||0|35.99|Roman|12
+Fictiune|ISBN-F079|Mandrie si prejudecata|Austen~Jane|Humanitas|2019|0|1|432|0||0|35.99|Roman romantic|14
+Fictiune|ISBN-F080|Dorian Gray|Wilde~Oscar|Humanitas|2019|0|1|254|0||0|25.99|Roman|16
+Fictiune|ISBN-F081|The Firm|Grisham~John|Litera|2019|0|1|421|0||0|35.99|Thriller|16
+Fictiune|ISBN-F082|The Client|Grisham~John|Litera|2020|0|1|422|0||0|35.99|Thriller|16
+Fictiune|ISBN-F083|A Time to Kill|Grisham~John|Litera|2019|0|1|515|0||0|39.99|Thriller|16
+Fictiune|ISBN-F084|And Then There Were None|Christie~Agatha|Litera|2019|0|1|245|0||0|29.99|Mister|14
+Fictiune|ISBN-F085|Murder on the Orient Express|Christie~Agatha|Litera|2020|0|1|212|0||0|28.99|Mister|14
+Fictiune|ISBN-F086|The Da Vinci Code|Brown~Dan|RAO|2020|0|1|454|0||0|39.99|Thriller|16
+Fictiune|ISBN-F087|The Girl with the Dragon Tattoo|Larsson~Stieg|Litera|2019|0|1|465|0|Millennium|1|42.99|Thriller|18
+Fictiune|ISBN-F088|Killing Floor|Child~Lee|Litera|2020|0|1|424|0|Jack Reacher|1|35.99|Thriller|16
+Fictiune|ISBN-F089|Gone Girl|Flynn~Gillian|Litera|2021|0|1|415|0||0|39.99|Thriller|18
+Fictiune|ISBN-F090|The Silent Patient|Michaelides~Alex|Litera|2022|0|1|325|0||0|35.99|Thriller|18
+Fictiune|ISBN-F091|Poezii|Eminescu~Mihai|Minerva|2018|0|1|312|0||0|25.99|Poezie|12
+Fictiune|ISBN-F092|Amintiri din Copilarie|Creanga~Ion|Minerva|2018|0|1|156|0||0|15.99|Proza|8
+Fictiune|ISBN-F093|O Scrisoare Pierduta|Caragiale~Ion Luca|Humanitas|2018|0|1|128|0||0|15.99|Teatru|14
+Fictiune|ISBN-F094|Ion|Rebreanu~Liviu|Humanitas|2020|0|1|448|0||0|35.99|Roman|16
+Fictiune|ISBN-F095|Padurea Spanzuratilor|Rebreanu~Liviu|Humanitas|2019|0|1|352|0||0|32.99|Roman|16
+Fictiune|ISBN-F096|Baltagul|Sadoveanu~Mihail|Minerva|2018|0|1|245|0||0|25.99|Roman|14
+Fictiune|ISBN-F097|Morometii vol 1|Preda~Marin|Humanitas|2020|0|1|312|0|Morometii|1|32.99|Roman|16
+Fictiune|ISBN-F098|Morometii vol 2|Preda~Marin|Humanitas|2020|0|1|298|0|Morometii|2|32.99|Roman|16
+Fictiune|ISBN-F099|Nostalgia|Cartarescu~Mircea|Humanitas|2019|0|1|312|0||0|39.99|Proza|18
+Fictiune|ISBN-F100|Solenoid|Cartarescu~Mircea|Humanitas|2021|0|1|860|0||0|65.99|Roman|18
+Fictiune|ISBN-F101|Poemele luminii|Blaga~Lucian|Minerva|2019|0|1|96|0||0|14.99|Poezie|14
+Fictiune|ISBN-F102|Maitreyi|Eliade~Mircea|Humanitas|2019|0|1|224|0||0|24.99|Roman|16
+Fictiune|ISBN-F103|Ultima noapte de dragoste|Petrescu~Camil|Humanitas|2019|0|1|288|0||0|28.99|Roman|16
+Fictiune|ISBN-F104|Jurnalul fericirii|Steinhardt~Nicolae|Polirom|2019|0|1|448|0||0|39.99|Jurnal|16
+Fictiune|ISBN-F105|Micul Print|Saint-Exupery~Antoine de|Humanitas|2019|0|1|96|0||0|15.99|Basm filozofic|8
+Fictiune|ISBN-F106|The Handmaid Tale|Atwood~Margaret|Humanitas|2020|0|1|311|0||0|34.99|Distopie|18
+Fictiune|ISBN-F107|Alias Grace|Atwood~Margaret|Humanitas|2021|0|1|460|0||0|38.99|Roman|18
+Fictiune|ISBN-F108|Never Let Me Go|Ishiguro~Kazuo|Humanitas|2021|0|1|288|0||0|32.99|SF|16
+Fictiune|ISBN-F109|The Remains of the Day|Ishiguro~Kazuo|Humanitas|2020|0|1|245|0||0|28.99|Roman|16
+Fictiune|ISBN-F110|The Road|McCarthy~Cormac|Pandora M|2020|0|1|287|0||0|30.99|Distopie|18
+Fictiune|ISBN-F111|No Country for Old Men|McCarthy~Cormac|Pandora M|2021|0|1|309|0||0|30.99|Thriller|18
+Fictiune|ISBN-F112|The Spy Who Came in from the Cold|le Carre~John|RAO|2019|0|1|216|0||0|26.99|Thriller spionaj|16
+Fictiune|ISBN-F113|Tinker Tailor Soldier Spy|le Carre~John|RAO|2020|0|1|388|0||0|32.99|Thriller spionaj|16
+Fictiune|ISBN-F114|The Pillars of the Earth|Follett~Ken|Litera|2020|0|1|973|0|Kingsbridge|1|55.99|Roman istoric|14
+Fictiune|ISBN-F115|World Without End|Follett~Ken|Litera|2021|0|1|1024|0|Kingsbridge|2|55.99|Roman istoric|14
+Fictiune|ISBN-F116|Outlander|Gabaldon~Diana|RAO|2020|0|1|850|0|Outlander|1|55.99|Fantasy romantic|18
+Fictiune|ISBN-F117|Dragonfly in Amber|Gabaldon~Diana|RAO|2021|0|1|752|0|Outlander|2|52.99|Fantasy romantic|18
+Fictiune|ISBN-F118|Twilight|Meyer~Stephenie|RAO|2020|0|1|498|0|Twilight|1|39.99|Fantasy romantic|14
+Fictiune|ISBN-F119|New Moon|Meyer~Stephenie|RAO|2020|0|1|563|0|Twilight|2|39.99|Fantasy romantic|14
+Fictiune|ISBN-F120|Eclipse|Meyer~Stephenie|RAO|2021|0|1|629|0|Twilight|3|39.99|Fantasy romantic|14
+Fictiune|ISBN-F121|The Hunger Games|Collins~Suzanne|Nemira|2020|0|1|374|0|Hunger Games|1|35.99|SF Distopie|14
+Fictiune|ISBN-F122|Catching Fire|Collins~Suzanne|Nemira|2020|0|1|391|0|Hunger Games|2|35.99|SF Distopie|14
+Fictiune|ISBN-F123|Mockingjay|Collins~Suzanne|Nemira|2021|0|1|390|0|Hunger Games|3|35.99|SF Distopie|14
+Fictiune|ISBN-F124|The Lightning Thief|Riordan~Rick|RAO|2020|0|1|377|0|Percy Jackson|1|35.99|Fantasy Mitologie|10
+Fictiune|ISBN-F125|Sea of Monsters|Riordan~Rick|RAO|2020|0|1|279|0|Percy Jackson|2|32.99|Fantasy Mitologie|10
+Fictiune|ISBN-F126|The Titan Curse|Riordan~Rick|RAO|2021|0|1|312|0|Percy Jackson|3|32.99|Fantasy Mitologie|10
+Fictiune|ISBN-F127|Dracula|Stoker~Bram|Nemira|2019|0|1|418|0||0|35.99|Horror|16
+Fictiune|ISBN-F128|Frankenstein|Shelley~Mary|Humanitas|2020|0|1|232|0||0|24.99|Horror|16
+Fictiune|ISBN-F129|The Call of Cthulhu|Lovecraft~H.P.|Nemira|2019|0|1|204|0||0|22.99|Horror|18
+Fictiune|ISBN-F130|Haunting of Hill House|Jackson~Shirley|Nemira|2021|0|1|246|0||0|28.99|Horror|18
+Fictiune|ISBN-F131|We Need to Talk About Kevin|Shriver~Lionel|Litera|2021|0|1|400|0||0|35.99|Thriller psihologic|18
+Fictiune|ISBN-F132|Behind Closed Doors|Paris~B.A.|Litera|2022|0|1|294|0||0|28.99|Thriller psihologic|18
+Fictiune|ISBN-F133|The Kite Runner|Hosseini~Khaled|RAO|2019|0|1|371|0||0|34.99|Roman|16
+Fictiune|ISBN-F134|A Thousand Splendid Suns|Hosseini~Khaled|RAO|2020|0|1|372|0||0|34.99|Roman|16
+Fictiune|ISBN-F135|The Thief of Always|Barker~Clive|Litera|2021|0|1|245|0||0|24.99|Fantasy Horror|14
+Fictiune|ISBN-F136|The Book Thief|Zusak~Markus|Humanitas|2020|0|1|550|0||0|39.99|Roman|14
+Fictiune|ISBN-F137|My Sisters Keeper|Picoult~Jodi|Litera|2020|0|1|432|0||0|35.99|Roman contemporan|16
+Fictiune|ISBN-F138|Change of Heart|Picoult~Jodi|Litera|2021|0|1|447|0||0|35.99|Roman contemporan|16
+Fictiune|ISBN-F139|Mystic River|Lehane~Dennis|Litera|2020|0|1|401|0||0|35.99|Thriller|16
+Fictiune|ISBN-F140|Gone Baby Gone|Lehane~Dennis|Litera|2021|0|1|397|0||0|34.99|Thriller|16
+Fictiune|ISBN-F141|The Great Gatsby|Fitzgerald~F. Scott|Humanitas|2019|0|1|192|0||0|22.99|Roman clasic|16
+Fictiune|ISBN-F142|The Catcher in the Rye|Salinger~J.D.|Humanitas|2020|0|1|277|0||0|25.99|Roman|16
+Fictiune|ISBN-F143|On the Road|Kerouac~Jack|Humanitas|2019|0|1|307|0||0|27.99|Roman|18
+Fictiune|ISBN-F144|Post Office|Bukowski~Charles|Humanitas|2020|0|1|208|0||0|22.99|Roman|18
+Fictiune|ISBN-F145|Ham on Rye|Bukowski~Charles|Humanitas|2021|0|1|320|0||0|25.99|Autobiografic|18
+Fictiune|ISBN-F146|The Grapes of Wrath|Steinbeck~John|Humanitas|2020|0|1|464|0||0|37.99|Roman social|16
+Fictiune|ISBN-F147|Of Mice and Men|Steinbeck~John|Humanitas|2019|0|1|105|0||0|15.99|Nuvela|14
+Fictiune|ISBN-F148|East of Eden|Steinbeck~John|Humanitas|2021|0|1|601|0||0|45.99|Roman|16
+Fictiune|ISBN-F149|The Sound and the Fury|Faulkner~William|Humanitas|2020|0|1|326|0||0|28.99|Roman|18
+Fictiune|ISBN-F150|To Kill a Mockingbird|Lee~Harper|Humanitas|2019|0|1|281|0||0|26.99|Roman clasic|14
+Fictiune|ISBN-F151|Ready Player One|Cline~Ernest|RAO|2021|0|1|374|0||0|35.99|SF Cyberpunk|14
+Fictiune|ISBN-F152|All Systems Red|Wells~Martha|Nemira|2022|0|1|156|0|Murderbot|1|24.99|SF|14
+Fictiune|ISBN-F153|Leviathan Wakes|Corey~James S.A.|Nemira|2021|0|1|561|0|Expanse|1|45.99|SF|16
+Fictiune|ISBN-F154|Caliban War|Corey~James S.A.|Nemira|2022|0|1|595|0|Expanse|2|45.99|SF|16
+Fictiune|ISBN-F155|Old Mans War|Scalzi~John|Nemira|2021|0|1|351|0||0|39.99|SF|16
+Fictiune|ISBN-F156|The Long Way to a Small Angry Planet|Chambers~Becky|Nemira|2022|0|1|404|0||0|39.99|SF|14
+Fictiune|ISBN-F157|Annihilation|VanderMeer~Jeff|Nemira|2022|0|1|195|0||0|28.99|SF Mister|16
+Fictiune|ISBN-F158|Jane Eyre|Bronte~Charlotte|Humanitas|2020|0|1|507|0||0|35.99|Roman gotic|14
+Fictiune|ISBN-F159|Wuthering Heights|Bronte~Emily|Humanitas|2019|0|1|352|0||0|28.99|Roman gotic|16
+Fictiune|ISBN-F160|Rebecca|du Maurier~Daphne|Humanitas|2021|0|1|449|0||0|32.99|Roman gotic|16
+Fictiune|ISBN-F161|The Picture of Dorian Gray|Wilde~Oscar|Humanitas|2020|0|1|254|0||0|25.99|Roman gotic|16
+Fictiune|ISBN-F162|Perfume Story of a Murderer|Suskind~Patrick|Litera|2019|0|1|248|0||0|26.99|Roman|16
+Fictiune|ISBN-F163|Like Water for Chocolate|Esquivel~Laura|Litera|2021|0|1|245|0||0|25.99|Realism magic|16
+Fictiune|ISBN-F164|The House of the Spirits|Allende~Isabel|Litera|2020|0|1|433|0||0|34.99|Realism magic|16
+Fictiune|ISBN-F165|Love in the Time of Cholera|Garcia Marquez~Gabriel|RAO|2020|0|1|384|0||0|37.99|Roman|16
+Fictiune|ISBN-F166|Catch-22|Heller~Joseph|Humanitas|2021|0|1|453|0||0|35.99|Satira|18
+Fictiune|ISBN-F167|Slaughterhouse Five|Vonnegut~Kurt|Humanitas|2020|0|1|215|0||0|24.99|SF Satira|18
+Fictiune|ISBN-F168|The Hitchhikers Guide Restaurant End Universe|Adams~Douglas|Humanitas|2020|0|1|193|0|HHGTTG|2|30.99|SF Comedie|12
+Fictiune|ISBN-F169|Life the Universe and Everything|Adams~Douglas|Humanitas|2021|0|1|224|0|HHGTTG|3|30.99|SF Comedie|12
+Fictiune|ISBN-F170|Orbitor Aripa Stanga|Cartarescu~Mircea|Humanitas|2020|0|1|412|0|Orbitor|1|49.99|Roman|18
+Fictiune|ISBN-F171|Orbitor Corpul|Cartarescu~Mircea|Humanitas|2021|0|1|456|0|Orbitor|2|49.99|Roman|18
+Fictiune|ISBN-F172|Evenimentul|Tataru~Claudiu|Humanitas|2022|0|1|280|0||0|32.99|Roman|18
+Fictiune|ISBN-F173|Viata si Opiniile lui Zacharias Lichter|Calinescu~Matei|Humanitas|2019|0|1|207|0||0|24.99|Roman|18
+Fictiune|ISBN-F174|Groapa|Eugen~Barbu|Minerva|2020|0|1|430|0||0|30.99|Roman|16
+Fictiune|ISBN-F175|Patul lui Procust|Petrescu~Camil|Humanitas|2021|0|1|312|0||0|28.99|Roman|18
 Tehnica|ISBN-T001|Clean Code|Martin~Robert C.|Prentice Hall|2008|1|0|431|0||0|89.99|Software Engineering|Avansat|0
-Tehnica|ISBN-T002|The Clean Coder|Martin~Robert C.|Prentice Hall|2011|1|0|210|0||0|79.99|Software Engineering|Avansat|0
-Tehnica|ISBN-T003|Clean Architecture|Martin~Robert C.|Prentice Hall|2017|1|0|432|0||0|89.99|Software Engineering|Avansat|0
-Tehnica|ISBN-T004|Design Patterns|Gamma~Erich|Prentice Hall|1994|1|0|395|0||0|95.99|Software Engineering|Avansat|0
-Tehnica|ISBN-T005|Refactoring|Fowler~Martin|Addison-Wesley|1999|1|0|448|0||0|89.99|Software Engineering|Intermediar|0
-Tehnica|ISBN-T006|The Art of Computer Programming vol 1|Knuth~Donald|Addison-Wesley|2011|1|0|672|0||0|120.99|Algoritmi|Avansat|0
-Tehnica|ISBN-T007|The Art of Computer Programming vol 2|Knuth~Donald|Addison-Wesley|2014|1|0|784|0||0|120.99|Algoritmi|Avansat|0
-Tehnica|ISBN-T008|The C++ Programming Language|Stroustrup~Bjarne|Addison-Wesley|2013|1|0|1368|0||0|125.99|C++|Avansat|0
-Tehnica|ISBN-T009|The C Programming Language|Kernighan~Brian|Prentice Hall|1988|1|0|274|0||0|79.99|C|Intermediar|0
-Tehnica|ISBN-T010|Modern Operating Systems|Tanenbaum~Andrew|Prentice Hall|2014|1|0|1136|0||0|115.99|Sisteme de Operare|Avansat|0
-Tehnica|ISBN-T011|Computer Networks|Tanenbaum~Andrew|Prentice Hall|2010|1|0|960|0||0|110.99|Retele|Intermediar|0
-Tehnica|ISBN-T012|Introduction to Algorithms|Cormen~Thomas|Addison-Wesley|2009|1|0|1292|0||0|125.99|Algoritmi|Avansat|0
-Tehnica|ISBN-T013|Effective C++|Meyers~Scott|Addison-Wesley|2005|1|0|320|0||0|79.99|C++|Intermediar|0
-Tehnica|ISBN-T014|Effective Modern C++|Meyers~Scott|O'Reilly Media|2014|1|0|334|0||0|85.99|C++|Avansat|0
-Tehnica|ISBN-T015|Modern C++ Design|Alexandrescu~Andrei|Addison-Wesley|2001|1|0|352|0||0|89.99|C++|Avansat|0
-Tehnica|ISBN-T016|The Pragmatic Programmer|Hunt~Andrew|Addison-Wesley|2019|1|0|352|0||0|79.99|Software Engineering|Intermediar|0
-Tehnica|ISBN-T017|Learning Python|Lutz~Mark|O'Reilly Media|2013|1|0|1540|0||0|99.99|Python|Incepator|0
-Tehnica|ISBN-T018|Domain-Driven Design|Evans~Eric|Addison-Wesley|2003|1|0|560|0||0|89.99|Software Engineering|Avansat|0
-Tehnica|ISBN-T019|Building Microservices|Newman~Sam|O'Reilly Media|2021|1|0|640|0||0|85.99|Microservicii|Avansat|0
-Tehnica|ISBN-T020|Fluent Python|Ramalho~Luciano|O'Reilly Media|2015|1|0|792|0||0|89.99|Python|Avansat|0
-Tehnica|ISBN-T021|Hands-On Machine Learning|Geron~Aurelien|O'Reilly Media|2019|1|0|856|0||0|95.99|Machine Learning|Intermediar|0
-Tehnica|ISBN-T022|Deep Learning|Goodfellow~Ian|Addison-Wesley|2016|1|0|800|0||0|119.99|Machine Learning|Avansat|0
-Tehnica|ISBN-T023|Effective Java|Bloch~Joshua|Addison-Wesley|2018|1|0|412|0||0|89.99|Java|Avansat|0
-Tehnica|ISBN-T024|Head First Java|Sierra~Kathy|O'Reilly Media|2005|1|0|688|0||0|75.99|Java|Incepator|0
-Tehnica|ISBN-T025|JavaScript The Good Parts|Crockford~Douglas|O'Reilly Media|2008|1|0|172|0||0|59.99|JavaScript|Intermediar|0
-Tehnica|ISBN-T026|Eloquent JavaScript|Haverbeke~Marijn|No Starch Press|2018|1|0|472|0||0|65.99|JavaScript|Intermediar|0
-Tehnica|ISBN-T027|Database System Concepts|Silberschatz~Abraham|Addison-Wesley|2019|1|0|1376|0||0|115.99|Baze de Date|Intermediar|0
-Tehnica|ISBN-T028|Designing Data-Intensive Applications|Kleppmann~Martin|O'Reilly Media|2017|1|0|616|0||0|99.99|Baze de Date|Avansat|0
-Tehnica|ISBN-T029|The Phoenix Project|Kim~Gene|O'Reilly Media|2013|1|0|432|0||0|69.99|DevOps|Incepator|0
-Tehnica|ISBN-T030|Site Reliability Engineering|Beyer~Betsy|O'Reilly Media|2016|1|0|552|0||0|95.99|DevOps|Avansat|0
-Tehnica|ISBN-T031|Kubernetes in Action|Luksa~Marko|Manning Publications|2017|1|0|624|0||0|89.99|Cloud|Intermediar|0
-Tehnica|ISBN-T032|Hacking The Art of Exploitation|Erickson~Jon|No Starch Press|2008|1|0|488|0||0|79.99|Securitate|Avansat|0
-Tehnica|ISBN-T033|Applied Cryptography|Schneier~Bruce|Addison-Wesley|2015|1|0|784|0||0|89.99|Criptografie|Avansat|0
-Tehnica|ISBN-T034|TCP/IP Illustrated vol 1|Stevens~W. Richard|Addison-Wesley|2011|1|0|1032|0||0|89.99|Retele|Avansat|0
-Tehnica|ISBN-T035|The Linux Command Line|Shotts~William|No Starch Press|2019|1|0|480|0||0|65.99|Linux|Incepator|0
-Tehnica|ISBN-T036|The Algorithm Design Manual|Skiena~Steven|Addison-Wesley|2020|1|0|800|0||0|89.99|Algoritmi|Intermediar|0
-Tehnica|ISBN-T037|Cracking the Coding Interview|McDowell~Gayle|Addison-Wesley|2015|1|0|696|0||0|55.99|Interviuri|Intermediar|0
-Tehnica|ISBN-T038|System Design Interview|Xu~Alex|Addison-Wesley|2020|1|0|309|0||0|49.99|Interviuri|Intermediar|0
-Tehnica|ISBN-T039|Programming Rust|Blandy~Jim|O'Reilly Media|2021|1|0|622|0||0|79.99|Rust|Intermediar|0
-Tehnica|ISBN-T040|The Go Programming Language|Donovan~Alan|Addison-Wesley|2015|1|0|380|0||0|65.99|Go|Intermediar|0
-Tehnica|ISBN-T041|Code Complete|McConnell~Steve|Addison-Wesley|2004|1|0|960|0||0|95.99|Software Engineering|Intermediar|0
-Tehnica|ISBN-T042|Test Driven Development|Beck~Kent|Addison-Wesley|2002|1|0|240|0||0|75.99|Software Engineering|Intermediar|0
-Tehnica|ISBN-T043|Working with Legacy Code|Feathers~Michael|Prentice Hall|2004|1|0|456|0||0|85.99|Software Engineering|Avansat|0
-Tehnica|ISBN-T044|Kafka The Definitive Guide|Shapira~Gwen|O'Reilly Media|2021|1|0|302|0||0|75.99|Streaming|Avansat|0
-Tehnica|ISBN-T045|Spark The Definitive Guide|Chambers~Bill|O'Reilly Media|2018|1|0|610|0||0|89.99|Big Data|Avansat|0
-Tehnica|ISBN-T046|Mastering Bitcoin|Antonopoulos~Andreas|O'Reilly Media|2017|1|0|410|0||0|75.99|Blockchain|Avansat|0
-Tehnica|ISBN-T047|Python Cookbook|Beazley~David|O'Reilly Media|2013|1|0|706|0||0|85.99|Python|Intermediar|0
-Tehnica|ISBN-T048|Automate the Boring Stuff|Sweigart~Al|No Starch Press|2019|1|0|580|0||0|49.99|Python|Incepator|0
-Tehnica|ISBN-T049|Pro Git|Chacon~Scott|Addison-Wesley|2014|1|0|440|0||0|55.99|Git|Incepator|0
-Tehnica|ISBN-T050|Continuous Delivery|Humble~Jez|Addison-Wesley|2010|1|0|512|0||0|89.99|DevOps|Intermediar|0
-Tehnica|ISBN-T051|Docker Deep Dive|Poulton~Nigel|Packt Publishing|2020|1|0|260|0||0|65.99|Cloud|Incepator|0
-Tehnica|ISBN-T052|Terraform Up and Running|Brikman~Yevgeniy|O'Reilly Media|2022|1|0|476|0||0|75.99|Infrastructure|Intermediar|0
-Tehnica|ISBN-T053|MongoDB The Definitive Guide|Chodorow~Kristina|O'Reilly Media|2019|1|0|514|0||0|75.99|MongoDB|Intermediar|0
-Tehnica|ISBN-T054|High Performance MySQL|Schwartz~Baron|O'Reilly Media|2012|1|0|828|0||0|89.99|MySQL|Avansat|0
-Tehnica|ISBN-T055|Node.js Design Patterns|Casciaro~Mario|Packt Publishing|2020|1|0|660|0||0|79.99|Node.js|Avansat|0
-Tehnica|ISBN-T056|RESTful Web APIs|Richardson~Leonard|O'Reilly Media|2013|1|0|448|0||0|65.99|API Design|Intermediar|0
-Tehnica|ISBN-T057|Soft Skills|Sonmez~John|Manning Publications|2014|1|0|470|0||0|55.99|Cariera|Incepator|0
-Tehnica|ISBN-T058|The Managers Path|Fournier~Camille|O'Reilly Media|2017|1|0|244|0||0|55.99|Management|Intermediar|0
-Tehnica|ISBN-T059|C++ Concurrency in Action|Williams~Anthony|Manning Publications|2019|1|0|592|0||0|79.99|C++|Avansat|0
-Tehnica|ISBN-T060|Computer Architecture|Patterson~David|Addison-Wesley|2017|1|0|800|0||0|115.99|Arhitectura|Avansat|0
-Tehnica|ISBN-T061|Game Engine Architecture|Gregory~Jason|Prentice Hall|2018|1|0|1042|0||0|109.99|Game Dev|Avansat|0
-Tehnica|ISBN-T062|Programming PyTorch|Pointer~Ian|O'Reilly Media|2019|1|0|246|0||0|65.99|PyTorch|Intermediar|0
-Tehnica|ISBN-T063|Head First Design Patterns|Freeman~Eric|O'Reilly Media|2020|1|0|672|0||0|75.99|OOP|Intermediar|0
-Tehnica|ISBN-T064|Enterprise Integration Patterns|Hohpe~Gregor|Addison-Wesley|2003|1|0|736|0||0|89.99|Architecture|Avansat|0
-Tehnica|ISBN-T065|Implementing Domain-Driven Design|Vernon~Vaughn|Addison-Wesley|2013|1|0|656|0||0|89.99|Software Engineering|Avansat|0
-Tehnica|ISBN-T066|Structure and Interpretation of Programs|Abelson~Harold|Addison-Wesley|1996|1|0|657|0||0|95.99|Algoritmi|Avansat|0
-Tehnica|ISBN-T067|Learn You a Haskell|Lipovaca~Miran|No Starch Press|2011|1|0|400|0||0|49.99|Haskell|Incepator|0
-Tehnica|ISBN-T068|The Rust Programming Language|Klabnik~Steve|No Starch Press|2022|1|0|560|0||0|55.99|Rust|Incepator|0
-Tehnica|ISBN-T069|Hadoop The Definitive Guide|White~Tom|O'Reilly Media|2015|1|0|758|0||0|89.99|Big Data|Intermediar|0
-Tehnica|ISBN-T070|Ansible for DevOps|Geerling~Jeff|Addison-Wesley|2020|1|0|436|0||0|69.99|Automatizare|Intermediar|0
-Tehnica|ISBN-T071|AWS in Action|Wittig~Andreas|Manning Publications|2019|1|0|528|0||0|79.99|AWS|Intermediar|0
-Tehnica|ISBN-T072|Prometheus Up and Running|Brazil~Brian|O'Reilly Media|2018|1|0|358|0||0|69.99|Monitoring|Intermediar|0
-Tehnica|ISBN-T073|GraphQL in Action|Buna~Samer|Manning Publications|2021|1|0|392|0||0|69.99|GraphQL|Intermediar|0
+Tehnica|ISBN-T002|The C++ Programming Language|Stroustrup~Bjarne|Addison-Wesley|2013|1|0|1368|0||0|125.99|C++|Avansat|0
+Tehnica|ISBN-T003|The C Programming Language|Kernighan~Brian|Prentice Hall|1988|1|0|274|0||0|79.99|C|Intermediar|0
+Tehnica|ISBN-T004|Effective C++|Meyers~Scott|Addison-Wesley|2005|1|0|320|0||0|79.99|C++|Intermediar|0
+Tehnica|ISBN-T005|Effective Modern C++|Meyers~Scott|O'Reilly Media|2014|1|0|334|0||0|85.99|C++|Avansat|0
+Tehnica|ISBN-T006|C++ Primer Plus|Prata~Stephen|Addison-Wesley|2011|1|0|1200|0||0|85.99|C++|Incepator|0
+Tehnica|ISBN-T007|C++ Concurrency in Action|Williams~Anthony|Manning Publications|2019|1|0|592|0||0|79.99|C++|Avansat|0
+Tehnica|ISBN-T008|Modern C++ Design|Alexandrescu~Andrei|Addison-Wesley|2001|1|0|352|0||0|89.99|C++|Avansat|0
+Tehnica|ISBN-T009|More Effective C++|Meyers~Scott|Addison-Wesley|1996|1|0|336|0||0|79.99|C++|Avansat|0
+Tehnica|ISBN-T010|Functional Programming in C++|Cukic~Ivan|Manning Publications|2018|1|0|320|0||0|69.99|C++|Avansat|0
+Tehnica|ISBN-T011|C++ Templates The Complete Guide|Vandevoorde~David|Addison-Wesley|2017|1|0|840|0||0|99.99|C++|Avansat|0
+Tehnica|ISBN-T012|Beginning C++ Through Game Programming|Dawson~Michael|Addison-Wesley|2015|1|0|390|0||0|55.99|C++|Incepator|0
+Tehnica|ISBN-T013|Learning Python|Lutz~Mark|O'Reilly Media|2013|1|0|1540|0||0|99.99|Python|Incepator|0
+Tehnica|ISBN-T014|Fluent Python|Ramalho~Luciano|O'Reilly Media|2015|1|0|792|0||0|89.99|Python|Avansat|0
+Tehnica|ISBN-T015|Automate the Boring Stuff|Sweigart~Al|No Starch Press|2019|1|0|580|0||0|49.99|Python|Incepator|0
+Tehnica|ISBN-T016|Python Cookbook|Beazley~David|O'Reilly Media|2013|1|0|706|0||0|85.99|Python|Intermediar|0
+Tehnica|ISBN-T017|Python for Everybody|Severance~Charles|Addison-Wesley|2016|1|0|244|0||0|45.99|Python|Incepator|0
+Tehnica|ISBN-T018|Python Tricks|Bader~Dan|Addison-Wesley|2017|1|0|302|0||0|49.99|Python|Intermediar|0
+Tehnica|ISBN-T019|Head First Python|Barry~Paul|O'Reilly Media|2016|1|0|624|0||0|65.99|Python|Incepator|0
+Tehnica|ISBN-T020|Python Machine Learning|Raschka~Sebastian|Packt Publishing|2019|1|0|770|0||0|79.99|Python|Intermediar|0
+Tehnica|ISBN-T021|Introduction to Algorithms|Cormen~Thomas|Addison-Wesley|2009|1|0|1292|0||0|125.99|Algoritmi|Avansat|0
+Tehnica|ISBN-T022|The Art of Computer Programming vol 1|Knuth~Donald|Addison-Wesley|2011|1|0|672|0||0|120.99|Algoritmi|Avansat|0
+Tehnica|ISBN-T023|The Art of Computer Programming vol 2|Knuth~Donald|Addison-Wesley|2014|1|0|784|0||0|120.99|Algoritmi|Avansat|0
+Tehnica|ISBN-T024|The Algorithm Design Manual|Skiena~Steven|Addison-Wesley|2020|1|0|800|0||0|89.99|Algoritmi|Intermediar|0
+Tehnica|ISBN-T025|Cracking the Coding Interview|McDowell~Gayle|Addison-Wesley|2015|1|0|696|0||0|55.99|Algoritmi|Intermediar|0
+Tehnica|ISBN-T026|Competitive Programming|Halim~Steven|Addison-Wesley|2013|1|0|433|0||0|75.99|Algoritmi|Avansat|0
+Tehnica|ISBN-T027|Effective Java|Bloch~Joshua|Addison-Wesley|2018|1|0|412|0||0|89.99|Java|Avansat|0
+Tehnica|ISBN-T028|Head First Java|Sierra~Kathy|O'Reilly Media|2005|1|0|688|0||0|75.99|Java|Incepator|0
+Tehnica|ISBN-T029|Java The Complete Reference|Schildt~Herbert|Addison-Wesley|2018|1|0|1248|0||0|99.99|Java|Intermediar|0
+Tehnica|ISBN-T030|Spring in Action|Walls~Craig|Manning Publications|2018|1|0|520|0||0|79.99|Java|Intermediar|0
+Tehnica|ISBN-T031|Hands-On Machine Learning|Geron~Aurelien|O'Reilly Media|2019|1|0|856|0||0|95.99|Machine Learning|Intermediar|0
+Tehnica|ISBN-T032|Deep Learning|Goodfellow~Ian|Addison-Wesley|2016|1|0|800|0||0|119.99|Machine Learning|Avansat|0
+Tehnica|ISBN-T033|Pattern Recognition and ML|Bishop~Christopher|Addison-Wesley|2006|1|0|738|0||0|115.99|Machine Learning|Avansat|0
+Tehnica|ISBN-T034|Reinforcement Learning|Sutton~Richard|Addison-Wesley|2018|1|0|526|0||0|89.99|AI|Avansat|0
+Tehnica|ISBN-T035|Python for Data Analysis|McKinney~Wes|O'Reilly Media|2017|1|0|544|0||0|85.99|Data Science|Intermediar|0
+Tehnica|ISBN-T036|Data Science from Scratch|Grus~Joel|O'Reilly Media|2019|1|0|406|0||0|65.99|Data Science|Incepator|0
+Tehnica|ISBN-T037|Natural Language Processing|Bird~Steven|O'Reilly Media|2009|1|0|504|0||0|75.99|NLP|Intermediar|0
+Tehnica|ISBN-T038|Speech and Language Processing|Jurafsky~Daniel|Prentice Hall|2022|1|0|632|0||0|99.99|NLP|Avansat|0
+Tehnica|ISBN-T039|Computer Vision|Szeliski~Richard|Addison-Wesley|2022|1|0|932|0||0|109.99|Computer Vision|Avansat|0
+Tehnica|ISBN-T040|TensorFlow in Action|Madhavan~Thushan|Manning Publications|2022|1|0|424|0||0|69.99|TensorFlow|Intermediar|0
+Tehnica|ISBN-T041|Design Patterns|Gamma~Erich|Prentice Hall|1994|1|0|395|0||0|95.99|Software Engineering|Avansat|0
+Tehnica|ISBN-T042|Refactoring|Fowler~Martin|Addison-Wesley|1999|1|0|448|0||0|89.99|Software Engineering|Intermediar|0
+Tehnica|ISBN-T043|Clean Architecture|Martin~Robert C.|Prentice Hall|2017|1|0|432|0||0|89.99|Software Engineering|Avansat|0
+Tehnica|ISBN-T044|The Pragmatic Programmer|Hunt~Andrew|Addison-Wesley|2019|1|0|352|0||0|79.99|Software Engineering|Intermediar|0
+Tehnica|ISBN-T045|Domain-Driven Design|Evans~Eric|Addison-Wesley|2003|1|0|560|0||0|89.99|Software Engineering|Avansat|0
+Tehnica|ISBN-T046|Code Complete|McConnell~Steve|Addison-Wesley|2004|1|0|960|0||0|95.99|Software Engineering|Intermediar|0
+Tehnica|ISBN-T047|Head First Design Patterns|Freeman~Eric|O'Reilly Media|2020|1|0|672|0||0|75.99|OOP|Intermediar|0
+Tehnica|ISBN-T048|Test Driven Development|Beck~Kent|Addison-Wesley|2002|1|0|240|0||0|75.99|Software Engineering|Intermediar|0
+Tehnica|ISBN-T049|Modern Operating Systems|Tanenbaum~Andrew|Prentice Hall|2014|1|0|1136|0||0|115.99|Sisteme de Operare|Avansat|0
+Tehnica|ISBN-T050|Computer Networks|Tanenbaum~Andrew|Prentice Hall|2010|1|0|960|0||0|110.99|Retele|Intermediar|0
+Tehnica|ISBN-T051|TCP/IP Illustrated vol 1|Stevens~W. Richard|Addison-Wesley|2011|1|0|1032|0||0|89.99|Retele|Avansat|0
+Tehnica|ISBN-T052|The Linux Command Line|Shotts~William|No Starch Press|2019|1|0|480|0||0|65.99|Linux|Incepator|0
+Tehnica|ISBN-T053|Linux Kernel Development|Love~Robert|Addison-Wesley|2010|1|0|440|0||0|89.99|Linux|Avansat|0
+Tehnica|ISBN-T054|Building Microservices|Newman~Sam|O'Reilly Media|2021|1|0|640|0||0|85.99|Microservicii|Avansat|0
+Tehnica|ISBN-T055|Kubernetes in Action|Luksa~Marko|Manning Publications|2017|1|0|624|0||0|89.99|Cloud|Intermediar|0
+Tehnica|ISBN-T056|Docker Deep Dive|Poulton~Nigel|Packt Publishing|2020|1|0|260|0||0|65.99|Cloud|Incepator|0
+Tehnica|ISBN-T057|Site Reliability Engineering|Beyer~Betsy|O'Reilly Media|2016|1|0|552|0||0|95.99|DevOps|Avansat|0
+Tehnica|ISBN-T058|The Phoenix Project|Kim~Gene|O'Reilly Media|2013|1|0|432|0||0|69.99|DevOps|Incepator|0
+Tehnica|ISBN-T059|Pro Git|Chacon~Scott|Addison-Wesley|2014|1|0|440|0||0|55.99|Git|Incepator|0
+Tehnica|ISBN-T060|AWS in Action|Wittig~Andreas|Manning Publications|2019|1|0|528|0||0|79.99|AWS|Intermediar|0
+Tehnica|ISBN-T061|Designing Data-Intensive Applications|Kleppmann~Martin|O'Reilly Media|2017|1|0|616|0||0|99.99|Baze de Date|Avansat|0
+Tehnica|ISBN-T062|Database System Concepts|Silberschatz~Abraham|Addison-Wesley|2019|1|0|1376|0||0|115.99|Baze de Date|Intermediar|0
+Tehnica|ISBN-T063|High Performance MySQL|Schwartz~Baron|O'Reilly Media|2012|1|0|828|0||0|89.99|MySQL|Avansat|0
+Tehnica|ISBN-T064|MongoDB The Definitive Guide|Chodorow~Kristina|O'Reilly Media|2019|1|0|514|0||0|75.99|MongoDB|Intermediar|0
+Tehnica|ISBN-T065|Hacking The Art of Exploitation|Erickson~Jon|No Starch Press|2008|1|0|488|0||0|79.99|Securitate|Avansat|0
+Tehnica|ISBN-T066|Applied Cryptography|Schneier~Bruce|Addison-Wesley|2015|1|0|784|0||0|89.99|Criptografie|Avansat|0
+Tehnica|ISBN-T067|Penetration Testing|Georgia~Weidman|No Starch Press|2014|1|0|528|0||0|79.99|Securitate|Intermediar|0
+Tehnica|ISBN-T068|The Web Application Hackers Handbook|Stuttard~Dafydd|Addison-Wesley|2011|1|0|912|0||0|89.99|Securitate|Avansat|0
+Tehnica|ISBN-T069|JavaScript The Good Parts|Crockford~Douglas|O'Reilly Media|2008|1|0|172|0||0|59.99|JavaScript|Intermediar|0
+Tehnica|ISBN-T070|Eloquent JavaScript|Haverbeke~Marijn|No Starch Press|2018|1|0|472|0||0|65.99|JavaScript|Intermediar|0
+Tehnica|ISBN-T071|Learning React|Banks~Alex|O'Reilly Media|2020|1|0|312|0||0|69.99|React|Intermediar|0
+Tehnica|ISBN-T072|HTML and CSS Design and Build|Duckett~Jon|Addison-Wesley|2011|1|0|490|0||0|55.99|Web|Incepator|0
+Tehnica|ISBN-T073|Node.js Design Patterns|Casciaro~Mario|Packt Publishing|2020|1|0|660|0||0|79.99|Node.js|Avansat|0
 Tehnica|ISBN-T074|TypeScript Quickly|Fain~Yakov|Manning Publications|2020|1|0|464|0||0|69.99|TypeScript|Intermediar|0
-Tehnica|ISBN-T075|Spring in Action|Walls~Craig|Manning Publications|2018|1|0|520|0||0|79.99|Java|Intermediar|0
-Tehnica|ISBN-T076|Python for Data Analysis|McKinney~Wes|O'Reilly Media|2017|1|0|544|0||0|85.99|Data Science|Intermediar|0
-Tehnica|ISBN-T077|Natural Language Processing|Bird~Steven|O'Reilly Media|2009|1|0|504|0||0|75.99|NLP|Intermediar|0
-Tehnica|ISBN-T078|Reinforcement Learning|Sutton~Richard|Addison-Wesley|2018|1|0|526|0||0|89.99|AI|Avansat|0
-Tehnica|ISBN-T079|Patterns of Enterprise Application|Fowler~Martin|Addison-Wesley|2002|1|0|560|0||0|89.99|Software Engineering|Avansat|0
-Tehnica|ISBN-T080|The Mythical Man Month|Brooks~Fred|Addison-Wesley|1995|1|0|336|0||0|69.99|Management|Intermediar|0
-Tehnica|ISBN-T081|Release It|Nygard~Michael|Addison-Wesley|2018|1|0|376|0||0|69.99|Software Engineering|Avansat|0
-Tehnica|ISBN-T082|Growing Object Oriented Software|Freeman~Steve|Addison-Wesley|2009|1|0|384|0||0|79.99|OOP|Avansat|0
-Tehnica|ISBN-T083|Redis in Action|Carlson~Josiah|Manning Publications|2013|1|0|320|0||0|65.99|Redis|Intermediar|0
-Tehnica|ISBN-T084|SQL Antipatterns|Karwin~Bill|Addison-Wesley|2010|1|0|352|0||0|65.99|SQL|Intermediar|0
-Tehnica|ISBN-T085|Making Embedded Systems|White~Elecia|O'Reilly Media|2011|1|0|330|0||0|65.99|Embedded|Intermediar|0
-Tehnica|ISBN-T086|Programming Arduino|Monk~Simon|Addison-Wesley|2016|1|0|208|0||0|45.99|Arduino|Incepator|0
-Tehnica|ISBN-T087|Accelerate|Forsgren~Nicole|O'Reilly Media|2018|1|0|288|0||0|55.99|DevOps|Avansat|0
-Tehnica|ISBN-T088|A Philosophy of Software Design|Ousterhout~John|Addison-Wesley|2018|1|0|190|0||0|45.99|Software Engineering|Intermediar|0
-Tehnica|ISBN-T089|Clean Agile|Martin~Robert C.|Prentice Hall|2019|1|0|240|0||0|75.99|Software Engineering|Intermediar|0
-Tehnica|ISBN-T090|More Effective C++|Meyers~Scott|Addison-Wesley|1996|1|0|336|0||0|79.99|C++|Avansat|0
-Tehnica|ISBN-T091|Effective STL|Meyers~Scott|Addison-Wesley|2001|1|0|260|0||0|69.99|C++|Avansat|0
-Tehnica|ISBN-T092|C++ Primer Plus|Prata~Stephen|Addison-Wesley|2011|1|0|1200|0||0|85.99|C++|Incepator|0
-Tehnica|ISBN-T093|Functional Programming in C++|Cukic~Ivan|Manning Publications|2018|1|0|320|0||0|69.99|C++|Avansat|0
-Tehnica|ISBN-T094|Microservices Patterns|Richardson~Chris|Manning Publications|2018|1|0|520|0||0|79.99|Microservicii|Avansat|0
-Tehnica|ISBN-T095|Designing Distributed Systems|Burns~Brendan|O'Reilly Media|2018|1|0|166|0||0|55.99|Distributed Systems|Intermediar|0
-Tehnica|ISBN-T096|Vue.js in Action|Hanchett~Erik|Manning Publications|2018|1|0|304|0||0|65.99|Vue.js|Intermediar|0
-Tehnica|ISBN-T097|Angular in Action|Wilken~Jeremy|Manning Publications|2018|1|0|296|0||0|65.99|Angular|Intermediar|0
-Tehnica|ISBN-T098|Learning React|Banks~Alex|O'Reilly Media|2020|1|0|312|0||0|69.99|React|Intermediar|0
-Tehnica|ISBN-T099|Elasticsearch in Action|Hinman~Matthew|Manning Publications|2015|1|0|482|0||0|69.99|Search|Intermediar|0
-Tehnica|ISBN-T100|Python Machine Learning|Raschka~Sebastian|Packt Publishing|2019|1|0|770|0||0|79.99|Machine Learning|Intermediar|0
-Tehnica|ISBN-T101|Quantum Computing|Hidary~Jack|Addison-Wesley|2021|1|0|422|0||0|89.99|Quantum|Avansat|0
-Tehnica|ISBN-T102|Blockchain Basics|Drescher~Daniel|Addison-Wesley|2017|1|0|255|0||0|55.99|Blockchain|Incepator|0
-Tehnica|ISBN-T103|Python Tricks|Bader~Dan|Addison-Wesley|2017|1|0|302|0||0|49.99|Python|Intermediar|0
-Tehnica|ISBN-T104|Head First Python|Barry~Paul|O'Reilly Media|2016|1|0|624|0||0|65.99|Python|Incepator|0
-Tehnica|ISBN-T105|Data Science from Scratch|Grus~Joel|O'Reilly Media|2019|1|0|406|0||0|65.99|Data Science|Incepator|0
-Tehnica|ISBN-T106|The Art of Computer Programming vol 3|Knuth~Donald|Addison-Wesley|2011|1|0|780|0||0|120.99|Algoritmi|Avansat|0
-Tehnica|ISBN-T107|Competitive Programming|Halim~Steven|Addison-Wesley|2013|1|0|433|0||0|75.99|Algoritmi|Avansat|0
-Tehnica|ISBN-T108|Programming Kotlin|Jemerov~Dmitry|Addison-Wesley|2017|1|0|436|0||0|75.99|Kotlin|Intermediar|0
-Tehnica|ISBN-T109|Programming Scala|Wampler~Dean|O'Reilly Media|2021|1|0|622|0||0|89.99|Scala|Intermediar|0
-Tehnica|ISBN-T110|Swift Programming|Mathias~Matthew|Addison-Wesley|2016|1|0|624|0||0|75.99|Swift|Intermediar|0
-Tehnica|ISBN-T111|Object Design Style Guide|Noback~Matthias|Manning Publications|2019|1|0|312|0||0|65.99|OOP|Intermediar|0
-Tehnica|ISBN-T112|Applying UML and Patterns|Larman~Craig|Prentice Hall|2004|1|0|736|0||0|85.99|OOP|Intermediar|0
-Tehnica|ISBN-T113|The Web Application Hackers Handbook|Stuttard~Dafydd|Addison-Wesley|2011|1|0|912|0||0|89.99|Securitate|Avansat|0
-Tehnica|ISBN-T114|Penetration Testing|Georgia~Weidman|No Starch Press|2014|1|0|528|0||0|79.99|Securitate|Intermediar|0
-Tehnica|ISBN-T115|Unix Network Programming|Stevens~W. Richard|Addison-Wesley|2003|1|0|1024|0||0|95.99|Retele|Avansat|0
-Tehnica|ISBN-T116|Cassandra The Definitive Guide|Hewitt~Eben|O'Reilly Media|2022|1|0|344|0||0|69.99|Cassandra|Avansat|0
-Tehnica|ISBN-T117|PostgreSQL Up and Running|Obe~Regina|O'Reilly Media|2017|1|0|334|0||0|65.99|PostgreSQL|Intermediar|0
-Tehnica|ISBN-T118|Learning MySQL|Dyer~Russel|O'Reilly Media|2007|1|0|388|0||0|59.99|MySQL|Incepator|0
-Tehnica|ISBN-T119|Peopleware|DeMarco~Tom|Addison-Wesley|2013|1|0|264|0||0|65.99|Management|Intermediar|0
-Tehnica|ISBN-T120|An Elegant Puzzle|Larson~Will|Addison-Wesley|2019|1|0|280|0||0|55.99|Engineering Management|Intermediar|0
-Tehnica|ISBN-T121|C++ Templates The Complete Guide|Vandevoorde~David|Addison-Wesley|2017|1|0|840|0||0|99.99|C++|Avansat|0
-Tehnica|ISBN-T122|Digital Design and Computer Architecture|Harris~David|Addison-Wesley|2012|1|0|712|0||0|89.99|Hardware|Intermediar|0
-Tehnica|ISBN-T123|OpenGL Programming Guide|Shreiner~Dave|Addison-Wesley|2013|1|0|936|0||0|99.99|OpenGL|Intermediar|0
-Tehnica|ISBN-T124|TensorFlow in Action|Madhavan~Thushan|Manning Publications|2022|1|0|424|0||0|69.99|TensorFlow|Intermediar|0
-Tehnica|ISBN-T125|Real Time Rendering|Akenine-Moller~Tomas|Prentice Hall|2018|1|0|1198|0||0|115.99|Game Dev|Avansat|0
-Tehnica|ISBN-T126|Pattern Recognition and ML|Bishop~Christopher|Addison-Wesley|2006|1|0|738|0||0|115.99|Machine Learning|Avansat|0
-Tehnica|ISBN-T127|Speech and Language Processing|Jurafsky~Daniel|Prentice Hall|2022|1|0|632|0||0|99.99|NLP|Avansat|0
-Tehnica|ISBN-T128|Computer Vision|Szeliski~Richard|Addison-Wesley|2022|1|0|932|0||0|109.99|Computer Vision|Avansat|0
-Tehnica|ISBN-T129|The Staff Engineers Path|Reilly~Tanya|O'Reilly Media|2022|1|0|422|0||0|65.99|Cariera|Avansat|0
-Tehnica|ISBN-T130|Raspberry Pi Cookbook|Monk~Simon|O'Reilly Media|2016|1|0|412|0||0|55.99|Raspberry Pi|Incepator|0
-Tehnica|ISBN-T131|Linux Kernel Development|Love~Robert|Addison-Wesley|2010|1|0|440|0||0|89.99|Linux|Avansat|0
-Tehnica|ISBN-T132|Python for Everybody|Severance~Charles|Addison-Wesley|2016|1|0|244|0||0|45.99|Python|Incepator|0
-Tehnica|ISBN-T133|The Elements of Statistical Learning|Hastie~Trevor|Addison-Wesley|2017|1|0|768|0||0|110.99|Machine Learning|Avansat|0
-Tehnica|ISBN-T134|AWS Lambda in Action|Poccia~Danilo|Manning Publications|2016|1|0|338|0||0|65.99|Serverless|Intermediar|0
-Tehnica|ISBN-T135|Kubernetes Patterns|Ibryam~Bilgin|O'Reilly Media|2019|1|0|260|0||0|65.99|Cloud|Avansat|0
-Tehnica|ISBN-T136|Cloud Native Patterns|Davis~Cornelia|Manning Publications|2019|1|0|400|0||0|75.99|Cloud|Intermediar|0
-Tehnica|ISBN-T137|RabbitMQ in Action|Videla~Alvaro|Manning Publications|2012|1|0|312|0||0|65.99|Mesagerie|Intermediar|0
-Tehnica|ISBN-T138|Computer Security Art and Science|Bishop~Matt|Addison-Wesley|2018|1|0|1136|0||0|115.99|Securitate|Avansat|0
-Tehnica|ISBN-T139|Programming Go|Calvert~Charles|Manning Publications|2021|1|0|400|0||0|69.99|Go|Intermediar|0
-Tehnica|ISBN-T140|Programming Haskell|Hutton~Graham|Prentice Hall|2016|1|0|299|0||0|65.99|Haskell|Intermediar|0
-Tehnica|ISBN-T141|Beginning C++ Through Game Programming|Dawson~Michael|Addison-Wesley|2015|1|0|390|0||0|55.99|C++|Incepator|0
-Tehnica|ISBN-T142|Continuous Delivery|Humble~Jez|Addison-Wesley|2010|1|0|512|0||0|89.99|DevOps|Intermediar|0
-Tehnica|ISBN-T143|Java The Complete Reference|Schildt~Herbert|Addison-Wesley|2018|1|0|1248|0||0|99.99|Java|Intermediar|0
-Tehnica|ISBN-T144|HTML and CSS Design and Build|Duckett~Jon|Addison-Wesley|2011|1|0|490|0||0|55.99|Web|Incepator|0
-Tehnica|ISBN-T145|Google Cloud Platform in Action|Geewax~JJ|Manning Publications|2018|1|0|408|0||0|75.99|GCP|Intermediar|0
-Tehnica|ISBN-T146|The Practice of Network Security|Bejtlich~Richard|No Starch Press|2013|1|0|376|0||0|65.99|Securitate|Intermediar|0
-Tehnica|ISBN-T147|Programming PyTorch for Deep Learning|Pointer~Ian|O'Reilly Media|2019|1|0|246|0||0|65.99|PyTorch|Intermediar|0
-Tehnica|ISBN-T148|Mastering Ethereum|Antonopoulos~Andreas|O'Reilly Media|2018|1|0|422|0||0|79.99|Blockchain|Avansat|0
-Tehnica|ISBN-T149|Learning Elasticsearch|Gupta~Bharvi|Packt Publishing|2017|1|0|394|0||0|65.99|Elasticsearch|Intermediar|0
-Tehnica|ISBN-T150|Computer Organization and Design|Patterson~David|Addison-Wesley|2020|1|0|864|0||0|99.99|Arhitectura|Avansat|0
+Tehnica|ISBN-T075|Vue.js in Action|Hanchett~Erik|Manning Publications|2018|1|0|304|0||0|65.99|Vue.js|Intermediar|0
+Tehnica|ISBN-T076|Angular in Action|Wilken~Jeremy|Manning Publications|2018|1|0|296|0||0|65.99|Angular|Intermediar|0
+Tehnica|ISBN-T077|Game Engine Architecture|Gregory~Jason|Prentice Hall|2018|1|0|1042|0||0|109.99|Game Dev|Avansat|0
+Tehnica|ISBN-T078|Real Time Rendering|Akenine-Moller~Tomas|Prentice Hall|2018|1|0|1198|0||0|115.99|Game Dev|Avansat|0
+Tehnica|ISBN-T079|Programming Arduino|Monk~Simon|Addison-Wesley|2016|1|0|208|0||0|45.99|Arduino|Incepator|0
+Tehnica|ISBN-T080|Raspberry Pi Cookbook|Monk~Simon|O'Reilly Media|2016|1|0|412|0||0|55.99|Raspberry Pi|Incepator|0
+Tehnica|ISBN-T081|Programming Rust|Blandy~Jim|O'Reilly Media|2021|1|0|622|0||0|79.99|Rust|Intermediar|0
+Tehnica|ISBN-T082|The Rust Programming Language|Klabnik~Steve|No Starch Press|2022|1|0|560|0||0|55.99|Rust|Incepator|0
+Tehnica|ISBN-T083|The Go Programming Language|Donovan~Alan|Addison-Wesley|2015|1|0|380|0||0|65.99|Go|Intermediar|0
+Tehnica|ISBN-T084|Programming Go|Calvert~Charles|Manning Publications|2021|1|0|400|0||0|69.99|Go|Intermediar|0
+Tehnica|ISBN-T085|The Mythical Man Month|Brooks~Fred|Addison-Wesley|1995|1|0|336|0||0|69.99|Management|Intermediar|0
+Tehnica|ISBN-T086|Soft Skills|Sonmez~John|Manning Publications|2014|1|0|470|0||0|55.99|Cariera|Incepator|0
+Tehnica|ISBN-T087|The Managers Path|Fournier~Camille|O'Reilly Media|2017|1|0|244|0||0|55.99|Management|Intermediar|0
+Tehnica|ISBN-T088|An Elegant Puzzle|Larson~Will|Addison-Wesley|2019|1|0|280|0||0|55.99|Engineering Management|Intermediar|0
+Tehnica|ISBN-T089|System Design Interview|Xu~Alex|Addison-Wesley|2020|1|0|309|0||0|49.99|Interviuri|Intermediar|0
+Tehnica|ISBN-T090|A Philosophy of Software Design|Ousterhout~John|Addison-Wesley|2018|1|0|190|0||0|45.99|Software Engineering|Intermediar|0
+Tehnica|ISBN-T091|Computer Architecture|Patterson~David|Addison-Wesley|2017|1|0|800|0||0|115.99|Arhitectura|Avansat|0
+Tehnica|ISBN-T092|Computer Organization and Design|Patterson~David|Addison-Wesley|2020|1|0|864|0||0|99.99|Arhitectura|Avansat|0
+Tehnica|ISBN-T093|Digital Design and Computer Architecture|Harris~David|Addison-Wesley|2012|1|0|712|0||0|89.99|Hardware|Intermediar|0
+Tehnica|ISBN-T094|Structure and Interpretation of Programs|Abelson~Harold|Addison-Wesley|1996|1|0|657|0||0|95.99|Algoritmi|Avansat|0
+Tehnica|ISBN-T095|Kafka The Definitive Guide|Shapira~Gwen|O'Reilly Media|2021|1|0|302|0||0|75.99|Streaming|Avansat|0
+Tehnica|ISBN-T096|Spark The Definitive Guide|Chambers~Bill|O'Reilly Media|2018|1|0|610|0||0|89.99|Big Data|Avansat|0
+Tehnica|ISBN-T097|Hadoop The Definitive Guide|White~Tom|O'Reilly Media|2015|1|0|758|0||0|89.99|Big Data|Intermediar|0
+Tehnica|ISBN-T098|Elasticsearch in Action|Hinman~Matthew|Manning Publications|2015|1|0|482|0||0|69.99|Search|Intermediar|0
+Tehnica|ISBN-T099|Making Embedded Systems|White~Elecia|O'Reilly Media|2011|1|0|330|0||0|65.99|Embedded|Intermediar|0
+Tehnica|ISBN-T100|Computer Security Art and Science|Bishop~Matt|Addison-Wesley|2018|1|0|1136|0||0|115.99|Securitate|Avansat|0
+Tehnica|ISBN-T101|ChatGPT Prompt Engineering for Developers|Wulfken~Moritz|O'Reilly Media|2023|1|0|220|0||0|55.99|AI|Incepator|0
+Tehnica|ISBN-T102|Building LLM Powered Applications|Ozturk~Valentina|Packt Publishing|2024|1|0|312|0||0|69.99|AI|Intermediar|0
+Tehnica|ISBN-T103|Generative Deep Learning|Foster~David|O'Reilly Media|2023|1|0|456|0||0|89.99|Machine Learning|Avansat|0
+Tehnica|ISBN-T104|Practical MLOps|Gift~Noah|O'Reilly Media|2021|1|0|422|0||0|75.99|Machine Learning|Intermediar|0
+Tehnica|ISBN-T105|Platform Engineering|Butcher~Matt|Manning Publications|2023|1|0|350|0||0|69.99|DevOps|Intermediar|0
+Tehnica|ISBN-T106|Software Architecture Patterns|Fowler~Martin|O'Reilly Media|2023|1|0|280|0||0|45.99|Software Engineering|Intermediar|0
+Tehnica|ISBN-T107|Quantum Computing An Applied Approach|Hidary~Jack|Addison-Wesley|2021|1|0|422|0||0|89.99|Quantum|Avansat|0
+Tehnica|ISBN-T108|Blockchain Basics|Drescher~Daniel|Addison-Wesley|2017|1|0|255|0||0|55.99|Blockchain|Incepator|0
+Tehnica|ISBN-T109|Web3 Development|Antonopoulos~Andreas|O'Reilly Media|2022|1|0|380|0||0|69.99|Blockchain|Intermediar|0
+Tehnica|ISBN-T110|iOS Programming The Big Nerd Ranch|Conway~Joe|Addison-Wesley|2020|1|0|576|0||0|79.99|iOS|Intermediar|0
+Tehnica|ISBN-T111|Android Programming The Big Nerd Ranch|Hardy~Bill|Addison-Wesley|2019|1|0|576|0||0|79.99|Android|Intermediar|0
+Tehnica|ISBN-T112|Flutter in Action|Windmill~Eric|Manning Publications|2020|1|0|368|0||0|65.99|Flutter|Intermediar|0
+Tehnica|ISBN-T113|Microservices Patterns|Richardson~Chris|Manning Publications|2018|1|0|520|0||0|79.99|Microservicii|Avansat|0
+Tehnica|ISBN-T114|GraphQL in Action|Buna~Samer|Manning Publications|2021|1|0|392|0||0|69.99|GraphQL|Intermediar|0
+Tehnica|ISBN-T115|REST API Design Rulebook|Masse~Mark|O'Reilly Media|2011|1|0|116|0||0|45.99|API Design|Intermediar|0
 Educativa|ISBN-E001|Matematica cls 5|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|224|0||0|25.99|Matematica|Real|5
 Educativa|ISBN-E002|Matematica cls 6|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|240|0||0|25.99|Matematica|Real|6
 Educativa|ISBN-E003|Matematica cls 7|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|256|0||0|27.99|Matematica|Real|7
@@ -316,7 +306,7 @@ Educativa|ISBN-E015|Matematica pentru olimpici|Colectiv~Autori|Didactica si Peda
 Educativa|ISBN-E016|Calcul diferential si integral|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|448|0||0|52.99|Matematica|Real|0
 Educativa|ISBN-E017|Ecuatii diferentiale|Colectiv~Autori|Didactica si Pedagogica|2020|0|1|368|0||0|45.99|Matematica|Real|0
 Educativa|ISBN-E018|Statistica Aplicata|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|416|0||0|50.99|Statistica|Real|0
-Educativa|ISBN-E019|Cercetari Operationale|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|448|0||0|52.99|Matematica|Economic|0
+Educativa|ISBN-E019|Geometrie diferentiala|Colectiv~Autori|Didactica si Pedagogica|2020|0|1|356|0||0|42.99|Matematica|Real|0
 Educativa|ISBN-E020|Admitere Politehnica|Colectiv~Autori|Didactica si Pedagogica|2023|0|1|384|0||0|38.99|Matematica|Real|0
 Educativa|ISBN-E021|Fizica cls 6|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|192|0||0|22.99|Fizica|Real|6
 Educativa|ISBN-E022|Fizica cls 7|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|208|0||0|24.99|Fizica|Real|7
@@ -326,10 +316,10 @@ Educativa|ISBN-E025|Fizica cls 10|Colectiv~Autori|Didactica si Pedagogica|2022|0
 Educativa|ISBN-E026|Fizica cls 11|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|272|0||0|28.99|Fizica|Real|11
 Educativa|ISBN-E027|Fizica cls 12|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|288|0||0|28.99|Fizica|Real|12
 Educativa|ISBN-E028|Culegere Fizica cls 9-12|Colectiv~Autori|Didactica si Pedagogica|2023|0|1|448|0||0|39.99|Fizica|Real|9
-Educativa|ISBN-E029|Mecanica clasica|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|368|0||0|42.99|Fizica|Real|0
-Educativa|ISBN-E030|Electromagnetism|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|412|0||0|45.99|Fizica|Real|0
-Educativa|ISBN-E031|Fizica cuantica|Colectiv~Autori|Didactica si Pedagogica|2020|0|1|448|0||0|49.99|Fizica|Real|0
-Educativa|ISBN-E032|Termodinamica tehnica|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|416|0||0|50.99|Fizica|Real|0
+Educativa|ISBN-E029|Fizica pentru olimpici|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|368|0||0|37.99|Fizica|Real|9
+Educativa|ISBN-E030|Mecanica clasica|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|368|0||0|42.99|Fizica|Real|0
+Educativa|ISBN-E031|Electromagnetism|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|412|0||0|45.99|Fizica|Real|0
+Educativa|ISBN-E032|Fizica cuantica|Colectiv~Autori|Didactica si Pedagogica|2020|0|1|448|0||0|49.99|Fizica|Real|0
 Educativa|ISBN-E033|Chimie cls 7|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|176|0||0|22.99|Chimie|Real|7
 Educativa|ISBN-E034|Chimie cls 8|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|192|0||0|22.99|Chimie|Real|8
 Educativa|ISBN-E035|Chimie cls 9|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|208|0||0|24.99|Chimie|Real|9
@@ -352,127 +342,93 @@ Educativa|ISBN-E051|Informatica cls 11 C++|Colectiv~Autori|Didactica si Pedagogi
 Educativa|ISBN-E052|Informatica cls 12 C++|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|304|0||0|34.99|Informatica|Real|12
 Educativa|ISBN-E053|Bacalaureat Informatica|Colectiv~Autori|Didactica si Pedagogica|2023|0|1|320|0||0|35.99|Informatica|Real|12
 Educativa|ISBN-E054|Informatica pentru olimpici|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|352|0||0|36.99|Informatica|Real|9
-Educativa|ISBN-E055|Sisteme de operare|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|384|0||0|48.99|Informatica|Real|0
-Educativa|ISBN-E056|Retele de calculatoare|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|448|0||0|52.99|Informatica|Real|0
+Educativa|ISBN-E055|Structuri de date si algoritmi|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|480|0||0|55.99|Informatica|Real|0
+Educativa|ISBN-E056|Programare orientata obiect|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|416|0||0|50.99|Informatica|Real|0
 Educativa|ISBN-E057|Baze de date|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|368|0||0|45.99|Informatica|Real|0
-Educativa|ISBN-E058|Programare orientata obiect|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|416|0||0|50.99|Informatica|Real|0
-Educativa|ISBN-E059|Structuri de date si algoritmi|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|480|0||0|55.99|Informatica|Real|0
+Educativa|ISBN-E058|Retele de calculatoare|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|448|0||0|52.99|Informatica|Real|0
+Educativa|ISBN-E059|Sisteme de operare|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|384|0||0|48.99|Informatica|Real|0
 Educativa|ISBN-E060|Inteligenta Artificiala|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|512|0||0|58.99|Informatica|Real|0
 Educativa|ISBN-E061|Securitate Informatica|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|448|0||0|54.99|Informatica|Real|0
 Educativa|ISBN-E062|Cloud Computing|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|384|0||0|48.99|Informatica|Real|0
 Educativa|ISBN-E063|Internet of Things|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|416|0||0|50.99|Informatica|Real|0
 Educativa|ISBN-E064|Criptografie|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|352|0||0|45.99|Informatica|Real|0
-Educativa|ISBN-E065|Limba Romana cls 5|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|176|0||0|19.99|Romana|Uman|5
-Educativa|ISBN-E066|Limba Romana cls 6|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|192|0||0|19.99|Romana|Uman|6
-Educativa|ISBN-E067|Limba Romana cls 7|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|208|0||0|21.99|Romana|Uman|7
-Educativa|ISBN-E068|Limba Romana cls 8|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|224|0||0|21.99|Romana|Uman|8
-Educativa|ISBN-E069|Limba si Literatura Romana cls 9|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|240|0||0|24.99|Romana|Uman|9
-Educativa|ISBN-E070|Limba si Literatura Romana cls 10|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|256|0||0|24.99|Romana|Uman|10
-Educativa|ISBN-E071|Limba si Literatura Romana cls 11|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|272|0||0|26.99|Romana|Uman|11
-Educativa|ISBN-E072|Limba si Literatura Romana cls 12|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|288|0||0|26.99|Romana|Uman|12
-Educativa|ISBN-E073|Bacalaureat Romana|Colectiv~Autori|Didactica si Pedagogica|2023|0|1|312|0||0|32.99|Romana|Uman|12
-Educativa|ISBN-E074|Engleza pentru avansati|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|320|0||0|34.99|Engleza|Uman|0
-Educativa|ISBN-E075|IELTS Academic|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|448|0||0|45.99|Engleza|Uman|0
-Educativa|ISBN-E076|Franceza pentru incepatori|Colectiv~Autori|Didactica si Pedagogica|2020|0|1|256|0||0|28.99|Franceza|Uman|0
-Educativa|ISBN-E077|Germana pentru incepatori|Colectiv~Autori|Didactica si Pedagogica|2020|0|1|272|0||0|29.99|Germana|Uman|0
-Educativa|ISBN-E078|Spaniola pentru incepatori|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|256|0||0|28.99|Spaniola|Uman|0
-Educativa|ISBN-E079|Istorie cls 5|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|160|0||0|18.99|Istorie|Uman|5
-Educativa|ISBN-E080|Istorie cls 6|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|176|0||0|18.99|Istorie|Uman|6
-Educativa|ISBN-E081|Istorie cls 7|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|192|0||0|20.99|Istorie|Uman|7
-Educativa|ISBN-E082|Istorie cls 8|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|208|0||0|20.99|Istorie|Uman|8
-Educativa|ISBN-E083|Istoria Romanilor cls 11|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|256|0||0|24.99|Istorie|Uman|11
-Educativa|ISBN-E084|Bacalaureat Istorie|Colectiv~Autori|Didactica si Pedagogica|2023|0|1|288|0||0|30.99|Istorie|Uman|12
-Educativa|ISBN-E085|Geografie Romania cls 9|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|224|0||0|22.99|Geografie|Uman|9
-Educativa|ISBN-E086|Bacalaureat Geografie|Colectiv~Autori|Didactica si Pedagogica|2023|0|1|264|0||0|28.99|Geografie|Uman|12
-Educativa|ISBN-E087|Drept Civil vol 1|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|512|0||0|65.99|Drept|Juridic|0
-Educativa|ISBN-E088|Drept Penal general|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|480|0||0|62.99|Drept|Juridic|0
-Educativa|ISBN-E089|Drept Constitutional|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|512|0||0|62.99|Drept|Juridic|0
-Educativa|ISBN-E090|Drept Administrativ|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|480|0||0|59.99|Drept|Juridic|0
-Educativa|ISBN-E091|Procedura Civila|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|576|0||0|68.99|Drept|Juridic|0
-Educativa|ISBN-E092|Procedura Penala|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|544|0||0|65.99|Drept|Juridic|0
-Educativa|ISBN-E093|Admitere Drept|Colectiv~Autori|Didactica si Pedagogica|2023|0|1|288|0||0|32.99|Romana|Juridic|0
-Educativa|ISBN-E094|Contabilitate generala|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|448|0||0|55.99|Economie|Economic|0
-Educativa|ISBN-E095|Macroeconomie|Colectiv~Autori|Didactica si Pedagogica|2020|0|1|412|0||0|52.99|Economie|Economic|0
-Educativa|ISBN-E096|Microeconomie|Colectiv~Autori|Didactica si Pedagogica|2020|0|1|396|0||0|50.99|Economie|Economic|0
-Educativa|ISBN-E097|Management general|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|416|0||0|50.99|Economie|Economic|0
-Educativa|ISBN-E098|Marketing|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|384|0||0|47.99|Economie|Economic|0
-Educativa|ISBN-E099|Admitere ASE|Colectiv~Autori|Didactica si Pedagogica|2023|0|1|320|0||0|35.99|Matematica|Economic|0
-Educativa|ISBN-E100|Anatomie umana vol 1|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|672|0||0|85.99|Medicina|Medical|0
-Educativa|ISBN-E101|Anatomie umana vol 2|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|688|0||0|85.99|Medicina|Medical|0
-Educativa|ISBN-E102|Fiziologie|Colectiv~Autori|Didactica si Pedagogica|2020|0|1|768|0||0|92.99|Medicina|Medical|0
-Educativa|ISBN-E103|Biochimie medicala|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|624|0||0|79.99|Medicina|Medical|0
-Educativa|ISBN-E104|Farmacologie|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|864|0||0|98.99|Medicina|Medical|0
-Educativa|ISBN-E105|Microbiologie|Colectiv~Autori|Didactica si Pedagogica|2020|0|1|592|0||0|75.99|Medicina|Medical|0
-Educativa|ISBN-E106|Nutritie si Dietetica|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|416|0||0|50.99|Medicina|Medical|0
-Educativa|ISBN-E107|Psihologie generala|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|384|0||0|48.99|Psihologie|Uman|0
-Educativa|ISBN-E108|Pedagogie|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|416|0||0|50.99|Pedagogie|Pedagogic|0
-Educativa|ISBN-E109|Filosofie|Colectiv~Autori|Didactica si Pedagogica|2020|0|1|448|0||0|52.99|Filosofie|Uman|0
-Educativa|ISBN-E110|Logica formala|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|320|0||0|40.99|Filosofie|Uman|0
-Educativa|ISBN-E111|Sociologie generala|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|384|0||0|47.99|Sociologie|Uman|0
-Educativa|ISBN-E112|Comunicare si Relatii Publice|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|368|0||0|46.99|Comunicare|Uman|0
-Educativa|ISBN-E113|Relatii Internationale|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|448|0||0|52.99|Stiinte Politice|Uman|0
-Educativa|ISBN-E114|Istoria Artei vol 1|Colectiv~Autori|Didactica si Pedagogica|2020|0|1|512|0||0|65.99|Arta|Uman|0
-Educativa|ISBN-E115|Istoria Artei vol 2|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|528|0||0|65.99|Arta|Uman|0
-Educativa|ISBN-E116|Electrotehnica|Colectiv~Autori|Didactica si Pedagogica|2020|0|1|512|0||0|58.99|Electrica|Real|0
-Educativa|ISBN-E117|Electronica digitala|Colectiv~Autori|Didactica si Pedagogica|2020|0|1|448|0||0|52.99|Electronica|Real|0
-Educativa|ISBN-E118|Robotica|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|384|0||0|48.99|Automatizari|Real|0
-Educativa|ISBN-E119|Rezistenta Materialelor|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|512|0||0|62.99|Constructii|Tehnic|0
-Educativa|ISBN-E120|Mecanica Fluidelor|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|416|0||0|51.99|Mecanica|Real|0
-Educativa|ISBN-E121|Constructii Civile|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|512|0||0|62.99|Constructii|Tehnic|0
-Educativa|ISBN-E122|Tehnologia Materialelor|Colectiv~Autori|Didactica si Pedagogica|2020|0|1|512|0||0|62.99|Tehnica|Tehnic|0
-Educativa|ISBN-E123|Grafica pe Calculator|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|416|0||0|50.99|Informatica|Real|0
-Educativa|ISBN-E124|Calcul Numeric|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|368|0||0|46.99|Matematica|Real|0
-Educativa|ISBN-E125|Teoria Jocurilor|Colectiv~Autori|Didactica si Pedagogica|2020|0|1|312|0||0|40.99|Matematica|Economic|0
-Educativa|ISBN-E126|Econometrie|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|384|0||0|47.99|Economie|Economic|0
-Educativa|ISBN-E127|Matematici Financiare|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|320|0||0|42.99|Matematica|Economic|0
-Educativa|ISBN-E128|Ingineria Programarii|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|448|0||0|52.99|Informatica|Real|0
-Educativa|ISBN-E129|Sisteme Expert|Colectiv~Autori|Didactica si Pedagogica|2020|0|1|320|0||0|42.99|Informatica|Real|0
-Educativa|ISBN-E130|Procesarea Imaginilor|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|448|0||0|54.99|Informatica|Real|0
-Educativa|ISBN-E131|Automatizari Industriale|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|448|0||0|54.99|Automatizari|Real|0
-Educativa|ISBN-E132|Organe de Masini|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|576|0||0|68.99|Mecanica|Tehnic|0
-Educativa|ISBN-E133|Metale si Aliaje|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|448|0||0|54.99|Metalurgie|Tehnic|0
-Educativa|ISBN-E134|Calitate si Fiabilitate|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|320|0||0|42.99|Calitate|Tehnic|0
-Educativa|ISBN-E135|Agrotehnica|Colectiv~Autori|Didactica si Pedagogica|2020|0|1|480|0||0|55.99|Agronomie|Agricol|0
-Educativa|ISBN-E136|Zootehnie|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|448|0||0|52.99|Agronomie|Agricol|0
-Educativa|ISBN-E137|Geologie|Colectiv~Autori|Didactica si Pedagogica|2020|0|1|448|0||0|52.99|Geografie|Real|0
-Educativa|ISBN-E138|Geografie economica mondiala|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|512|0||0|58.99|Geografie|Uman|0
-Educativa|ISBN-E139|Turism si Ospitalitate|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|416|0||0|50.99|Turism|Economic|0
-Educativa|ISBN-E140|Criminologie|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|384|0||0|48.99|Drept|Juridic|0
-Educativa|ISBN-E141|Finante publice|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|448|0||0|52.99|Economie|Economic|0
-Educativa|ISBN-E142|Drept Commercial|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|448|0||0|56.99|Drept|Juridic|0
-Educativa|ISBN-E143|Asistenta Sociala|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|384|0||0|47.99|Sociologie|Uman|0
-Educativa|ISBN-E144|Jurnalism|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|320|0||0|42.99|Comunicare|Uman|0
-Educativa|ISBN-E145|Publicitate si Reclama|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|352|0||0|44.99|Comunicare|Uman|0
-Educativa|ISBN-E146|Stiinte Politice|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|416|0||0|50.99|Stiinte Politice|Uman|0
-Educativa|ISBN-E147|Teoria Muzicii|Colectiv~Autori|Didactica si Pedagogica|2019|0|1|320|0||0|42.99|Muzica|Uman|0
-Educativa|ISBN-E148|Arhitectura|Colectiv~Autori|Didactica si Pedagogica|2020|0|1|512|0||0|68.99|Arhitectura|Tehnic|0
-Educativa|ISBN-E149|Bioinformatica|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|448|0||0|54.99|Informatica|Medical|0
-Educativa|ISBN-E150|Calcul Paralel|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|416|0||0|50.99|Informatica|Real|0
-Educativa|ISBN-E151|Recunoastere Forme|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|384|0||0|48.99|Informatica|Real|0
-Educativa|ISBN-E152|Patologie generala|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|712|0||0|88.99|Medicina|Medical|0
-Educativa|ISBN-E153|Psihologie sociala|Colectiv~Autori|Didactica si Pedagogica|2020|0|1|368|0||0|46.99|Psihologie|Uman|0
-Educativa|ISBN-E154|Drept International Public|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|512|0||0|62.99|Drept|Juridic|0
-Educativa|ISBN-E155|Actuariat|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|384|0||0|48.99|Matematica|Economic|0
-Educativa|ISBN-E156|Geometrie diferentiala|Colectiv~Autori|Didactica si Pedagogica|2020|0|1|356|0||0|42.99|Matematica|Real|0
-Educativa|ISBN-E157|Electronica analogica|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|480|0||0|55.99|Electronica|Real|0
-Educativa|ISBN-E158|Tehnici de Compilare|Colectiv~Autori|Didactica si Pedagogica|2020|0|1|512|0||0|60.99|Informatica|Real|0
-Educativa|ISBN-E159|Realitate Virtuala|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|352|0||0|45.99|Informatica|Real|0
-Educativa|ISBN-E160|Modelare Sisteme|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|368|0||0|46.99|Informatica|Real|0
-Educativa|ISBN-E161|Fizica pentru olimpici|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|368|0||0|37.99|Fizica|Real|9
-Educativa|ISBN-E162|100 teste BAC Romana|Colectiv~Autori|Didactica si Pedagogica|2023|0|1|288|0||0|28.99|Romana|Uman|12
-Educativa|ISBN-E163|100 teste BAC Matematica|Colectiv~Autori|Didactica si Pedagogica|2023|0|1|256|0||0|28.99|Matematica|Real|12
-Educativa|ISBN-E164|100 teste BAC Fizica|Colectiv~Autori|Didactica si Pedagogica|2023|0|1|240|0||0|26.99|Fizica|Real|12
-Educativa|ISBN-E165|100 teste BAC Chimie|Colectiv~Autori|Didactica si Pedagogica|2023|0|1|224|0||0|25.99|Chimie|Real|12
-Educativa|ISBN-E166|100 teste BAC Biologie|Colectiv~Autori|Didactica si Pedagogica|2023|0|1|208|0||0|24.99|Biologie|Real|12
-Educativa|ISBN-E167|100 teste BAC Engleza|Colectiv~Autori|Didactica si Pedagogica|2023|0|1|272|0||0|27.99|Engleza|Uman|12
-Educativa|ISBN-E168|Admitere Academia Militara|Colectiv~Autori|Didactica si Pedagogica|2023|0|1|320|0||0|35.99|Matematica|Real|0
-Educativa|ISBN-E169|Educatie Fizica si Sport|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|256|0||0|32.99|Educatie Fizica|Sport|0
-Educativa|ISBN-E170|Algebra cls 9|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|192|0||0|24.99|Matematica|Real|9
-Educativa|ISBN-E171|Trigonometrie|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|144|0||0|22.99|Matematica|Real|10
-Educativa|ISBN-E172|Geometrie cls 9|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|176|0||0|23.99|Matematica|Real|9
-Educativa|ISBN-E173|Statistica si probabilitati|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|160|0||0|22.99|Matematica|Real|11
-Educativa|ISBN-E174|Limba Engleza cls 9|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|208|0||0|26.99|Engleza|Uman|9
-Educativa|ISBN-E175|Limba Engleza cls 10|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|216|0||0|26.99|Engleza|Uman|10
+Educativa|ISBN-E065|Ingineria Programarii|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|448|0||0|52.99|Informatica|Real|0
+Educativa|ISBN-E066|Procesarea Imaginilor|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|448|0||0|54.99|Informatica|Real|0
+Educativa|ISBN-E067|Grafica pe Calculator|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|416|0||0|50.99|Informatica|Real|0
+Educativa|ISBN-E068|Sisteme Expert|Colectiv~Autori|Didactica si Pedagogica|2020|0|1|320|0||0|42.99|Informatica|Real|0
+Educativa|ISBN-E069|Limba Romana cls 5|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|176|0||0|19.99|Romana|Uman|5
+Educativa|ISBN-E070|Limba Romana cls 6|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|192|0||0|19.99|Romana|Uman|6
+Educativa|ISBN-E071|Limba Romana cls 7|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|208|0||0|21.99|Romana|Uman|7
+Educativa|ISBN-E072|Limba Romana cls 8|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|224|0||0|21.99|Romana|Uman|8
+Educativa|ISBN-E073|Limba si Literatura Romana cls 9|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|240|0||0|24.99|Romana|Uman|9
+Educativa|ISBN-E074|Limba si Literatura Romana cls 10|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|256|0||0|24.99|Romana|Uman|10
+Educativa|ISBN-E075|Limba si Literatura Romana cls 11|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|272|0||0|26.99|Romana|Uman|11
+Educativa|ISBN-E076|Limba si Literatura Romana cls 12|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|288|0||0|26.99|Romana|Uman|12
+Educativa|ISBN-E077|Bacalaureat Romana|Colectiv~Autori|Didactica si Pedagogica|2023|0|1|312|0||0|32.99|Romana|Uman|12
+Educativa|ISBN-E078|Engleza pentru avansati|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|320|0||0|34.99|Engleza|Uman|0
+Educativa|ISBN-E079|IELTS Academic|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|448|0||0|45.99|Engleza|Uman|0
+Educativa|ISBN-E080|Franceza pentru incepatori|Colectiv~Autori|Didactica si Pedagogica|2020|0|1|256|0||0|28.99|Franceza|Uman|0
+Educativa|ISBN-E081|Germana pentru incepatori|Colectiv~Autori|Didactica si Pedagogica|2020|0|1|272|0||0|29.99|Germana|Uman|0
+Educativa|ISBN-E082|Spaniola pentru incepatori|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|256|0||0|28.99|Spaniola|Uman|0
+Educativa|ISBN-E083|Limba Engleza cls 9|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|208|0||0|26.99|Engleza|Uman|9
+Educativa|ISBN-E084|Limba Engleza cls 10|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|216|0||0|26.99|Engleza|Uman|10
+Educativa|ISBN-E085|Istorie cls 5|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|160|0||0|18.99|Istorie|Uman|5
+Educativa|ISBN-E086|Istorie cls 6|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|176|0||0|18.99|Istorie|Uman|6
+Educativa|ISBN-E087|Istoria Romanilor cls 11|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|256|0||0|24.99|Istorie|Uman|11
+Educativa|ISBN-E088|Bacalaureat Istorie|Colectiv~Autori|Didactica si Pedagogica|2023|0|1|288|0||0|30.99|Istorie|Uman|12
+Educativa|ISBN-E089|Geografie Romania cls 9|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|224|0||0|22.99|Geografie|Uman|9
+Educativa|ISBN-E090|Bacalaureat Geografie|Colectiv~Autori|Didactica si Pedagogica|2023|0|1|264|0||0|28.99|Geografie|Uman|12
+Educativa|ISBN-E091|Drept Civil vol 1|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|512|0||0|65.99|Drept|Juridic|0
+Educativa|ISBN-E092|Drept Penal general|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|480|0||0|62.99|Drept|Juridic|0
+Educativa|ISBN-E093|Drept Constitutional|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|512|0||0|62.99|Drept|Juridic|0
+Educativa|ISBN-E094|Drept Administrativ|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|480|0||0|59.99|Drept|Juridic|0
+Educativa|ISBN-E095|Procedura Civila|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|576|0||0|68.99|Drept|Juridic|0
+Educativa|ISBN-E096|Procedura Penala|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|544|0||0|65.99|Drept|Juridic|0
+Educativa|ISBN-E097|Contabilitate generala|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|448|0||0|55.99|Economie|Economic|0
+Educativa|ISBN-E098|Macroeconomie|Colectiv~Autori|Didactica si Pedagogica|2020|0|1|412|0||0|52.99|Economie|Economic|0
+Educativa|ISBN-E099|Microeconomie|Colectiv~Autori|Didactica si Pedagogica|2020|0|1|396|0||0|50.99|Economie|Economic|0
+Educativa|ISBN-E100|Management general|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|416|0||0|50.99|Economie|Economic|0
+Educativa|ISBN-E101|Marketing|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|384|0||0|47.99|Economie|Economic|0
+Educativa|ISBN-E102|Admitere ASE|Colectiv~Autori|Didactica si Pedagogica|2023|0|1|320|0||0|35.99|Matematica|Economic|0
+Educativa|ISBN-E103|Finante publice|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|448|0||0|52.99|Economie|Economic|0
+Educativa|ISBN-E104|Drept Commercial|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|448|0||0|56.99|Drept|Juridic|0
+Educativa|ISBN-E105|Anatomie umana vol 1|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|672|0||0|85.99|Medicina|Medical|0
+Educativa|ISBN-E106|Anatomie umana vol 2|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|688|0||0|85.99|Medicina|Medical|0
+Educativa|ISBN-E107|Fiziologie|Colectiv~Autori|Didactica si Pedagogica|2020|0|1|768|0||0|92.99|Medicina|Medical|0
+Educativa|ISBN-E108|Biochimie medicala|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|624|0||0|79.99|Medicina|Medical|0
+Educativa|ISBN-E109|Farmacologie|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|864|0||0|98.99|Medicina|Medical|0
+Educativa|ISBN-E110|Microbiologie|Colectiv~Autori|Didactica si Pedagogica|2020|0|1|592|0||0|75.99|Medicina|Medical|0
+Educativa|ISBN-E111|Patologie generala|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|712|0||0|88.99|Medicina|Medical|0
+Educativa|ISBN-E112|Nutritie si Dietetica|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|416|0||0|50.99|Medicina|Medical|0
+Educativa|ISBN-E113|Psihologie generala|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|384|0||0|48.99|Psihologie|Uman|0
+Educativa|ISBN-E114|Pedagogie|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|416|0||0|50.99|Pedagogie|Pedagogic|0
+Educativa|ISBN-E115|Filosofie|Colectiv~Autori|Didactica si Pedagogica|2020|0|1|448|0||0|52.99|Filosofie|Uman|0
+Educativa|ISBN-E116|Sociologie generala|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|384|0||0|47.99|Sociologie|Uman|0
+Educativa|ISBN-E117|Comunicare si Relatii Publice|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|368|0||0|46.99|Comunicare|Uman|0
+Educativa|ISBN-E118|Relatii Internationale|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|448|0||0|52.99|Stiinte Politice|Uman|0
+Educativa|ISBN-E119|Psihologie sociala|Colectiv~Autori|Didactica si Pedagogica|2020|0|1|368|0||0|46.99|Psihologie|Uman|0
+Educativa|ISBN-E120|Asistenta Sociala|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|384|0||0|47.99|Sociologie|Uman|0
+Educativa|ISBN-E121|Jurnalism|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|320|0||0|42.99|Comunicare|Uman|0
+Educativa|ISBN-E122|Stiinte Politice|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|416|0||0|50.99|Stiinte Politice|Uman|0
+Educativa|ISBN-E123|Electrotehnica|Colectiv~Autori|Didactica si Pedagogica|2020|0|1|512|0||0|58.99|Electrica|Real|0
+Educativa|ISBN-E124|Electronica digitala|Colectiv~Autori|Didactica si Pedagogica|2020|0|1|448|0||0|52.99|Electronica|Real|0
+Educativa|ISBN-E125|Robotica|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|384|0||0|48.99|Automatizari|Real|0
+Educativa|ISBN-E126|Rezistenta Materialelor|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|512|0||0|62.99|Constructii|Tehnic|0
+Educativa|ISBN-E127|Mecanica Fluidelor|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|416|0||0|51.99|Mecanica|Real|0
+Educativa|ISBN-E128|Constructii Civile|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|512|0||0|62.99|Constructii|Tehnic|0
+Educativa|ISBN-E129|Calcul Numeric|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|368|0||0|46.99|Matematica|Real|0
+Educativa|ISBN-E130|Econometrie|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|384|0||0|47.99|Economie|Economic|0
+Educativa|ISBN-E131|Matematici Financiare|Colectiv~Autori|Didactica si Pedagogica|2022|0|1|320|0||0|42.99|Matematica|Economic|0
+Educativa|ISBN-E132|Automatizari Industriale|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|448|0||0|54.99|Automatizari|Real|0
+Educativa|ISBN-E133|Calcul Paralel|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|416|0||0|50.99|Informatica|Real|0
+Educativa|ISBN-E134|Recunoastere Forme|Colectiv~Autori|Didactica si Pedagogica|2021|0|1|384|0||0|48.99|Informatica|Real|0
+Educativa|ISBN-E135|100 teste BAC Romana|Colectiv~Autori|Didactica si Pedagogica|2023|0|1|288|0||0|28.99|Romana|Uman|12
+Educativa|ISBN-E136|100 teste BAC Matematica|Colectiv~Autori|Didactica si Pedagogica|2023|0|1|256|0||0|28.99|Matematica|Real|12
+Educativa|ISBN-E137|100 teste BAC Fizica|Colectiv~Autori|Didactica si Pedagogica|2023|0|1|240|0||0|26.99|Fizica|Real|12
+Educativa|ISBN-E138|100 teste BAC Chimie|Colectiv~Autori|Didactica si Pedagogica|2023|0|1|224|0||0|25.99|Chimie|Real|12
+Educativa|ISBN-E139|100 teste BAC Biologie|Colectiv~Autori|Didactica si Pedagogica|2023|0|1|208|0||0|24.99|Biologie|Real|12
+Educativa|ISBN-E140|100 teste BAC Engleza|Colectiv~Autori|Didactica si Pedagogica|2023|0|1|272|0||0|27.99|Engleza|Uman|12
+Educativa|ISBN-E141|Bacalaureat Informatica|Colectiv~Autori|Didactica si Pedagogica|2023|0|1|320|0||0|35.99|Informatica|Real|12
 Copii|ISBN-C001|Harry Potter si Piatra Filozofala|Rowling~J.K.|RAO|2019|0|0|320|0||0|39.99|8|Divers|0
 Copii|ISBN-C002|Harry Potter si Camera Secretelor|Rowling~J.K.|RAO|2019|0|0|352|0||0|39.99|8|Divers|0
 Copii|ISBN-C003|Harry Potter si Prizonierul din Azkaban|Rowling~J.K.|RAO|2020|0|0|384|0||0|42.99|8|Divers|0
@@ -494,85 +450,60 @@ Copii|ISBN-C018|Mica Sirena|Andersen~Hans Christian|Corint|2019|0|0|64|0||0|15.9
 Copii|ISBN-C019|Degetarica|Andersen~Hans Christian|Corint|2019|0|0|48|0||0|12.99|4|Divers|1
 Copii|ISBN-C020|Craiasa Zapezii|Andersen~Hans Christian|Corint|2020|0|0|96|0||0|18.99|6|Divers|0
 Copii|ISBN-C021|Rata cea Urata|Andersen~Hans Christian|Corint|2020|0|0|48|0||0|12.99|4|Divers|1
-Copii|ISBN-C022|Soldatelul de Cositor|Andersen~Hans Christian|Corint|2019|0|0|48|0||0|12.99|5|Divers|1
-Copii|ISBN-C023|Lebedele Salbatice|Andersen~Hans Christian|Corint|2020|0|0|64|0||0|14.99|6|Divers|0
-Copii|ISBN-C024|Frumoasa din Padurea Adormita|Grimm~Jacob|Litera|2019|0|0|64|0||0|14.99|5|Divers|1
-Copii|ISBN-C025|Alba ca Zapada|Grimm~Jacob|Litera|2019|0|0|64|0||0|14.99|5|Divers|1
-Copii|ISBN-C026|Scufita Rosie|Grimm~Jacob|Litera|2020|0|0|48|0||0|12.99|4|Divers|1
-Copii|ISBN-C027|Cenusareasa|Grimm~Jacob|Litera|2020|0|0|64|0||0|14.99|5|Divers|1
-Copii|ISBN-C028|Hansel si Gretel|Grimm~Jacob|Litera|2019|0|0|48|0||0|12.99|5|Divers|1
-Copii|ISBN-C029|Rapunzel|Grimm~Jacob|Litera|2019|0|0|40|0||0|10.99|4|Divers|1
-Copii|ISBN-C030|Motanul Incaltat|Grimm~Jacob|Litera|2020|0|0|48|0||0|12.99|4|Divers|1
-Copii|ISBN-C031|Harap Alb|Ispirescu~Petre|Corint|2019|0|0|96|0||0|18.99|7|Divers|0
-Copii|ISBN-C032|Praslea cel Voinic|Ispirescu~Petre|Corint|2020|0|0|80|0||0|16.99|7|Divers|0
-Copii|ISBN-C033|Fat Frumos din Lacrima|Ispirescu~Petre|Corint|2020|0|0|72|0||0|15.99|6|Divers|0
-Copii|ISBN-C034|Ileana Cosanzeana|Ispirescu~Petre|Corint|2019|0|0|80|0||0|16.99|6|Divers|0
-Copii|ISBN-C035|Zana Zorilor|Ispirescu~Petre|Corint|2020|0|0|72|0||0|15.99|6|Divers|0
-Copii|ISBN-C036|Greuceanu|Ispirescu~Petre|Corint|2020|0|0|88|0||0|17.99|7|Divers|0
-Copii|ISBN-C037|Winnie the Pooh|Milne~A.A.|Art|2019|0|0|176|0||0|18.99|4|Divers|1
-Copii|ISBN-C038|Casa de la Coltul Padurii|Milne~A.A.|Art|2020|0|0|176|0||0|18.99|4|Divers|1
-Copii|ISBN-C039|Pippi Sosetica|Lindgren~Astrid|Litera|2020|0|0|160|0||0|19.99|6|Divers|0
-Copii|ISBN-C040|Fratii Inimii|Lindgren~Astrid|Litera|2019|0|0|256|0||0|25.99|8|Divers|0
-Copii|ISBN-C041|Cartea junglei|Kipling~Rudyard|Litera|2019|0|0|256|0||0|24.99|7|Divers|0
-Copii|ISBN-C042|Captains Courageous|Kipling~Rudyard|Litera|2021|0|0|192|0||0|21.99|9|Divers|0
-Copii|ISBN-C043|Alice in Tara Minunilor|Carroll~Lewis|Corint|2019|0|0|192|0||0|21.99|7|Divers|0
-Copii|ISBN-C044|Peter Pan|Barrie~J.M.|Litera|2020|0|0|224|0||0|22.99|6|Divers|0
-Copii|ISBN-C045|Pinocchio|Collodi~Carlo|Corint|2019|0|0|192|0||0|18.99|6|Divers|0
-Copii|ISBN-C046|Heidi|Spyri~Johanna|Litera|2020|0|0|256|0||0|24.99|8|Divers|0
-Copii|ISBN-C047|Pollyanna|Porter~Eleanor|Litera|2021|0|0|240|0||0|23.99|8|Divers|0
-Copii|ISBN-C048|Fetitele|Alcott~Louisa May|Litera|2021|0|0|544|0||0|38.99|9|Divers|0
-Copii|ISBN-C049|Singur pe lume|Malot~Hector|Litera|2020|0|0|416|0||0|34.99|9|Divers|0
-Copii|ISBN-C050|Emil si Detectivii|Kastner~Erich|Litera|2020|0|0|176|0||0|20.99|7|Divers|0
-Copii|ISBN-C051|Robinson Crusoe|Defoe~Daniel|Corint|2021|0|0|312|0||0|28.99|10|Divers|0
-Copii|ISBN-C052|Don Quijote pentru copii|Cervantes~Miguel de|Corint|2020|0|0|224|0||0|23.99|10|Divers|0
-Copii|ISBN-C053|Insula comorii|Stevenson~Robert Louis|Corint|2019|0|0|224|0||0|22.99|10|Divers|0
-Copii|ISBN-C054|Aventurile lui Tom Sawyer|Twain~Mark|Corint|2020|0|0|200|0||0|22.99|9|Divers|0
-Copii|ISBN-C055|Micul Lord|Burnett~Frances Hodgson|Litera|2020|0|0|224|0||0|22.99|8|Divers|0
-Copii|ISBN-C056|Enciclopedia copiilor|Colectiv~Autori|Corint|2021|0|0|256|0||0|45.99|6|Divers|1
-Copii|ISBN-C057|Atlasul lumii pentru copii|Colectiv~Autori|Corint|2021|0|0|128|0||0|35.99|6|Divers|1
-Copii|ISBN-C058|Corpul uman pentru copii|Colectiv~Autori|Corint|2022|0|0|128|0||0|32.99|7|Divers|1
-Copii|ISBN-C059|Sistemul solar pentru copii|Colectiv~Autori|Corint|2021|0|0|96|0||0|24.99|7|Divers|1
-Copii|ISBN-C060|Dinozaurii uriasi|Colectiv~Autori|Corint|2022|0|0|80|0||0|22.99|5|Divers|1
-Copii|ISBN-C061|Animale din Romania|Colectiv~Autori|Corint|2021|0|0|112|0||0|29.99|6|Divers|1
-Copii|ISBN-C062|Istoria lumii pentru copii|Colectiv~Autori|Corint|2020|0|0|192|0||0|35.99|8|Divers|0
-Copii|ISBN-C063|Romania pentru copii|Colectiv~Autori|Corint|2021|0|0|128|0||0|28.99|7|Divers|1
-Copii|ISBN-C064|Experimente stiintifice acasa|Colectiv~Autori|Art|2022|0|0|144|0||0|29.99|8|Divers|1
-Copii|ISBN-C065|Mitologie Greaca pentru copii|Colectiv~Autori|Corint|2021|0|0|256|0||0|28.99|8|Divers|0
-Copii|ISBN-C066|Abecedar|Colectiv~Autori|Corint|2022|0|0|128|0||0|18.99|1|Divers|1
-Copii|ISBN-C067|Matematica distractiva cls 1|Colectiv~Autori|Corint|2022|0|0|96|0||0|18.99|1|Divers|1
-Copii|ISBN-C068|Matematica distractiva cls 2|Colectiv~Autori|Corint|2022|0|0|104|0||0|18.99|2|Divers|1
-Copii|ISBN-C069|Matematica distractiva cls 3|Colectiv~Autori|Corint|2022|0|0|112|0||0|19.99|3|Divers|1
-Copii|ISBN-C070|Matematica distractiva cls 4|Colectiv~Autori|Corint|2022|0|0|120|0||0|19.99|4|Divers|1
-Copii|ISBN-C071|Citim si scriem cls 1|Colectiv~Autori|Corint|2022|0|0|96|0||0|16.99|1|Divers|1
-Copii|ISBN-C072|Citim si scriem cls 2|Colectiv~Autori|Corint|2022|0|0|104|0||0|16.99|2|Divers|1
-Copii|ISBN-C073|Carte de colorat cu animale|Colectiv~Autori|Art|2021|0|0|64|0||0|10.99|3|Divers|1
-Copii|ISBN-C074|Carte de colorat cu printese|Colectiv~Autori|Art|2021|0|0|64|0||0|10.99|4|Divers|1
-Copii|ISBN-C075|Povesti de noapte buna|Colectiv~Autori|Corint|2020|0|0|256|0||0|28.99|3|Divers|0
-Copii|ISBN-C076|Gulliver in Tara Piticilor|Swift~Jonathan|Corint|2019|0|0|256|0||0|25.99|9|Divers|0
-Copii|ISBN-C077|Omul Invizibil|Wells~H.G.|Litera|2021|0|0|224|0||0|22.99|10|Divers|0
-Copii|ISBN-C078|Razboiul Lumilor|Wells~H.G.|Litera|2020|0|0|192|0||0|20.99|10|Divers|0
-Copii|ISBN-C079|Masina Timpului|Wells~H.G.|Litera|2021|0|0|160|0||0|19.99|10|Divers|0
-Copii|ISBN-C080|Basme romanesti vol 1|Ispirescu~Petre|Corint|2020|0|0|192|0||0|22.99|6|Divers|0
-Copii|ISBN-C081|Basme romanesti vol 2|Ispirescu~Petre|Corint|2021|0|0|192|0||0|22.99|6|Divers|0
-Copii|ISBN-C082|Basme internationale vol 1|Colectiv~Autori|Corint|2020|0|0|224|0||0|24.99|5|Divers|0
-Copii|ISBN-C083|Basme internationale vol 2|Colectiv~Autori|Corint|2021|0|0|224|0||0|24.99|5|Divers|0
-Copii|ISBN-C084|Oceane si mari|Colectiv~Autori|Corint|2022|0|0|96|0||0|24.99|6|Divers|1
-Copii|ISBN-C085|Mitologie Romana pentru copii|Colectiv~Autori|Corint|2022|0|0|224|0||0|26.99|8|Divers|0
-Copii|ISBN-C086|Ghid de supravietuire in natura|Colectiv~Autori|Corint|2022|0|0|192|0||0|26.99|9|Divers|1
-Copii|ISBN-C087|Carte de colorat cu dinozauri|Colectiv~Autori|Art|2022|0|0|64|0||0|10.99|4|Divers|1
-Copii|ISBN-C088|Cum sa desenezi pas cu pas|Colectiv~Autori|Art|2021|0|0|128|0||0|24.99|6|Divers|1
-Copii|ISBN-C089|Calatorie spre centrul pamantului copii|Verne~Jules|Corint|2021|0|0|256|0||0|25.99|9|Divers|0
-Copii|ISBN-C090|20000 de leghe copii|Verne~Jules|Corint|2020|0|0|312|0||0|28.99|9|Divers|0
-Copii|ISBN-C091|Cei trei muschetari pentru copii|Dumas~Alexandre|Corint|2019|0|0|224|0||0|22.99|9|Divers|0
-Copii|ISBN-C092|Printul si Sarmanul|Twain~Mark|Corint|2021|0|0|192|0||0|21.99|8|Divers|0
-Copii|ISBN-C093|Fetita cu Chibrituri|Andersen~Hans Christian|Corint|2019|0|0|32|0||0|10.99|5|Divers|1
-Copii|ISBN-C094|Printatesa pe Mazare|Andersen~Hans Christian|Corint|2020|0|0|32|0||0|10.99|4|Divers|1
-Copii|ISBN-C095|Frumoasa si Bestia|Grimm~Jacob|Litera|2020|0|0|64|0||0|14.99|5|Divers|0
-Copii|ISBN-C096|Aventuri in jungla|Kipling~Rudyard|Litera|2022|0|0|192|0||0|21.99|7|Divers|0
-Copii|ISBN-C097|Micul Print pentru copii|Saint-Exupery~Antoine de|Humanitas|2020|0|0|96|0||0|14.99|6|Divers|0
-Copii|ISBN-C098|Jurnalul unui pusti vol 1|Kinney~Jeff|Art|2021|0|0|224|0||0|29.99|8|Divers|0
-Copii|ISBN-C099|Jurnalul unui pusti vol 2|Kinney~Jeff|Art|2021|0|0|224|0||0|29.99|8|Divers|0
-Copii|ISBN-C100|Geronimo Stilton vol 1|Stilton~Geronimo|Litera|2020|0|0|128|0||0|18.99|6|Divers|1
+Copii|ISBN-C022|Lebedele Salbatice|Andersen~Hans Christian|Corint|2020|0|0|64|0||0|14.99|6|Divers|0
+Copii|ISBN-C023|Frumoasa din Padurea Adormita|Grimm~Jacob|Litera|2019|0|0|64|0||0|14.99|5|Divers|1
+Copii|ISBN-C024|Alba ca Zapada|Grimm~Jacob|Litera|2019|0|0|64|0||0|14.99|5|Divers|1
+Copii|ISBN-C025|Scufita Rosie|Grimm~Jacob|Litera|2020|0|0|48|0||0|12.99|4|Divers|1
+Copii|ISBN-C026|Cenusareasa|Grimm~Jacob|Litera|2020|0|0|64|0||0|14.99|5|Divers|1
+Copii|ISBN-C027|Hansel si Gretel|Grimm~Jacob|Litera|2019|0|0|48|0||0|12.99|5|Divers|1
+Copii|ISBN-C028|Rapunzel|Grimm~Jacob|Litera|2019|0|0|40|0||0|10.99|4|Divers|1
+Copii|ISBN-C029|Harap Alb|Ispirescu~Petre|Corint|2019|0|0|96|0||0|18.99|7|Divers|0
+Copii|ISBN-C030|Praslea cel Voinic|Ispirescu~Petre|Corint|2020|0|0|80|0||0|16.99|7|Divers|0
+Copii|ISBN-C031|Fat Frumos din Lacrima|Ispirescu~Petre|Corint|2020|0|0|72|0||0|15.99|6|Divers|0
+Copii|ISBN-C032|Ileana Cosanzeana|Ispirescu~Petre|Corint|2019|0|0|80|0||0|16.99|6|Divers|0
+Copii|ISBN-C033|Basme romanesti vol 1|Ispirescu~Petre|Corint|2020|0|0|192|0||0|22.99|6|Divers|0
+Copii|ISBN-C034|Basme romanesti vol 2|Ispirescu~Petre|Corint|2021|0|0|192|0||0|22.99|6|Divers|0
+Copii|ISBN-C035|Winnie the Pooh|Milne~A.A.|Art|2019|0|0|176|0||0|18.99|4|Divers|1
+Copii|ISBN-C036|Pippi Sosetica|Lindgren~Astrid|Litera|2020|0|0|160|0||0|19.99|6|Divers|0
+Copii|ISBN-C037|Fratii Inimii|Lindgren~Astrid|Litera|2019|0|0|256|0||0|25.99|8|Divers|0
+Copii|ISBN-C038|Cartea junglei|Kipling~Rudyard|Litera|2019|0|0|256|0||0|24.99|7|Divers|0
+Copii|ISBN-C039|Alice in Tara Minunilor|Carroll~Lewis|Corint|2019|0|0|192|0||0|21.99|7|Divers|0
+Copii|ISBN-C040|Peter Pan|Barrie~J.M.|Litera|2020|0|0|224|0||0|22.99|6|Divers|0
+Copii|ISBN-C041|Pinocchio|Collodi~Carlo|Corint|2019|0|0|192|0||0|18.99|6|Divers|0
+Copii|ISBN-C042|Heidi|Spyri~Johanna|Litera|2020|0|0|256|0||0|24.99|8|Divers|0
+Copii|ISBN-C043|Robinson Crusoe|Defoe~Daniel|Corint|2021|0|0|312|0||0|28.99|10|Divers|0
+Copii|ISBN-C044|Aventurile lui Tom Sawyer|Twain~Mark|Corint|2020|0|0|200|0||0|22.99|9|Divers|0
+Copii|ISBN-C045|Insula comorii|Stevenson~Robert Louis|Corint|2019|0|0|224|0||0|22.99|10|Divers|0
+Copii|ISBN-C046|Don Quijote pentru copii|Cervantes~Miguel de|Corint|2020|0|0|224|0||0|23.99|10|Divers|0
+Copii|ISBN-C047|Gulliver in Tara Piticilor|Swift~Jonathan|Corint|2019|0|0|256|0||0|25.99|9|Divers|0
+Copii|ISBN-C048|Emil si Detectivii|Kastner~Erich|Litera|2020|0|0|176|0||0|20.99|7|Divers|0
+Copii|ISBN-C049|Omul Invizibil|Wells~H.G.|Litera|2021|0|0|224|0||0|22.99|10|Divers|0
+Copii|ISBN-C050|Razboiul Lumilor|Wells~H.G.|Litera|2020|0|0|192|0||0|20.99|10|Divers|0
+Copii|ISBN-C051|Enciclopedia copiilor|Colectiv~Autori|Corint|2021|0|0|256|0||0|45.99|6|Divers|1
+Copii|ISBN-C052|Atlasul lumii pentru copii|Colectiv~Autori|Corint|2021|0|0|128|0||0|35.99|6|Divers|1
+Copii|ISBN-C053|Corpul uman pentru copii|Colectiv~Autori|Corint|2022|0|0|128|0||0|32.99|7|Divers|1
+Copii|ISBN-C054|Sistemul solar pentru copii|Colectiv~Autori|Corint|2021|0|0|96|0||0|24.99|7|Divers|1
+Copii|ISBN-C055|Dinozaurii uriasi|Colectiv~Autori|Corint|2022|0|0|80|0||0|22.99|5|Divers|1
+Copii|ISBN-C056|Animale din Romania|Colectiv~Autori|Corint|2021|0|0|112|0||0|29.99|6|Divers|1
+Copii|ISBN-C057|Mitologie Greaca pentru copii|Colectiv~Autori|Corint|2021|0|0|256|0||0|28.99|8|Divers|0
+Copii|ISBN-C058|Mitologie Romana pentru copii|Colectiv~Autori|Corint|2022|0|0|224|0||0|26.99|8|Divers|0
+Copii|ISBN-C059|Experimente stiintifice acasa|Colectiv~Autori|Art|2022|0|0|144|0||0|29.99|8|Divers|1
+Copii|ISBN-C060|Romania pentru copii|Colectiv~Autori|Corint|2021|0|0|128|0||0|28.99|7|Divers|1
+Copii|ISBN-C061|Abecedar|Colectiv~Autori|Corint|2022|0|0|128|0||0|18.99|1|Divers|1
+Copii|ISBN-C062|Matematica distractiva cls 1|Colectiv~Autori|Corint|2022|0|0|96|0||0|18.99|1|Divers|1
+Copii|ISBN-C063|Matematica distractiva cls 2|Colectiv~Autori|Corint|2022|0|0|104|0||0|18.99|2|Divers|1
+Copii|ISBN-C064|Matematica distractiva cls 3|Colectiv~Autori|Corint|2022|0|0|112|0||0|19.99|3|Divers|1
+Copii|ISBN-C065|Citim si scriem cls 1|Colectiv~Autori|Corint|2022|0|0|96|0||0|16.99|1|Divers|1
+Copii|ISBN-C066|Citim si scriem cls 2|Colectiv~Autori|Corint|2022|0|0|104|0||0|16.99|2|Divers|1
+Copii|ISBN-C067|Carte de colorat cu animale|Colectiv~Autori|Art|2021|0|0|64|0||0|10.99|3|Divers|1
+Copii|ISBN-C068|Carte de colorat cu printese|Colectiv~Autori|Art|2021|0|0|64|0||0|10.99|4|Divers|1
+Copii|ISBN-C069|Povesti de noapte buna|Colectiv~Autori|Corint|2020|0|0|256|0||0|28.99|3|Divers|0
+Copii|ISBN-C070|Jurnalul unui pusti vol 1|Kinney~Jeff|Art|2021|0|0|224|0||0|29.99|8|Divers|0
+Copii|ISBN-C071|Jurnalul unui pusti vol 2|Kinney~Jeff|Art|2021|0|0|224|0||0|29.99|8|Divers|0
+Copii|ISBN-C072|Geronimo Stilton vol 1|Stilton~Geronimo|Litera|2020|0|0|128|0||0|18.99|6|Divers|1
+Copii|ISBN-C073|Micul Print pentru copii|Saint-Exupery~Antoine de|Humanitas|2020|0|0|96|0||0|14.99|6|Divers|0
+Copii|ISBN-C074|Fetitele|Alcott~Louisa May|Litera|2021|0|0|544|0||0|38.99|9|Divers|0
+Copii|ISBN-C075|Singur pe lume|Malot~Hector|Litera|2020|0|0|416|0||0|34.99|9|Divers|0
 Referinta|ISBN-R001|Dictionarul Explicativ al Limbii Romane|Colectiv~Autori|Corint|2009|0|0|1192|0||0|120.99|Dictionar
 Referinta|ISBN-R002|Dictionarul Ortografic DOOM3|Colectiv~Autori|Corint|2021|0|0|688|0||0|89.99|Dictionar
 Referinta|ISBN-R003|Dictionarul de Sinonime|Colectiv~Autori|Corint|2019|0|0|512|0||0|55.99|Dictionar
