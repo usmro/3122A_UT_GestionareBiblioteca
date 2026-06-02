@@ -1,4 +1,4 @@
-ISBN-F001|BIB-2024-00001|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|34.993|0
+ISBN-F001|BIB-2024-00001|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|34.993|1
 ISBN-F001|BIB-2024-00002|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|34.993|0
 ISBN-F001|BIB-2024-00003|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|34.993|0
 ISBN-F001|BIB-2024-00004|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|34.993|0
@@ -53,7 +53,7 @@ ISBN-F002|BIB-2024-00052|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|32.193|0
 ISBN-F002|BIB-2024-00053|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|32.193|0
 ISBN-F002|BIB-2024-00054|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|32.193|0
 ISBN-F002|BIB-2024-00055|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|32.193|0
-ISBN-F003|BIB-2024-00056|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|32.193|1
+ISBN-F003|BIB-2024-00056|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|32.193|0
 ISBN-F003|BIB-2024-00057|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|32.193|0
 ISBN-F003|BIB-2024-00058|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|32.193|0
 ISBN-F003|BIB-2024-00059|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|32.193|0
@@ -78,7 +78,7 @@ ISBN-F004|BIB-2024-00077|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|32.193|0
 ISBN-F004|BIB-2024-00078|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|32.193|0
 ISBN-F004|BIB-2024-00079|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|32.193|0
 ISBN-F004|BIB-2024-00080|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|32.193|0
-ISBN-F005|BIB-2024-00081|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|39.193|0
+ISBN-F005|BIB-2024-00081|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|39.193|1
 ISBN-F005|BIB-2024-00082|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|39.193|0
 ISBN-F005|BIB-2024-00083|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|39.193|0
 ISBN-F005|BIB-2024-00084|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|39.193|0
@@ -233,7 +233,7 @@ ISBN-F008|BIB-2024-00232|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|27.993|0
 ISBN-F008|BIB-2024-00233|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|27.993|0
 ISBN-F008|BIB-2024-00234|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|27.993|0
 ISBN-F008|BIB-2024-00235|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|27.993|0
-ISBN-F009|BIB-2024-00236|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|32.193|0
+ISBN-F009|BIB-2024-00236|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|32.193|1
 ISBN-F009|BIB-2024-00237|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|32.193|0
 ISBN-F009|BIB-2024-00238|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|32.193|0
 ISBN-F009|BIB-2024-00239|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|32.193|0
@@ -708,7 +708,7 @@ ISBN-F029|BIB-2024-00707|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|46.193|0
 ISBN-F029|BIB-2024-00708|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|46.193|0
 ISBN-F029|BIB-2024-00709|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|46.193|0
 ISBN-F029|BIB-2024-00710|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|46.193|0
-ISBN-F030|BIB-2024-00711|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|27.993|0
+ISBN-F030|BIB-2024-00711|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|27.993|1
 ISBN-F030|BIB-2024-00712|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|27.993|0
 ISBN-F030|BIB-2024-00713|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|27.993|0
 ISBN-F030|BIB-2024-00714|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|27.993|0
@@ -726,7 +726,7 @@ ISBN-F030|BIB-2024-00725|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|27.993|0
 ISBN-F030|BIB-2024-00726|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|27.993|0
 ISBN-F030|BIB-2024-00727|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|27.993|0
 ISBN-F030|BIB-2024-00728|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|27.993|0
-ISBN-F031|BIB-2024-00729|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|25.193|0
+ISBN-F031|BIB-2024-00729|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|25.193|1
 ISBN-F031|BIB-2024-00730|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|25.193|0
 ISBN-F031|BIB-2024-00731|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|25.193|0
 ISBN-F031|BIB-2024-00732|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|25.193|0
@@ -742,14 +742,14 @@ ISBN-F031|BIB-2024-00741|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|25.193|0
 ISBN-F031|BIB-2024-00742|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|25.193|0
 ISBN-F031|BIB-2024-00743|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|25.193|0
 ISBN-F032|BIB-2024-00744|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|46.193|1
-ISBN-F032|BIB-2024-00745|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|46.193|0
+ISBN-F032|BIB-2024-00745|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|46.193|1
 ISBN-F032|BIB-2024-00746|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|46.193|0
 ISBN-F032|BIB-2024-00747|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|46.193|0
 ISBN-F032|BIB-2024-00748|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|46.193|0
 ISBN-F032|BIB-2024-00749|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|46.193|0
 ISBN-F032|BIB-2024-00750|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|46.193|0
 ISBN-F032|BIB-2024-00751|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|46.193|0
-ISBN-F033|BIB-2024-00752|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|39.193|0
+ISBN-F033|BIB-2024-00752|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|39.193|1
 ISBN-F033|BIB-2024-00753|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|39.193|0
 ISBN-F033|BIB-2024-00754|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|39.193|0
 ISBN-F033|BIB-2024-00755|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|39.193|0
@@ -859,7 +859,7 @@ ISBN-F035|BIB-2024-00858|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|41.993|0
 ISBN-F035|BIB-2024-00859|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|41.993|0
 ISBN-F035|BIB-2024-00860|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|41.993|0
 ISBN-F035|BIB-2024-00861|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|41.993|0
-ISBN-F036|BIB-2024-00862|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|34.993|1
+ISBN-F036|BIB-2024-00862|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|34.993|0
 ISBN-F036|BIB-2024-00863|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|34.993|0
 ISBN-F036|BIB-2024-00864|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|34.993|0
 ISBN-F036|BIB-2024-00865|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|34.993|0
@@ -1046,7 +1046,7 @@ ISBN-F044|BIB-2024-01045|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|39.193|0
 ISBN-F044|BIB-2024-01046|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|39.193|0
 ISBN-F044|BIB-2024-01047|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|39.193|0
 ISBN-F044|BIB-2024-01048|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|39.193|0
-ISBN-F045|BIB-2024-01049|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|27.993|0
+ISBN-F045|BIB-2024-01049|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|27.993|1
 ISBN-F045|BIB-2024-01050|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|27.993|0
 ISBN-F045|BIB-2024-01051|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|27.993|0
 ISBN-F045|BIB-2024-01052|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|27.993|0
@@ -1180,7 +1180,7 @@ ISBN-F051|BIB-2024-01179|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|30.093|0
 ISBN-F051|BIB-2024-01180|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|30.093|0
 ISBN-F051|BIB-2024-01181|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|30.093|0
 ISBN-F051|BIB-2024-01182|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|30.093|0
-ISBN-F052|BIB-2024-01183|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|32.193|0
+ISBN-F052|BIB-2024-01183|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|32.193|1
 ISBN-F052|BIB-2024-01184|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|32.193|0
 ISBN-F052|BIB-2024-01185|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|32.193|0
 ISBN-F052|BIB-2024-01186|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|32.193|0
@@ -1315,7 +1315,7 @@ ISBN-F057|BIB-2024-01314|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|16.093|0
 ISBN-F057|BIB-2024-01315|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|16.093|0
 ISBN-F057|BIB-2024-01316|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|16.093|0
 ISBN-F057|BIB-2024-01317|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|16.093|0
-ISBN-F058|BIB-2024-01318|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|23.093|0
+ISBN-F058|BIB-2024-01318|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|23.093|1
 ISBN-F058|BIB-2024-01319|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|23.093|0
 ISBN-F058|BIB-2024-01320|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|23.093|0
 ISBN-F058|BIB-2024-01321|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|23.093|0
@@ -1335,7 +1335,7 @@ ISBN-F058|BIB-2024-01334|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|23.093|0
 ISBN-F058|BIB-2024-01335|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|23.093|0
 ISBN-F058|BIB-2024-01336|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|23.093|0
 ISBN-F058|BIB-2024-01337|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|23.093|0
-ISBN-F059|BIB-2024-01338|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|18.193|0
+ISBN-F059|BIB-2024-01338|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|18.193|1
 ISBN-F059|BIB-2024-01339|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|18.193|0
 ISBN-F059|BIB-2024-01340|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|18.193|0
 ISBN-F059|BIB-2024-01341|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|18.193|0
@@ -1413,7 +1413,7 @@ ISBN-F062|BIB-2024-01412|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|20.293|0
 ISBN-F062|BIB-2024-01413|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|20.293|0
 ISBN-F062|BIB-2024-01414|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|20.293|0
 ISBN-F062|BIB-2024-01415|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|20.293|0
-ISBN-F063|BIB-2024-01416|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|20.993|0
+ISBN-F063|BIB-2024-01416|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|20.993|1
 ISBN-F063|BIB-2024-01417|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|20.993|0
 ISBN-F063|BIB-2024-01418|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|20.993|0
 ISBN-F063|BIB-2024-01419|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|20.993|0
@@ -1465,7 +1465,7 @@ ISBN-F065|BIB-2024-01464|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|13.293|0
 ISBN-F065|BIB-2024-01465|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|13.293|0
 ISBN-F065|BIB-2024-01466|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|13.293|0
 ISBN-F065|BIB-2024-01467|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|13.293|0
-ISBN-F066|BIB-2024-01468|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|32.193|0
+ISBN-F066|BIB-2024-01468|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|32.193|1
 ISBN-F066|BIB-2024-01469|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|32.193|0
 ISBN-F066|BIB-2024-01470|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|32.193|0
 ISBN-F066|BIB-2024-01471|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|32.193|0
@@ -1738,7 +1738,7 @@ ISBN-F080|BIB-2024-01737|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|18.193|0
 ISBN-F080|BIB-2024-01738|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|18.193|0
 ISBN-F080|BIB-2024-01739|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|18.193|0
 ISBN-F080|BIB-2024-01740|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|18.193|0
-ISBN-F081|BIB-2024-01741|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|25.193|0
+ISBN-F081|BIB-2024-01741|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|25.193|1
 ISBN-F081|BIB-2024-01742|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|25.193|0
 ISBN-F081|BIB-2024-01743|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|25.193|0
 ISBN-F081|BIB-2024-01744|Cladirea A|Sala Fictiune|R-F1|Fictiune|0|2024|25.193|0
@@ -4275,7 +4275,7 @@ ISBN-T071|BIB-2024-04274|Cladirea B|Sala Tehnica|R-T1|Informatica|0|2024|45.4935
 ISBN-T071|BIB-2024-04275|Cladirea B|Sala Tehnica|R-T1|Informatica|0|2024|45.4935|0
 ISBN-T071|BIB-2024-04276|Cladirea B|Sala Tehnica|R-T1|Informatica|0|2024|45.4935|0
 ISBN-T071|BIB-2024-04277|Cladirea B|Sala Tehnica|R-T1|Informatica|0|2024|45.4935|0
-ISBN-T072|BIB-2024-04278|Cladirea B|Sala Tehnica|R-T1|Informatica|0|2024|36.3935|0
+ISBN-T072|BIB-2024-04278|Cladirea B|Sala Tehnica|R-T1|Informatica|0|2024|36.3935|1
 ISBN-T072|BIB-2024-04279|Cladirea B|Sala Tehnica|R-T1|Informatica|0|2024|36.3935|0
 ISBN-T072|BIB-2024-04280|Cladirea B|Sala Tehnica|R-T1|Informatica|0|2024|36.3935|0
 ISBN-T072|BIB-2024-04281|Cladirea B|Sala Tehnica|R-T1|Informatica|0|2024|36.3935|0
@@ -4899,7 +4899,7 @@ ISBN-E019|BIB-2024-04898|Cladirea C|Sala Educativa|R-E1|Educational|0|2024|25.79
 ISBN-E019|BIB-2024-04899|Cladirea C|Sala Educativa|R-E1|Educational|0|2024|25.794|0
 ISBN-E019|BIB-2024-04900|Cladirea C|Sala Educativa|R-E1|Educational|0|2024|25.794|0
 ISBN-E019|BIB-2024-04901|Cladirea C|Sala Educativa|R-E1|Educational|0|2024|25.794|0
-ISBN-E020|BIB-2024-04902|Cladirea C|Sala Educativa|R-E1|Educational|0|2024|23.394|0
+ISBN-E020|BIB-2024-04902|Cladirea C|Sala Educativa|R-E1|Educational|0|2024|23.394|1
 ISBN-E020|BIB-2024-04903|Cladirea C|Sala Educativa|R-E1|Educational|0|2024|23.394|0
 ISBN-E020|BIB-2024-04904|Cladirea C|Sala Educativa|R-E1|Educational|0|2024|23.394|0
 ISBN-E020|BIB-2024-04905|Cladirea C|Sala Educativa|R-E1|Educational|0|2024|23.394|0

@@ -1,6 +1,5 @@
 #ifndef SERVER_H
 #define SERVER_H
-
 // Socket headers trebuie incluse INAINTE de filesystem
 #include <sys/types.h>
 #include <sys/socket.h>
@@ -257,6 +256,7 @@ static string getHTML()
     position: fixed;
     top: 0; left: 0; bottom: 0;
     z-index: 100;
+    overflow-y: auto;
   }
   .sidebar-header {
     padding: 28px 24px 20px;
@@ -608,6 +608,14 @@ static string getHTML()
           <div class="nav-item" onclick="showPage('anunturi')"><span class="icon">📢</span> Anunțuri</div>
           <div class="nav-item" onclick="showPage('despre')"><span class="icon">🏛</span> Despre</div>
         </div>
+        <div class="nav-section">
+          <div class="nav-section-title">Personal</div>
+          <div class="nav-item" onclick="showPage('profil-staff')"><span class="icon">👤</span> Profilul Meu</div>
+          <div class="nav-item" onclick="showPage('carti-personal-staff')"><span class="icon">📚</span> Cărți</div>
+          <div class="nav-item" onclick="showPage('istoric-staff')"><span class="icon">📖</span> Istoricul Meu</div>
+          <div class="nav-item" onclick="showPage('wishlist-staff')"><span class="icon">🔖</span> Listă Lectură</div>
+          <div class="nav-item" onclick="showPage('recomandari-staff')"><span class="icon">✨</span> Recomandări</div>
+        </div>
       </div>
 
       <div id="nav-user" style="display:none">
@@ -671,7 +679,7 @@ static string getHTML()
           <table id="tabel-carti">
             <thead><tr>
               <th>Titlu</th><th>Autor</th><th>Tip</th>
-              <th>An</th><th>Disponibile</th><th>Total</th>
+              <th>An</th><th>ISBN</th><th>Disponibile</th><th>Total</th><th>Acțiuni</th>
             </tr></thead>
             <tbody id="tbody-carti"></tbody>
           </table>
@@ -829,8 +837,8 @@ static string getHTML()
             </div>
             <div id="pv-ner-info" class="alert alert-info" style="display:none"></div>
             <div class="form-group">
-              <label>ISBN Carte</label>
-              <input type="text" id="pv-ner-isbn" placeholder="ex: ISBN-F001">
+              <label>Cod Exemplar</label>
+              <input type="text" id="pv-ner-isbn" placeholder="ex: BIB-2024-00001">
             </div>
             <div class="form-group">
               <label>Zile depășite</label>
@@ -884,6 +892,197 @@ static string getHTML()
         </div>
       </div>
 
+      <!-- DETALII UTILIZATOR -->
+      <div class="page" id="page-detalii-user">
+        <div class="page-header">
+          <div style="display:flex;align-items:center;gap:16px">
+            <button class="btn btn-outline" style="padding:6px 14px" onclick="showPage('utilizatori')">← Înapoi</button>
+            <div>
+              <h1 id="du-titlu">Detalii Utilizator</h1>
+              <p id="du-subtitlu"></p>
+            </div>
+          </div>
+        </div>
+        <div class="grid-2" style="margin-bottom:20px">
+          <div class="card">
+            <div class="card-title">Informații Cont</div>
+            <div id="du-info"></div>
+          </div>
+          <div class="card">
+            <div class="card-title">Împrumuturi Active</div>
+            <div id="du-imprumuturi"></div>
+          </div>
+        </div>
+        <div class="grid-2">
+          <div class="card">
+            <div class="card-title">Înregistrează Împrumut</div>
+            <div class="form-group">
+              <label>ISBN Carte</label>
+              <input type="text" id="du-isbn" placeholder="ex: ISBN-F001">
+            </div>
+            <div class="form-group">
+              <label>Data (zi / luna / an)</label>
+              <div style="display:flex;gap:8px">
+                <input type="number" id="du-zi" min="1" max="31" style="width:33%">
+                <input type="number" id="du-luna" min="1" max="12" style="width:33%">
+                <input type="number" id="du-an" value="2024" style="width:34%">
+              </div>
+            </div>
+            <div id="du-imp-msg"></div>
+            <button class="btn btn-gold" onclick="doImprumutPentruUser()">Înregistrează Împrumut</button>
+          </div>
+          <div class="card">
+            <div class="card-title">Returnare & Taxe</div>
+            <div class="form-group">
+              <label>Cod Exemplar</label>
+              <input type="text" id="du-cod" placeholder="ex: BIB-2024-00001">
+            </div>
+            <div class="form-group">
+              <label>Zile întârziere</label>
+              <input type="number" id="du-zile" value="0" min="0">
+            </div>
+            <div id="du-ret-msg"></div>
+            <button class="btn btn-gold" onclick="doReturnarePentruUser()" style="margin-bottom:8px">Returnează</button>
+            <hr class="divider">
+            <div class="form-group">
+              <label>Suma de încasat (RON)</label>
+              <input type="number" id="du-taxa" step="0.01" placeholder="0.00">
+            </div>
+            <div id="du-taxa-msg"></div>
+            <button class="btn btn-outline" onclick="doIncasarePentruUser()">Încasează Taxă</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARTI PERSONAL STAFF -->
+      <div class="page" id="page-carti-personal-staff">
+        <div class="page-header">
+          <h1>Cărți</h1>
+          <p>Caută și împrumută cărți pentru tine</p>
+        </div>
+        <div class="search-bar">
+          <input type="text" id="cps-search" placeholder="Caută după titlu, autor, ISBN, gen..."
+            oninput="cautaCartiPersonalStaff()">
+          <select id="cps-tip" onchange="cautaCartiPersonalStaff()">
+            <option value="">Toate tipurile</option>
+            <option value="Fictiune">Ficțiune</option>
+            <option value="Tehnica">Tehnică</option>
+            <option value="Educativa">Educativă</option>
+            <option value="Copii">Copii</option>
+            <option value="Referinta">Referință</option>
+            <option value="Religioasa">Religioasă</option>
+            <option value="Periodic">Periodic</option>
+          </select>
+          <select id="cps-disponibile" onchange="cautaCartiPersonalStaff()">
+            <option value="">Toate</option>
+            <option value="disponibile">Doar disponibile</option>
+          </select>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr>
+              <th>Titlu</th><th>Autor</th><th>Gen</th><th>An</th>
+              <th>ISBN</th><th>Disponibile</th><th>Acțiuni</th>
+            </tr></thead>
+            <tbody id="tbody-carti-personal-staff"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- PROFIL STAFF -->
+      <div class="page" id="page-profil-staff">
+        <div class="page-header">
+          <h1>Profilul Meu</h1>
+          <p>Informațiile contului tău</p>
+        </div>
+        <div class="grid-2">
+          <div class="card">
+            <div class="card-title">Informații</div>
+            <div id="profil-staff-info"></div>
+          </div>
+          <div class="card">
+            <div class="card-title">Schimbă Parola</div>
+            <div class="form-group"><label>Parola Veche</label><input type="password" id="ps-parola-veche"></div>
+            <div class="form-group"><label>Parola Nouă</label><input type="password" id="ps-parola-noua"></div>
+            <div class="form-group"><label>Confirmă</label><input type="password" id="ps-parola-confirm"></div>
+            <div id="ps-parola-msg"></div>
+            <button class="btn btn-gold" onclick="schimbaParolaStaff2()">Actualizează</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ISTORIC STAFF -->
+      <div class="page" id="page-istoric-staff">
+        <div class="page-header">
+          <h1>Istoricul Meu</h1>
+          <p>Împrumuturi active și cărți citite</p>
+        </div>
+        <div class="card" style="margin-bottom:20px">
+          <div class="card-title">📚 Împrumuturi Active</div>
+          <div id="istoric-staff-active"><p style="color:var(--text2);font-style:italic;font-size:0.85rem">Se încarcă...</p></div>
+        </div>
+        <div class="card">
+          <div class="card-title">✅ Cărți Returnate</div>
+          <div id="istoric-staff-citite"><p style="color:var(--text2);font-style:italic">Nicio carte returnată încă.</p></div>
+        </div>
+      </div>
+
+      <!-- WISHLIST STAFF -->
+      <div class="page" id="page-wishlist-staff">
+        <div class="page-header">
+          <h1>Lista de Lectură</h1>
+          <p>Cărțile pe care vrei să le citești</p>
+        </div>
+        <div class="card">
+          <div class="card-title">Adaugă Manual</div>
+          <div style="display:flex;gap:10px">
+            <input type="text" id="wish-staff-isbn" placeholder="ISBN carte"
+              style="flex:1;background:var(--bg3);border:1px solid var(--border);color:var(--cream);padding:10px;font-family:Lora,serif;outline:none">
+            <button class="btn btn-gold" onclick="adaugaWishlistStaff()">Adaugă</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-title" id="wish-staff-title">Lista Ta</div>
+          <div style="margin-bottom:12px">
+            <input type="text" id="wish-staff-search" placeholder="Caută în lista ta..."
+              style="width:100%;background:var(--bg3);border:1px solid var(--border);color:var(--cream);padding:10px;font-family:Lora,serif;outline:none"
+              oninput="cautaWishlistStaff()">
+          </div>
+          <div id="wishlist-staff-content"></div>
+        </div>
+      </div>
+
+      <!-- RECOMANDARI STAFF -->
+      <div class="page" id="page-recomandari-staff">
+        <div class="page-header">
+          <h1>Recomandări</h1>
+          <p>Descoperă cărți care ți s-ar potrivi</p>
+        </div>
+        <div class="card">
+          <div class="card-title">Caută după Gen</div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap">
+            <button class="btn btn-outline" onclick="getRecomandariStaff('SF')">🚀 SF</button>
+            <button class="btn btn-outline" onclick="getRecomandariStaff('Fantasy')">🧙 Fantasy</button>
+            <button class="btn btn-outline" onclick="getRecomandariStaff('Horror')">👻 Horror</button>
+            <button class="btn btn-outline" onclick="getRecomandariStaff('Thriller')">🔪 Thriller</button>
+            <button class="btn btn-outline" onclick="getRecomandariStaff('Roman')">📖 Roman</button>
+            <button class="btn btn-outline" onclick="getRecomandariStaff('Aventuri')">⚔️ Aventuri</button>
+            <button class="btn btn-outline" onclick="getRecomandariStaff('Distopie')">🌍 Distopie</button>
+            <button class="btn btn-outline" onclick="getRecomandariStaff('C++')">💻 C++</button>
+            <button class="btn btn-outline" onclick="getRecomandariStaff('Python')">🐍 Python</button>
+            <button class="btn btn-outline" onclick="getRecomandariStaff('Machine Learning')">🧠 AI/ML</button>
+            <button class="btn btn-outline" onclick="getRecomandariStaff('Matematica')">📐 Matematica</button>
+            <button class="btn btn-outline" onclick="getRecomandariStaff('Medicina')">🏥 Medicina</button>
+          </div>
+          <div style="margin-top:12px;display:flex;gap:10px">
+            <input type="text" id="rec-staff-custom" placeholder="Caută alt gen..."
+              style="flex:1;background:var(--bg3);border:1px solid var(--border);color:var(--cream);padding:10px;font-family:Lora,serif;outline:none">
+            <button class="btn btn-gold" onclick="getRecomandariStaff(document.getElementById('rec-staff-custom').value)">Caută</button>
+          </div>
+        </div>
+        <div id="rec-staff-rezultate"></div>
+      </div>
+
       <!-- CAUTARE -->
       <div class="page" id="page-cautare">
         <div class="page-header">
@@ -918,15 +1117,9 @@ static string getHTML()
           <p>Situația curentă a bibliotecii</p>
         </div>
         <div class="stats-grid" id="stats-full"></div>
-        <div class="grid-2">
-          <div class="card">
-            <div class="card-title">Distribuție pe Tipuri</div>
-            <div id="stats-tipuri"></div>
-          </div>
-          <div class="card">
-            <div class="card-title">Împrumuturi Active</div>
-            <div id="stats-imp"></div>
-          </div>
+        <div class="card">
+          <div class="card-title">Distribuție pe Tipuri</div>
+          <div id="stats-tipuri"></div>
         </div>
       </div>
 
@@ -1125,6 +1318,34 @@ static string getHTML()
 
 
 <!-- MODALS -->
+<div class="modal-overlay" id="modal-imprumut-staff">
+  <div class="modal">
+    <h2>Înregistrează Împrumut</h2>
+    <div class="card" style="margin-bottom:16px;padding:12px">
+      <div style="color:var(--gold);font-size:0.9rem" id="is-titlu"></div>
+      <div style="color:var(--text2);font-size:0.8rem;margin-top:2px" id="is-autori"></div>
+    </div>
+    <input type="hidden" id="is-isbn">
+    <div class="form-group">
+      <label>ID Utilizator</label>
+      <input type="text" id="is-user-id" placeholder="ex: STU-1001, BAS-2001">
+    </div>
+    <div class="form-group">
+      <label>Data (zi / luna / an)</label>
+      <div style="display:flex;gap:8px">
+        <input type="number" id="is-zi" min="1" max="31" style="width:33%">
+        <input type="number" id="is-luna" min="1" max="12" style="width:33%">
+        <input type="number" id="is-an" value="2024" style="width:34%">
+      </div>
+    </div>
+    <div id="is-msg"></div>
+    <div class="modal-actions">
+      <button class="btn btn-outline" onclick="closeModal('modal-imprumut-staff')">Anulează</button>
+      <button class="btn btn-gold" onclick="doImprumutStaff()">Înregistrează</button>
+    </div>
+  </div>
+</div>
+
 <div class="modal-overlay" id="modal-adauga-carte">
   <div class="modal">
     <h2>Adaugă Carte Nouă</h2>
@@ -1322,6 +1543,11 @@ function showPage(name) {
   if (name === 'wishlist')   renderWishlist();
   if (name === 'istoric')    loadIstoric();
   if (name === 'recomandari') document.getElementById('rec-rezultate').innerHTML='';
+  if (name === 'profil-staff') loadProfilStaff();
+  if (name === 'carti-personal-staff') loadCartiPersonalStaff();
+  if (name === 'istoric-staff') loadIstoricStaff();
+  if (name === 'wishlist-staff') renderWishlistStaff();
+  if (name === 'recomandari-staff') document.getElementById('rec-staff-rezultate').innerHTML='';
 }
 
 // ---- DASHBOARD ----
@@ -1436,6 +1662,35 @@ function cautaCartiUser() {
   renderCartiUser(filtrate);
 }
 
+function deschideImprumutStaff(isbn, titlu, autori) {
+  // Deschide modalul de imprumut cu camp pentru ID utilizator
+  document.getElementById('is-isbn').value = isbn;
+  document.getElementById('is-titlu').textContent = titlu;
+  document.getElementById('is-autori').textContent = autori;
+  document.getElementById('is-user-id').value = '';
+  document.getElementById('is-msg').innerHTML = '';
+  const azi = new Date();
+  document.getElementById('is-zi').value = azi.getDate();
+  document.getElementById('is-luna').value = azi.getMonth() + 1;
+  document.getElementById('is-an').value = azi.getFullYear();
+  showModal('modal-imprumut-staff');
+}
+
+async function doImprumutStaff() {
+  const isbn = document.getElementById('is-isbn').value;
+  const uid = document.getElementById('is-user-id').value.trim();
+  const zi = parseInt(document.getElementById('is-zi').value) || 1;
+  const luna = parseInt(document.getElementById('is-luna').value) || 1;
+  const an = parseInt(document.getElementById('is-an').value) || 2024;
+  const msg = document.getElementById('is-msg');
+  if (!uid) { msg.innerHTML = '<div class="alert alert-error">Introduceți ID-ul utilizatorului.</div>'; return; }
+  const d = await api('POST', '/api/imprumut', {id_user: uid, isbn, zi, luna, an});
+  msg.innerHTML = `<div class="alert ${d.ok ? 'alert-success' : 'alert-error'}">${d.mesaj}</div>`;
+  if (d.ok) {
+    setTimeout(() => { closeModal('modal-imprumut-staff'); loadCarti(); loadImprumuturiActive(); }, 1500);
+  }
+}
+
 function deschideImprumutRapid(isbn, titlu, autori) {
   document.getElementById('ir-isbn').value = isbn;
   document.getElementById('imprumut-rapid-carte-info').innerHTML = 
@@ -1461,17 +1716,31 @@ async function doImprumutRapid() {
   });
   msg.innerHTML = `<div class="alert ${d.ok ? 'alert-success' : 'alert-error'}">${d.mesaj}</div>`;
   if (d.ok) {
-    // Sterge din wishlist daca e acolo
+    // Sterge din wishlist user
     normalizeazaWishlist();
     const idx = wishlist.findIndex(w => w.isbn === isbn);
     if (idx !== -1) {
       wishlist.splice(idx, 1);
       localStorage.setItem('wishlist_' + userInfo.id, JSON.stringify(wishlist));
     }
+    // Sterge din wishlist staff (acelasi localStorage)
+    normalizeazaWishlistStaff();
+    const idxS = wishlistStaff.findIndex(function(w){ return w.isbn === isbn; });
+    if (idxS !== -1) {
+      wishlistStaff.splice(idxS, 1);
+      localStorage.setItem('wishlist_' + userInfo.id, JSON.stringify(wishlistStaff));
+    }
     setTimeout(() => {
       closeModal('modal-imprumut-rapid');
       loadCartiUser();
       loadDashboard();
+      // Reincarca si paginile staff daca sunt active
+      const activePage = document.querySelector('.page.active');
+      if (activePage) {
+        if (activePage.id === 'page-carti-personal-staff') loadCartiPersonalStaff();
+        if (activePage.id === 'page-wishlist-staff') renderWishlistStaff();
+        if (activePage.id === 'page-recomandari-staff') {}
+      }
     }, 1500);
   }
 }
@@ -1481,11 +1750,25 @@ function renderCarti(carti) {
   tb.innerHTML = carti.map(c => `
     <tr>
       <td><strong style="color:var(--cream)">${c.titlu}</strong>${c.serie ? '<br><small style="color:var(--text2)">'+c.serie+'</small>' : ''}</td>
-      <td style="color:var(--text2)">${c.autori}</td>
+      <td style="color:var(--text2);font-size:0.85rem">${c.autori}</td>
       <td><span class="badge badge-gold">${c.tip}</span></td>
       <td>${c.an}</td>
+      <td>
+        <span style="font-family:monospace;font-size:0.78rem;color:var(--text2)">${c.isbn}</span>
+        <button onclick="navigator.clipboard.writeText('${c.isbn}')"
+          style="background:none;border:none;color:var(--gold);cursor:pointer;font-size:0.8rem;margin-left:2px" title="Copiază">📋</button>
+      </td>
       <td><span class="${c.disponibile > 0 ? 'badge badge-green' : 'badge badge-red'}">${c.disponibile}</span></td>
       <td>${c.total}</td>
+      <td>
+        ${c.disponibile > 0
+          ? `<button class="btn btn-gold" style="padding:4px 10px;font-size:0.75rem"
+               onclick="deschideImprumutStaff('${c.isbn}','${c.titlu.replace(/'/g,"\\'")}','${c.autori.replace(/'/g,"\\'")}')">
+               Împrumută
+             </button>`
+          : '<span style="color:var(--text2);font-size:0.8rem">Indisponibil</span>'
+        }
+      </td>
     </tr>
   `).join('');
 }
@@ -1595,10 +1878,108 @@ function cautaUtilizatori() {
   ));
 }
 
+let userDetaliiCurent = null;
+
 async function veziUtilizator(id) {
   const d = await api('GET', '/api/utilizator?id=' + id);
-  if (!d) return;
-  alert(JSON.stringify(d, null, 2));
+  if (!d || !d.id) return;
+  userDetaliiCurent = d;
+
+  document.getElementById('du-titlu').textContent = d.numeComplet;
+  document.getElementById('du-subtitlu').textContent = d.id + ' · ' + d.tip;
+
+  document.getElementById('du-info').innerHTML = `
+    <div style="line-height:2;font-size:0.9rem">
+      <div><span style="color:var(--text2)">ID:</span> <span style="color:var(--cream)">${d.id}</span></div>
+      <div><span style="color:var(--text2)">Nume:</span> <span style="color:var(--cream)">${d.numeComplet}</span></div>
+      <div><span style="color:var(--text2)">Tip:</span> <span class="badge badge-gold">${d.tip}</span></div>
+      <div><span style="color:var(--text2)">Contact:</span> <span style="color:var(--cream)">${d.contact||'—'}</span></div>
+      <div><span style="color:var(--text2)">Împrumuturi:</span> <span style="color:var(--cream)">${d.nrImprumuturi}/${d.limita}</span></div>
+      <div><span style="color:var(--text2)">Taxe:</span> <span style="color:${d.taxe>0?'#e07070':'var(--cream)'}">${d.taxe} RON</span></div>
+    </div>`;
+
+  // Seteaza data azi
+  const azi = new Date();
+  document.getElementById('du-zi').value = azi.getDate();
+  document.getElementById('du-luna').value = azi.getMonth() + 1;
+  document.getElementById('du-an').value = azi.getFullYear();
+
+  // Incarca imprumuturi active ale acestui user
+  const impAll = await api('GET', '/api/imprumuturi-active');
+  const aleUser = impAll && impAll.imprumuturi ? impAll.imprumuturi.filter(i => i.idUser === d.id) : [];
+  const elImp = document.getElementById('du-imprumuturi');
+  if (aleUser.length === 0) {
+    elImp.innerHTML = '<p style="color:var(--text2);font-style:italic;font-size:0.85rem">Niciun împrumut activ.</p>';
+  } else {
+    elImp.innerHTML = aleUser.map(i => `
+      <div style="padding:8px 0;border-bottom:1px solid var(--border)">
+        <div style="color:var(--cream);font-size:0.85rem">${i.titlu}</div>
+        <div style="display:flex;align-items:center;gap:8px;margin-top:4px">
+          <span style="font-family:monospace;font-size:0.78rem;color:var(--gold)">${i.cod}</span>
+          <button onclick="navigator.clipboard.writeText('${i.cod}');document.getElementById('du-cod').value='${i.cod}'"
+            style="background:none;border:none;color:var(--gold);cursor:pointer;font-size:0.78rem">📋</button>
+          <span style="color:var(--text2);font-size:0.75rem">${i.zi}.${i.luna}.${i.an}</span>
+        </div>
+      </div>`).join('');
+  }
+
+  // Curata mesaje
+  document.getElementById('du-imp-msg').innerHTML = '';
+  document.getElementById('du-ret-msg').innerHTML = '';
+  document.getElementById('du-taxa-msg').innerHTML = '';
+  document.getElementById('du-isbn').value = '';
+  document.getElementById('du-cod').value = '';
+  document.getElementById('du-zile').value = '0';
+  document.getElementById('du-taxa').value = '';
+
+  showPage('detalii-user');
+}
+
+async function doImprumutPentruUser() {
+  if (!userDetaliiCurent) return;
+  const isbn = document.getElementById('du-isbn').value.trim();
+  const zi = parseInt(document.getElementById('du-zi').value) || 1;
+  const luna = parseInt(document.getElementById('du-luna').value) || 1;
+  const an = parseInt(document.getElementById('du-an').value) || 2024;
+  const msg = document.getElementById('du-imp-msg');
+  const d = await api('POST', '/api/imprumut', {id_user: userDetaliiCurent.id, isbn, zi, luna, an});
+  msg.innerHTML = `<div class="alert ${d.ok ? 'alert-success' : 'alert-error'}">${d.mesaj}</div>`;
+  if (d.ok) veziUtilizator(userDetaliiCurent.id);
+}
+
+async function doReturnarePentruUser() {
+  if (!userDetaliiCurent) return;
+  const cod = document.getElementById('du-cod').value.trim();
+  const zile = parseInt(document.getElementById('du-zile').value) || 0;
+  const msg = document.getElementById('du-ret-msg');
+  const d = await api('POST', '/api/returnare', {id_user: userDetaliiCurent.id, cod_exemplar: cod, zile_intarziere: zile, rating: 0});
+  msg.innerHTML = `<div class="alert ${d.ok ? 'alert-success' : 'alert-error'}">${d.mesaj}</div>`;
+  if (d.ok) veziUtilizator(userDetaliiCurent.id);
+}
+
+async function doIncasarePentruUser() {
+  if (!userDetaliiCurent) return;
+  const suma = parseFloat(document.getElementById('du-taxa').value) || 0;
+  const msg = document.getElementById('du-taxa-msg');
+  const d = await api('POST', '/api/incasare', {id_user: userDetaliiCurent.id, suma});
+  msg.innerHTML = `<div class="alert ${d.ok ? 'alert-success' : 'alert-error'}">${d.mesaj}</div>`;
+  if (d.ok) {
+    // Reincarca datele proaspete din server
+    const refresh = await api('GET', '/api/utilizator?id=' + userDetaliiCurent.id);
+    if (refresh && refresh.id) {
+      userDetaliiCurent = refresh;
+      document.getElementById('du-info').innerHTML = `
+        <div style="line-height:2;font-size:0.9rem">
+          <div><span style="color:var(--text2)">ID:</span> <span style="color:var(--cream)">${refresh.id}</span></div>
+          <div><span style="color:var(--text2)">Nume:</span> <span style="color:var(--cream)">${refresh.numeComplet}</span></div>
+          <div><span style="color:var(--text2)">Tip:</span> <span class="badge badge-gold">${refresh.tip}</span></div>
+          <div><span style="color:var(--text2)">Contact:</span> <span style="color:var(--cream)">${refresh.contact||'—'}</span></div>
+          <div><span style="color:var(--text2)">Împrumuturi:</span> <span style="color:var(--cream)">${refresh.nrImprumuturi}/${refresh.limita}</span></div>
+          <div><span style="color:var(--text2)">Taxe:</span> <span style="color:${refresh.taxe>0?'#e07070':'var(--cream)'}">${refresh.taxe} RON</span></div>
+        </div>`;
+      document.getElementById('du-taxa').value = '';
+    }
+  }
 }
 
 // ---- IMPRUMUT ----
@@ -1709,7 +2090,7 @@ UTILIZATOR:
 - Contact: ${d.contact || '—'}
 
 CARTE NERESTITUITĂ:
-- ISBN: ${isbn}
+- Cod Exemplar: ${isbn}
 - Zile de întârziere: ${zile}
 - Taxă acumulată: ${(zile * 1.5).toFixed(2)} RON
 
@@ -1760,12 +2141,12 @@ async function executaCautare() {
         <td><span class="badge badge-gold">${c.tip}</span></td>
         <td>${c.an}</td>
         <td><span class="${c.disponibile>0?'badge badge-green':'badge badge-red'}">${c.disponibile}</span></td>
-        ${!isStaffUser ? `<td style="display:flex;gap:4px">
+        <td style="display:flex;gap:4px">
           ${c.disponibile>0 ? `<button class="btn btn-gold" style="padding:3px 8px;font-size:0.75rem"
-            onclick="deschideImprumutRapid('${c.isbn}','${c.titlu.replace(/'/g,"\\'")}','${c.autori.replace(/'/g,"\\'")}')">Împrumută</button>` : ''}
-          <button onclick="adaugaWishlistDinCarti('${c.isbn}','${c.titlu.replace(/'/g,"\\'")}'); event.stopPropagation();"
-            style="background:none;border:1px solid var(--border);color:var(--text2);cursor:pointer;padding:3px 6px;font-size:0.75rem">🔖</button>
-        </td>` : '<td></td>'}
+            onclick="isStaffUser ? deschideImprumutStaff('${c.isbn}','${c.titlu.replace(/'/g,"\\'")}','${c.autori.replace(/'/g,"\\'")}') : deschideImprumutRapid('${c.isbn}','${c.titlu.replace(/'/g,"\\'")}','${c.autori.replace(/'/g,"\\'")}')">Împrumută</button>` : ''}
+          ${!isStaffUser ? `<button onclick="adaugaWishlistDinCarti('${c.isbn}','${c.titlu.replace(/'/g,"\\'")}'); event.stopPropagation();"
+            style="background:none;border:1px solid var(--border);color:var(--text2);cursor:pointer;padding:3px 6px;font-size:0.75rem">🔖</button>` : ''}
+        </td>
       </tr>`).join('')}</tbody>
     </table></div></div>`;
 }
@@ -2073,6 +2454,242 @@ async function adaugaUser() {
   const msg = document.getElementById('u-msg');
   msg.innerHTML = `<div class="alert ${d.ok ? 'alert-success' : 'alert-error'}">${d.mesaj}</div>`;
   if (d.ok) { setTimeout(()=>closeModal('modal-adauga-user'), 1500); loadUtilizatori(); }
+}
+
+// ---- CARTI PERSONAL STAFF ----
+async function loadCartiPersonalStaff() {
+  if (toateCartile.length === 0) {
+    const d = await api('GET', '/api/carti');
+    if (d && d.carti) toateCartile = d.carti;
+  }
+  renderCartiPersonalStaff(toateCartile);
+}
+
+function renderCartiPersonalStaff(carti) {
+  const tb = document.getElementById('tbody-carti-personal-staff');
+  if (!tb) return;
+  let h = '';
+  carti.forEach(function(c) {
+    const isbn = c.isbn;
+    const titlu = c.titlu.replace(/'/g, "\'");
+    const autori = c.autori.replace(/'/g, "\'");
+    let btns = '';
+    if (c.disponibile > 0) {
+      btns += '<button class="btn btn-gold" style="padding:3px 8px;font-size:0.75rem;margin-right:4px" '
+        + 'onclick="imprumutaPersonalStaff(\'' + isbn + '\',\'' + titlu + '\')">Împrumută</button>';
+    }
+    btns += '<button onclick="adaugaWishlistStaffDinCarti(\'' + isbn + '\',\'' + titlu + '\')" '
+      + 'style="background:none;border:1px solid var(--border);color:var(--text2);cursor:pointer;padding:3px 8px;font-size:0.75rem" '
+      + 'title="Adaugă la wishlist">🔖</button>';
+    h += '<tr>'
+      + '<td><strong style="color:var(--cream)">' + c.titlu + '</strong></td>'
+      + '<td style="color:var(--text2);font-size:0.85rem">' + c.autori + '</td>'
+      + '<td><span class="badge badge-gold">' + (c.gen||c.tip) + '</span></td>'
+      + '<td>' + c.an + '</td>'
+      + '<td><span style="font-family:monospace;font-size:0.78rem;color:var(--text2)">' + c.isbn + '</span>'
+      + '<button onclick="navigator.clipboard.writeText(\'' + isbn + '\')" '
+      + 'style="background:none;border:none;color:var(--gold);cursor:pointer;font-size:0.8rem;margin-left:2px">📋</button></td>'
+      + '<td><span class="' + (c.disponibile>0?'badge badge-green':'badge badge-red') + '">' + c.disponibile + '</span></td>'
+      + '<td>' + btns + '</td>'
+      + '</tr>';
+  });
+  tb.innerHTML = h;
+}
+
+function cautaCartiPersonalStaff() {
+  const q = document.getElementById('cps-search').value.toLowerCase();
+  const tip = document.getElementById('cps-tip').value;
+  const doarDisp = document.getElementById('cps-disponibile').value === 'disponibile';
+  const f = toateCartile.filter(function(c) {
+    return (!q || c.titlu.toLowerCase().includes(q) || c.autori.toLowerCase().includes(q) ||
+            c.isbn.toLowerCase().includes(q) || (c.gen||'').toLowerCase().includes(q))
+        && (!tip || c.tip === tip)
+        && (!doarDisp || c.disponibile > 0);
+  });
+  renderCartiPersonalStaff(f);
+}
+
+function imprumutaPersonalStaff(isbn, titlu) {
+  // Refolosim modalul de imprumut rapid cu id-ul staff-ului
+  document.getElementById('ir-isbn').value = isbn;
+  document.getElementById('imprumut-rapid-carte-info').innerHTML =
+    '<strong style="color:var(--gold)">' + titlu + '</strong>';
+  const azi = new Date();
+  document.getElementById('ir-zi').value = azi.getDate();
+  document.getElementById('ir-luna').value = azi.getMonth() + 1;
+  document.getElementById('ir-an').value = azi.getFullYear();
+  document.getElementById('ir-msg').innerHTML = '';
+  showModal('modal-imprumut-rapid');
+}
+
+function adaugaWishlistStaffDinCarti(isbn, titlu) {
+  normalizeazaWishlistStaff();
+  if (!wishlistStaff.find(function(w){ return w.isbn === isbn; })) {
+    wishlistStaff.push({isbn: isbn, titlu: titlu});
+    localStorage.setItem('wishlist_' + userInfo.id, JSON.stringify(wishlistStaff));
+  }
+  const btn = event.target;
+  const orig = btn.textContent;
+  btn.textContent = '✅';
+  setTimeout(function(){ btn.textContent = orig; }, 1000);
+}
+
+// ---- PERSONAL STAFF ----
+async function loadProfilStaff() {
+  const d = await api('GET', '/api/utilizator?id=' + userInfo.id);
+  if (!d) return;
+  document.getElementById('profil-staff-info').innerHTML =
+    '<div style="line-height:2;font-size:0.9rem">'
+    + '<div><span style="color:var(--text2)">ID: </span><span style="color:var(--cream)">' + d.id + '</span></div>'
+    + '<div><span style="color:var(--text2)">Nume: </span><span style="color:var(--cream)">' + d.numeComplet + '</span></div>'
+    + '<div><span style="color:var(--text2)">Tip: </span><span class="badge badge-gold">' + d.tip + '</span></div>'
+    + '<div><span style="color:var(--text2)">Contact: </span><span style="color:var(--cream)">' + (d.contact||'—') + '</span></div>'
+    + '<div><span style="color:var(--text2)">Împrumuturi: </span><span style="color:var(--cream)">' + d.nrImprumuturi + '/' + d.limita + '</span></div>'
+    + '</div>';
+}
+
+async function schimbaParolaStaff2() {
+  const veche = document.getElementById('ps-parola-veche').value;
+  const noua = document.getElementById('ps-parola-noua').value;
+  const conf = document.getElementById('ps-parola-confirm').value;
+  const msg = document.getElementById('ps-parola-msg');
+  if (noua !== conf) { msg.innerHTML = '<div class="alert alert-error">Parolele nu coincid.</div>'; return; }
+  const d = await api('POST', '/api/schimba-parola', {id: userInfo.id, parola_veche: veche, parola_noua: noua});
+  msg.innerHTML = '<div class="alert ' + (d.ok?'alert-success':'alert-error') + '">' + d.mesaj + '</div>';
+}
+
+async function loadIstoricStaff() {
+  const impAll = await api('GET', '/api/imprumuturi-active');
+  const elActive = document.getElementById('istoric-staff-active');
+  const aleMe = impAll && impAll.imprumuturi ? impAll.imprumuturi.filter(function(i){ return i.idUser === userInfo.id; }) : [];
+  if (aleMe.length === 0) {
+    elActive.innerHTML = '<p style="color:var(--text2);font-style:italic;font-size:0.85rem">Nu ai nicio carte împrumutată momentan.</p>';
+  } else {
+    elActive.innerHTML = '<div class="table-wrap"><table><thead><tr><th>Carte</th><th>Cod Exemplar</th><th>Data</th><th>Zile</th></tr></thead><tbody>'
+      + aleMe.map(function(i) {
+        return '<tr><td style="color:var(--cream)">' + i.titlu + '</td>'
+          + '<td><span style="font-family:monospace;font-size:0.8rem;color:var(--gold)">' + i.cod + '</span>'
+          + '<button onclick="navigator.clipboard.writeText(\'' + i.cod + '\')'  + '" style="background:none;border:none;color:var(--gold);cursor:pointer;margin-left:4px">📋</button></td>'
+          + '<td style="color:var(--text2)">' + i.zi + '.' + i.luna + '.' + i.an + '</td>'
+          + '<td><span class="badge badge-gold">' + i.zileLimita + ' zile</span></td></tr>';
+      }).join('') + '</tbody></table></div>';
+  }
+  const d = await api('GET', '/api/istoric?id=' + userInfo.id);
+  const el = document.getElementById('istoric-staff-citite');
+  if (!d || !d.istoric || d.istoric.length === 0) {
+    el.innerHTML = '<p style="color:var(--text2);font-style:italic">Nicio carte returnată încă.</p>';
+    return;
+  }
+  el.innerHTML = '<table><thead><tr><th>Carte</th><th>ISBN</th><th>Data</th><th>Rating</th></tr></thead><tbody>'
+    + d.istoric.map(function(i) {
+      return '<tr><td style="color:var(--cream)">' + i.titlu + '</td>'
+        + '<td style="color:var(--text2);font-size:0.8rem">' + i.isbn + '</td>'
+        + '<td style="color:var(--text2)">' + i.data + '</td>'
+        + '<td style="color:var(--gold)">' + '★'.repeat(i.rating||0) + '☆'.repeat(5-(i.rating||0)) + '</td></tr>';
+    }).join('') + '</tbody></table>';
+}
+
+let wishlistStaff = [];
+
+function normalizeazaWishlistStaff() {
+  try { wishlistStaff = JSON.parse(localStorage.getItem('wishlist_' + userInfo.id) || '[]'); } catch(e) { wishlistStaff = []; }
+  wishlistStaff = wishlistStaff.map(function(w) {
+    if (typeof w === 'string') { const c = toateCartile.find(function(x){ return x.isbn===w; }); return {isbn:w, titlu: c?c.titlu:w}; }
+    if (w && w.isbn) return w;
+    return null;
+  }).filter(Boolean);
+  localStorage.setItem('wishlist_' + userInfo.id, JSON.stringify(wishlistStaff));
+}
+
+function renderWishlistStaff() {
+  if (toateCartile.length === 0) {
+    api('GET', '/api/carti').then(function(d){ if(d&&d.carti){toateCartile=d.carti; renderWishlistStaff();} });
+    return;
+  }
+  normalizeazaWishlistStaff();
+  const titleEl = document.getElementById('wish-staff-title');
+  if (titleEl) titleEl.textContent = 'Lista Ta (' + wishlistStaff.length + ' carti)';
+  afiseazaWishlistStaff(wishlistStaff);
+}
+
+function afiseazaWishlistStaff(lista) {
+  const el = document.getElementById('wishlist-staff-content');
+  if (!lista || lista.length === 0) { el.innerHTML = '<p style="color:var(--text2);font-style:italic">Lista goală.</p>'; return; }
+  let html = '';
+  lista.forEach(function(item) {
+    const carte = toateCartile.find(function(c){ return c.isbn===item.isbn; });
+    const disp = carte ? carte.disponibile : 0;
+    const autor = carte ? carte.autori : '';
+    const an = carte ? carte.an : '';
+    const idx = wishlistStaff.findIndex(function(w){ return w.isbn===item.isbn; });
+    const badge = disp>0 ? '<span class="badge badge-green">'+disp+' disp.</span>' : '<span class="badge badge-red">Indisponibil</span>';
+    const btnImp = (carte&&disp>0) ? '<button class="btn btn-gold" style="padding:3px 8px;font-size:0.75rem" onclick="imprumutaPersonalStaff(\'' + item.isbn + '\',\'' + item.titlu.replace(/'/g,"\\'") + '\')" >Împrumută</button>' : '';
+    const btnWish = '<button onclick="adaugaWishlistStaffDinCarti(\'' + item.isbn + '\',\'' + item.titlu.replace(/'/g,"\\'") + '\')" style="background:none;border:1px solid var(--border);color:var(--text2);cursor:pointer;padding:3px 6px;font-size:0.75rem">🔖</button>';
+    const btnDel = '<button class="btn btn-danger" style="padding:3px 8px;font-size:0.75rem" onclick="removeWishlistStaff('+idx+')">🗑</button>';
+    html += '<div style="display:flex;align-items:center;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--border)">'
+      + '<div><div style="color:var(--cream)">'+item.titlu+'</div><div style="color:var(--text2);font-size:0.78rem">'+autor+(an?' · '+an:'')+'</div></div>'
+      + '<div style="display:flex;gap:8px;align-items:center">'+badge+btnImp+btnDel+'</div></div>';
+  });
+  el.innerHTML = html;
+}
+
+function cautaWishlistStaff() {
+  normalizeazaWishlistStaff();
+  const q = document.getElementById('wish-staff-search').value.toLowerCase();
+  const f = wishlistStaff.filter(function(item){
+    const c = toateCartile.find(function(x){ return x.isbn===item.isbn; });
+    return !q || item.titlu.toLowerCase().includes(q) || item.isbn.toLowerCase().includes(q) || (c&&c.autori.toLowerCase().includes(q));
+  });
+  afiseazaWishlistStaff(f);
+}
+
+function adaugaWishlistStaff() {
+  const isbn = document.getElementById('wish-staff-isbn').value.trim();
+  if (!isbn) return;
+  normalizeazaWishlistStaff();
+  const carte = toateCartile.find(function(c){ return c.isbn===isbn; });
+  const titlu = carte ? carte.titlu : isbn;
+  if (!wishlistStaff.find(function(w){ return w.isbn===isbn; })) {
+    wishlistStaff.push({isbn:isbn, titlu:titlu});
+    localStorage.setItem('wishlist_' + userInfo.id, JSON.stringify(wishlistStaff));
+  }
+  document.getElementById('wish-staff-isbn').value = '';
+  renderWishlistStaff();
+}
+
+function removeWishlistStaff(i) {
+  normalizeazaWishlistStaff();
+  wishlistStaff.splice(i,1);
+  localStorage.setItem('wishlist_' + userInfo.id, JSON.stringify(wishlistStaff));
+  renderWishlistStaff();
+}
+
+async function getRecomandariStaff(gen) {
+  if (!gen || gen.trim()==='') return;
+  gen = gen.trim();
+  const d = await api('GET', '/api/recomandari?gen=' + encodeURIComponent(gen));
+  const el = document.getElementById('rec-staff-rezultate');
+  if (!d || !d.carti || d.carti.length===0) {
+    el.innerHTML = '<div class="alert alert-info">Nu am găsit recomandări pentru ' + gen + '.</div>';
+    return;
+  }
+  let rows = '';
+  d.carti.forEach(function(c) {
+    const btnImp = c.disponibile>0
+      ? '<button class="btn btn-gold" style="padding:3px 8px;font-size:0.75rem" onclick="deschideImprumutStaff(\'' + c.isbn + '\',\'' + c.titlu.replace(/'/g,"\\'") + '\',\'' + c.autori.replace(/'/g,"\\'") + '\')">Împrumută</button>'
+      : '';
+    rows += '<tr><td style="color:var(--cream)">'+c.titlu+'</td>'
+      + '<td style="color:var(--text2)">'+c.autori+'</td>'
+      + '<td><span class="badge badge-gold">'+(c.gen||c.tip)+'</span></td>'
+      + '<td>'+c.an+'</td>'
+      + '<td><span class="'+(c.disponibile>0?'badge badge-green':'badge badge-red')+'">'+c.disponibile+'</span></td>'
+      + '<td style="display:flex;gap:4px">'+btnImp
+      + '<button onclick="adaugaWishlistStaffDinCarti(\'' + c.isbn + '\',\'' + c.titlu.replace(/'/g,"\\\'" ) + '\')" style="background:none;border:1px solid var(--border);color:var(--text2);cursor:pointer;padding:3px 6px;font-size:0.75rem">🔖</button>'
+      + '</td></tr>';
+  });
+  el.innerHTML = '<div class="card"><div class="card-title">Recomandări — '+gen+' ('+d.carti.length+' titluri)</div>'
+    + '<div class="table-wrap"><table><thead><tr><th>Titlu</th><th>Autor</th><th>Gen</th><th>An</th><th>Disponibile</th><th>Acțiune</th></tr></thead>'
+    + '<tbody>'+rows+'</tbody></table></div></div>';
 }
 
 // ---- MODAL ----
@@ -2471,7 +3088,24 @@ private:
                 int an = p["an"].empty() ? 2024 : std::stoi(p["an"]);
                 bib.imprumutaCarte(p["id_user"], p["isbn"], zi, luna, an);
                 Fisiere::salveazaTot(bib);
-                res.set_content("{\"ok\":true,\"mesaj\":\"Împrumut înregistrat cu succes.\"}", "application/json");
+                // Gaseste codul si locatia exemplarului
+                string codEx, locEx;
+                for (int i = (int)bib.getImprumuturi().size()-1; i >= 0; i--) {
+                    const auto& imp = bib.getImprumuturi()[i];
+                    if (imp.idUtilizator == p["id_user"] && imp.isbnCarte == p["isbn"] && imp.esteActiv) {
+                        codEx = imp.codExemplar;
+                        Carte* c = bib.gasesteCarte(p["isbn"]);
+                        if (c) {
+                            for (const auto& ex : c->getExemplare()) {
+                                if (ex.getCod() == codEx) { locEx = ex.getLocatie(); break; }
+                            }
+                        }
+                        break;
+                    }
+                }
+                string mesajRasp = "Imprumut inregistrat! Cod: " + codEx;
+                if (!locEx.empty()) mesajRasp += " | Locatie: " + locEx;
+                res.set_content("{\"ok\":true,\"mesaj\":\"" + JSON::esc(mesajRasp) + "\"}", "application/json");
             } catch (const std::exception& ex) {
                 string err = ex.what();
                 res.set_content("{\"ok\":false,\"mesaj\":\"" + JSON::esc(err) + "\"}", "application/json");

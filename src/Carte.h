@@ -99,6 +99,8 @@ struct ExemplarFizic
         }
         cout << "\n";
     }
+    string getCod()     const { return codUnic; }
+    string getLocatie() const { return locatieCladire + " / " + locatieCamera + " / Raft " + locatieRaft; }
 };
 
 // -----------------------------------------------------------------------
@@ -181,6 +183,12 @@ public:
     void            setGen(const string& g) { gen = g; }
 
     const vector<ExemplarFizic>& getExemplare() const { return exemplare; }
+    string getLocatieExemplar(const string& cod) const {
+        for (const auto& ex : exemplare) {
+            if (ex.getCod() == cod) return ex.getLocatie();
+        }
+        return "";
+    }
 
     // -----------------------------------------------------------------------
     // Gestiune exemplare

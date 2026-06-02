@@ -3,6 +3,7 @@ STAFF|STAFF-002|Ionescu|Cristian|c.ionescu@bib.ro|2024|1|0|Tehnica|0|3500|2020|9
 STAFF|STAFF-003|Popescu|Elena|e.popescu@bib.ro|2024|1|0|Educativa|0|3500|2021|2
 STAFF|STAFF-004|Dumitrescu|Mihai|m.dumitrescu@bib.ro|2024|1|0|Administrativ|2|5500|2015|6
 STAFF|STAFF-005|Stanciu|Ana|a.stanciu@bib.ro|2024|1|0|Casierie|3|3200|2022|1
+STAFF|STAFF-006|Munteanu|Vasile|v.munteanu@bib.ro|2024|1|0|Arhiva|4|3200|2022|1
 STUDENT|STU-1001|Pop|Ana|Ana.Pop@usv.ro|2024|1|0|FIESC|1|MAT2024002
 STUDENT|STU-1002|Ionescu|Ion|Ion.Ionescu@usv.ro|2024|2|0|FSEAP|2|MAT2024003
 STUDENT|STU-1003|Popa|Maria|Maria.Popa@usv.ro|2024|3|0|FIG|3|MAT2024004
