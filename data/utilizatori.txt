@@ -5,7 +5,7 @@ STAFF|STAFF-004|Dumitrescu|Mihai|m.dumitrescu@bib.ro|2024|1|0|Administrativ|2|55
 STAFF|STAFF-005|Stanciu|Ana|a.stanciu@bib.ro|2024|1|0|Casierie|3|3200|2022|1
 STAFF|STAFF-006|Munteanu|Vasile|v.munteanu@bib.ro|2024|1|0|Arhiva|4|3200|2022|1
 STUDENT|STU-1001|Pop|Ana|Ana.Pop@usv.ro|2024|1|0|FIESC|1|MAT2024002
-STUDENT|STU-1002|Ionescu|Ion|Ion.Ionescu@usv.ro|2024|2|0|FSEAP|2|MAT2024003
+STUDENT|STU-1002|Ionescu|Ion|Ion.Ionescu@usv.ro|2024|2|1.4|FSEAP|2|MAT2024003
 STUDENT|STU-1003|Popa|Maria|Maria.Popa@usv.ro|2024|3|0|FIG|3|MAT2024004
 STUDENT|STU-1004|Georgescu|Gheorghe|Gheorghe.Georgescu@usv.ro|2024|4|0|FSE|4|MAT2024005
 STUDENT|STU-1005|Stan|Elena|Elena.Stan@usv.ro|2024|5|0|FDSA|1|MAT2024006
@@ -48,7 +48,7 @@ STUDENT|STU-1041|Marin|Daniela|Daniela.Marin@usv.ro|2024|1|0|FIESC|1|MAT2024042
 STUDENT|STU-1042|Florescu|Florin|Florin.Florescu@usv.ro|2024|2|0|FSEAP|2|MAT2024043
 STUDENT|STU-1043|Dima|Gabriela|Gabriela.Dima@usv.ro|2024|3|0|FIG|3|MAT2024044
 STUDENT|STU-1044|Lazar|Horia|Horia.Lazar@usv.ro|2024|4|0|FSE|4|MAT2024045
-STUDENT|STU-1045|Moldovan|Ileana|Ileana.Moldovan@usv.ro|2024|5|0|FDSA|1|MAT2024046
+STUDENT|STU-1045|Moldovan|Ileana|Ileana.Moldovan@usv.ro|2024|5|9.4|FDSA|1|MAT2024046
 STUDENT|STU-1046|Nistor|Iulian|Iulian.Nistor@usv.ro|2024|6|0|FIESC|2|MAT2024047
 STUDENT|STU-1047|Oprea|Jana|Jana.Oprea@usv.ro|2024|7|0|FSEAP|3|MAT2024048
 STUDENT|STU-1048|Petrescu|Liviu|Liviu.Petrescu@usv.ro|2024|8|0|FIG|4|MAT2024049
